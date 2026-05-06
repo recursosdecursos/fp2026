@@ -207,6 +207,8 @@ Resolver problemas con varios caminos usando condicionales anidados y múltiples
 
 - Condicionales anidados.
 - Condicionales múltiples con `if-elif-else`.
+- Decisiones múltiples tipo `switch` con `match-case`.
+- Menús simples con opciones.
 - Clasificación de datos.
 - Priorización de condiciones.
 - Casos límite.
@@ -220,6 +222,7 @@ Programas que clasifican datos y resuelven situaciones con más de dos caminos.
 - Clasificar una nota.
 - Semáforo.
 - Descuento por monto de compra.
+- Menú simple con `match-case`.
 - Recomendador de actividad.
 - Acceso con usuario y clave.
 
