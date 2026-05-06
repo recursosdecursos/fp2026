@@ -1,0 +1,57 @@
+site_name: Libro Digital de Programación
+site_description: Cuadernos de programación convertidos a libro digital estático con MkDocs.
+site_author: UPeU
+
+theme:
+  name: material
+  language: es
+  palette:
+        - scheme: default
+          primary: teal
+          accent: amber
+  features:
+        - navigation.sections
+        - navigation.expand
+        - navigation.top
+        - toc.follow
+        - content.code.copy
+        - search.suggest
+        - search.highlight
+
+plugins:
+  - search
+  - mkdocs-jupyter:
+          execute: false
+          include_source: true
+          ignore_h1_titles: true
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+          permalink: true
+  - pymdownx.details
+  - pymdownx.tabbed:
+          alternate_style: true
+  - pymdownx.superfences
+
+nav:
+    - Inicio: index.md
+    - Sílabo: Silabo_Programacion.md
+    - Guía de apoyo: Guia_algoritmo_a_codigo.ipynb
+    - Unidad 1:
+            - Sesión 1: Sesion_01_Algoritmos_Tipos_Datos_Variables.ipynb
+            - Sesión 2: Sesion_02_Operadores_Algoritmos_Secuenciales.ipynb
+            - Sesión 3: Sesion_03_Decisiones_Inteligentes_Simples.ipynb
+            - Sesión 4: Sesion_04_Decisiones_Anidadas_Multiples.ipynb
+            - Sesión 5: Sesion_05_Integracion_Fundamentos.ipynb
+            - Sesión 6: Sesion_06_Evaluacion_Unidad_1.ipynb
+    - Unidad 2:
+            - Sesión 7: Sesion_07_For_Arreglos_Acumuladores_Contadores.ipynb
+            - Sesión 8: Sesion_08_While_con_Listas_Aplicacion.ipynb
+            - Sesión 9: Sesion_09_Introduccion_Estructuras_Datos.ipynb
+            - Sesión 10: Sesion_10_Funciones_en_Accion.ipynb
+            - Sesión 11: Sesion_11_Integracion_Bucles_Listas_Funciones.ipynb
+            - Sesión 12: Sesion_12_Evaluacion_Unidad_2.ipynb
