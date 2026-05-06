@@ -1,6 +1,7 @@
 site_name: Libro Digital de Programación
 site_description: Cuadernos de programación convertidos a libro digital estático con MkDocs.
 site_author: UPeU
+copyright: Angel Sullon @asullom
 
 theme:
   name: material
