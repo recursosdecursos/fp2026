@@ -24,7 +24,7 @@ Al finalizar, el estudiante podrá analizar un problema, identificar entradas, p
 
 La metodología del curso será práctica, progresiva y orientada a resultados. Cada sesión debe permitir que el estudiante avance con la guía incluso sin depender totalmente del docente.
 
-La secuencia de trabajo será:
+La secuencia de aprendizaje será:
 
 ```text
 Ver -> Cambiar -> Probar -> Crear -> Evaluar
@@ -40,7 +40,17 @@ Cada sesión incluye:
 - Evaluación rápida de lo aprendido.
 - Retroalimentación del docente.
 
-La arquitectura base para resolver ejercicios será:
+El método base para resolver problemas tendrá 5 pasos:
+
+```text
+1. Comprender el problema
+2. Identificar entradas
+3. Diseñar el proceso
+4. Definir salidas y pruebas
+5. Escribir, ejecutar y corregir el código
+```
+
+La arquitectura que acompaña esos pasos será:
 
 ```text
 Problema
