@@ -672,17 +672,34 @@ function Get-SessionOneTheoryMarkdown {
         'Fin',
         '```',
         '',
-        '#### Símbolos comunes en diagramas de flujo',
+        '#### Ejemplo correcto de diagrama de flujo',
         '```mermaid',
         'flowchart TD',
-        '    inicio([Inicio / Fin])',
-        '    proceso[Proceso]',
-        '    decision{Decisión}',
-        '    entrada[/Entrada y salida/]',
-        '    inicio --> proceso --> decision --> entrada',
+        '    inicio([Inicio])',
+        '    entrada[/Leer datos/]',
+        '    proceso[Procesar datos]',
+        '    decision{¿Cumple condición?}',
+        '    salida_si[/Mostrar resultado válido/]',
+        '    salida_no[/Mostrar mensaje de error/]',
+        '    fin([Fin])',
+        '    inicio --> entrada --> proceso --> decision',
+        '    decision -->|Sí| salida_si --> fin',
+        '    decision -->|No| salida_no --> fin',
         '```',
         '',
-        'La flecha indica la dirección del flujo y conecta los pasos del algoritmo.',
+        '```text',
+        'Inicio',
+        '  |',
+        'Leer datos',
+        '  |',
+        'Procesar datos',
+        '  |',
+        '¿Cumple condición?',
+        '  |-- Sí --> Mostrar resultado válido --> Fin',
+        '  |-- No --> Mostrar mensaje de error --> Fin',
+        '```',
+        '',
+        'En un flujo real, el rombo representa una decisión y debe mostrar sus caminos posibles, normalmente `Sí` y `No`.',
         '',
         '### 4. Datos y tipos de datos',
         '#### Concepto',
@@ -771,32 +788,7 @@ function Get-SessionOneTheoryMarkdown {
         '',
         '   Escribir promedio',
         'Fin',
-        '```',
-        '',
-        '### Idea central',
-        'Programar no empieza escribiendo instrucciones en Python. Empieza comprendiendo el problema, diseñando un algoritmo, eligiendo datos y variables adecuados, y representando la solución antes de codificarla.'
-    ) -join "`n"
-}
-
-function Get-SessionOneMermaidCode {
-    return @(
-        '# Versión ejecutable del diagrama Mermaid para Jupyter o Colab.',
-        '# Si el paquete no está instalado, ejecuta primero: !pip install mermaid-py',
-        '',
-        'try:',
-        '    from mermaid import Mermaid',
-        'except ImportError:',
-        "    print('Instala primero mermaid-py con: !pip install mermaid-py')",
-        'else:',
-        '    Mermaid("""',
-        'flowchart TD',
-        '    inicio([Inicio / Fin])',
-        '    proceso[Proceso]',
-        '    decision{Decisión}',
-        '    entrada[/Entrada y salida/]',
-        '',
-        '    inicio --> proceso --> decision --> entrada',
-        '""")'
+        '```'
     ) -join "`n"
 }
 
@@ -1448,10 +1440,6 @@ $difficulty
 $contentsMd"),
         (New-MarkdownCell $theoryMd)
     )
-
-    if ($sessionNumber -eq 1) {
-        $cells += (New-CodeCell (Get-SessionOneMermaidCode))
-    }
 
     $cells += @(
         (New-MarkdownCell $routeMd),
