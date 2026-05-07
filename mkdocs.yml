@@ -49,6 +49,7 @@ extra_javascript:
 nav:
   - Inicio: index.md
   - Sílabo: Silabo_FP.md
+  - Plan POO: POO.md
   - Guía de apoyo: Guia_algoritmo_a_codigo.ipynb
   - 1. Resolución de problemas básicos:
       - 1 Algoritmos y datos: S01_Algoritmos_Datos.ipynb

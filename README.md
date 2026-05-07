@@ -89,79 +89,32 @@ Puedes probar el libro localmente con cualquiera de estas opciones:
 - Portada del curso.
 - Sílabo.
 - Guía de apoyo.
-- Sesiones 1 a 12 en formato de libro digital no ejecutable.
+- Sesiones 1 a 16 como páginas estáticas en el libro digital; los cuadernos `.ipynb` sí pueden ejecutarse en Google Colab o Jupyter local.
+- Evaluaciones integradoras en las sesiones 5, 12 y 16.
 
+## Estructura del curso
 
+### Unidad 1: Resolución de problemas básicos
 
+- S01: Algoritmos, variables y tipos de datos.
+- S02: Operadores, expresiones y secuencia.
+- S03: Decisiones simples y compuestas.
+- S04: Decisiones múltiples, anidadas y casos límite.
+- S05: Evaluación 1.
 
-FP + POO Articulados
-La progresión correcta queda así:
+### Unidad 2: Resolución de problemas iterativos y procesamiento de datos
 
-FP: resolver problemas con corrección y estructura.
-POO: modelar y diseñar mejor esas soluciones.
-FP: 16 sesiones
-Unidad 1: Problemas directos y control de casos
-Evaluación en s5.
+- S06: Repetición definida con `for`.
+- S07: Repetición condicionada con `while`.
+- S08: Listas, cadenas y procesamiento de colecciones.
+- S09: Búsqueda secuencial y ordenación básica.
+- S10: Matrices y organización tabular.
+- S11: Diccionarios y organización clave-valor.
+- S12: Evaluación 2.
 
-Pensamiento algorítmico, variables y tipos de datos
-Operadores, expresiones y secuencia
-Decisiones simples y compuestas
-Decisiones múltiples, anidadas y validación
-Evaluación integradora de la unidad 1
+### Unidad 3: Resolución de problemas estructurados y persistencia básica
 
-Unidad 2: Problemas iterativos y colecciones básicas
-Evaluación en s10.
-
-Repetición definida con for
-Repetición condicionada con while
-Listas y cadenas
-Búsqueda secuencial y ordenación básica
-Evaluación integradora de la unidad 2
-
-Unidad 3: Problemas estructurados y persistencia básica
-Evaluación en s16.
-
-Matrices y organización tabular
-Diccionarios y modelado simple de datos
-Funciones y modularización
-Integración de funciones, colecciones y menús
-Persistencia básica de información
-Evaluación integradora final
-
-
----- hasta aquí----
-
-
-
-
-POO: 16 sesiones
-Unidad 1: Modelado básico de objetos
-Evaluación en s5.
-
-Transición de programación estructurada a POO
-Clases, objetos, atributos y métodos
-Encapsulamiento y control del estado
-Constructores y responsabilidad de clase
-Evaluación integradora de la unidad 1
-
-
-
-Unidad 2: Colecciones de objetos y extensión del comportamiento
-Evaluación en s10.
-
-Colecciones de objetos
-Relaciones entre objetos
-Herencia como reutilización
-Polimorfismo y sustitución correcta
-Evaluación integradora de la unidad 2
-
-
-Unidad 3: Diseño aplicado y calidad
-Evaluación en s16.
-
-Interfaces o abstracción
-Excepciones y robustez
-Persistencia de objetos
-Organización en módulos, capas o paquetes
-Caso integrador con revisión de diseño
-Evaluación integradora final
+- S13: Funciones, parámetros, retorno y modularización.
+- S14: Integración de funciones, colecciones y menús.
+- S15: Persistencia básica de información.
+- S16: Evaluación final.

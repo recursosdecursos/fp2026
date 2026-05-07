@@ -269,31 +269,9 @@ Programas que clasifican y toman decisiones de acuerdo con varios criterios.
 
 ---
 
-### Sesión 5: Aplicación integrada de estructuras básicas
+### Sesión 5: Evaluación de desempeño de la unidad 1
 
 **Cuaderno de trabajo:** `S05_Evaluacion_1.ipynb`
-
-#### Objetivo
-
-Integrar variables, operadores y estructuras condicionales en la resolución de problemas completos.
-
-#### Contenidos
-
-- Entrada, proceso y salida.
-- Variables y conversiones.
-- Operadores.
-- Condicionales.
-- Pruebas con casos normales y límite.
-
-#### Producto esperado
-
-Compendio parcial de ejercicios resueltos con procesamiento secuencial y decisiones básicas.
-
----
-
-### Sesión 6: Evaluación de desempeño de la unidad 1
-
-**Cuaderno de trabajo:** `S06_For.ipynb`
 
 #### Evidencia
 
@@ -309,58 +287,57 @@ Programa individual que integre entrada de datos, procesamiento secuencial, vali
 
 ---
 
-## Unidad 2: Estructuras repetitivas, datos y subprogramas
+## Unidad 2: Estructuras repetitivas y procesamiento de datos
 
 ### Propósito de la unidad
 
-Que el estudiante automatice tareas mediante bucles, procese datos en listas y cadenas, y estructure soluciones mediante funciones.
+Que el estudiante automatice tareas mediante bucles y procese colecciones de datos usando listas, cadenas, búsqueda, ordenación, matrices y diccionarios simples.
 
 ### Competencias de la unidad
 
 - Usa estructuras repetitivas para automatizar procesos.
 - Aplica contadores y acumuladores.
-- Maneja listas, cadenas y estructuras simples de datos.
-- Diseña funciones con parámetros y retorno.
+- Maneja listas, cadenas, matrices y diccionarios simples.
 - Aplica búsqueda secuencial y ordenación básica en problemas sencillos.
-- Integra varias estructuras en un programa completo.
+- Procesa datos organizados en filas, columnas y pares clave-valor.
+- Integra varias estructuras en programas de complejidad progresiva.
 
 ### Producto de unidad
 
-Compendio de ejercicios resueltos sobre estructuras repetitivas, datos y subprogramas.
+Compendio de ejercicios resueltos sobre estructuras repetitivas y procesamiento de datos.
 
 ---
 
-### Sesión 7: Repetición definida y procesamiento con listas
+### Sesión 6: Repetición definida con `for`
 
-**Cuaderno de trabajo:** `S07_While.ipynb`
+**Cuaderno de trabajo:** `S06_For.ipynb`
 
 #### Objetivo
 
-Resolver problemas repetitivos con `for`, listas, contadores, acumuladores y ordenación básica.
+Resolver problemas que requieren repetir una acción un número conocido de veces.
 
 #### Contenidos
 
 - Bucle `for`.
 - Uso de `range()`.
-- Recorrido de listas.
 - Contadores.
 - Acumuladores.
-- Ordenación básica de datos en listas.
 - Sumatorias y conteos condicionados.
+- Recorrido inicial de listas.
 
 #### Producto esperado
 
-Programas que procesan, ordenan y resumen conjuntos básicos de datos.
+Programas que usan `for`, contadores y acumuladores para procesar varios datos.
 
 ---
 
-### Sesión 8: Repetición condicionada y captura dinámica de datos
+### Sesión 7: Repetición condicionada con `while`
 
-**Cuaderno de trabajo:** `S08_Listas_Cadenas.ipynb`
+**Cuaderno de trabajo:** `S07_While.ipynb`
 
 #### Objetivo
 
-Usar `while` para controlar el ingreso de datos hasta cumplir una condición de parada y validar entradas en datos numéricos o textuales.
+Resolver problemas en los que la repetición depende de una condición de parada.
 
 #### Contenidos
 
@@ -368,77 +345,103 @@ Usar `while` para controlar el ingreso de datos hasta cumplir una condición de 
 - Condición de parada.
 - Centinelas.
 - Validación repetida.
-- Cadenas y operaciones básicas de procesamiento textual.
-- Registro de datos en listas.
+- Acumulación con cantidad desconocida de datos.
+- Menús simples.
 
 #### Producto esperado
 
-Programa que permita ingresar una cantidad variable de datos, validarlos y procesarlos.
+Programa que use `while`, centinelas y validación iterativa de datos.
 
 ---
 
-### Sesión 9: Estructuración básica de datos
+### Sesión 8: Listas, cadenas y procesamiento de colecciones
+
+**Cuaderno de trabajo:** `S08_Listas_Cadenas.ipynb`
+
+#### Objetivo
+
+Procesar conjuntos de datos usando listas y cadenas en problemas de recorrido y análisis simple.
+
+#### Contenidos
+
+- Listas.
+- Cadenas.
+- Recorrido de colecciones.
+- Conteos condicionados.
+- Transformación básica de texto.
+- Construcción de nuevas listas con `append()`.
+
+#### Producto esperado
+
+Programa que recorra una colección, cuente elementos y transforme información textual.
+
+---
+
+### Sesión 9: Búsqueda secuencial y ordenación básica
 
 **Cuaderno de trabajo:** `S09_Busqueda_Ordenacion.ipynb`
 
 #### Objetivo
 
-Organizar información utilizando listas y diccionarios simples según la estructura que requiera el problema.
+Resolver problemas de localización y ordenamiento de datos usando técnicas básicas.
 
 #### Contenidos
 
-- Listas e índices.
-- Diccionarios simples.
-- Selección de la estructura según el problema.
-- Recorrido y consulta de datos.
+- Búsqueda secuencial.
+- Variable de control para encontrado/no encontrado.
+- Búsqueda con posición.
+- Comparación entre elementos.
+- Ordenación básica por intercambio.
 
 #### Producto esperado
 
-Programa que registre y consulte información organizada.
+Programa que encuentre elementos y ordene listas con una estrategia elemental.
 
 ---
 
-### Sesión 10: Modularización de soluciones con funciones
+### Sesión 10: Matrices y organización tabular de información
 
 **Cuaderno de trabajo:** `S10_Matrices.ipynb`
 
 #### Objetivo
 
-Modularizar programas mediante funciones con parámetros y retorno.
+Representar y procesar datos organizados en filas y columnas.
 
 #### Contenidos
 
-- `def`.
-- Parámetros.
-- `return`.
-- Reutilización de código.
-- Diseño modular.
+- Concepto de matriz o estructura bidimensional.
+- Recorrido por filas.
+- Recorrido por columnas.
+- Promedios y totales por fila.
+- Totales por columna.
+- Organización tabular de información.
 
 #### Producto esperado
 
-Programa estructurado en funciones claras y reutilizables.
+Programa que recorra una matriz y obtenga resúmenes por filas o columnas.
 
 ---
 
-### Sesión 11: Integración de repetición, datos y funciones
+### Sesión 11: Diccionarios, organización clave-valor y consulta de datos
 
 **Cuaderno de trabajo:** `S11_Diccionarios.ipynb`
 
 #### Objetivo
 
-Integrar repetición, almacenamiento, búsqueda secuencial y modularización en una solución completa.
+Modelar información mediante pares clave-valor para registrar y consultar datos de forma directa.
 
 #### Contenidos
 
-- Menús simples.
-- Integración de bucles y listas.
-- Búsqueda secuencial en colecciones de datos.
-- Funciones para organizar el flujo.
-- Pruebas de funcionamiento.
+- Diccionarios.
+- Claves y valores.
+- Consulta y actualización de datos.
+- Recorrido de diccionarios.
+- Lista de diccionarios.
+- Selección de estructuras según el problema.
 
 #### Producto esperado
 
-Compendio parcial de ejercicios resueltos con repetición, organización de datos y funciones de apoyo.
+Programa que use diccionarios para guardar, consultar y actualizar información.
 
 ---
 
@@ -448,7 +451,7 @@ Compendio parcial de ejercicios resueltos con repetición, organización de dato
 
 #### Evidencia
 
-Programa aplicado que use datos de entrada, decisiones, bucles, listas y funciones.
+Programa aplicado que use datos de entrada, decisiones, bucles, listas, búsqueda, matrices o diccionarios según el problema.
 
 #### Criterios específicos
 
@@ -460,83 +463,95 @@ Programa aplicado que use datos de entrada, decisiones, bucles, listas y funcion
 
 ---
 
-## Unidad 3: Organización y persistencia de información
+## Unidad 3: Problemas estructurados y persistencia básica
 
 ### Propósito de la unidad
 
-Que el estudiante organice información de manera estructurada y use mecanismos básicos de persistencia para resolver problemas aplicados con mayor claridad, control y continuidad de los datos.
+Que el estudiante organice programas mediante funciones, integre colecciones con menús y use archivos de texto para resolver problemas aplicados con mayor claridad, control y continuidad de los datos.
 
 ### Competencias de la unidad
 
-- Organiza información para su registro, consulta y actualización según necesidades de persistencia.
-- Lee, escribe y recupera información en mecanismos básicos de persistencia.
-- Relaciona datos, operaciones y estructura del programa para resolver ejercicios de forma ordenada y consistente.
+- Diseña funciones con parámetros y retorno.
+- Integra funciones, colecciones y menús simples.
+- Lee, escribe y recupera información en archivos de texto.
+- Relaciona datos, operaciones y estructura del programa para resolver ejercicios completos.
 
 ### Producto de la unidad
 
-Compendio parcial de ejercicios resueltos sobre organización y persistencia básica de información.
+Compendio parcial de ejercicios resueltos sobre modularización, integración y persistencia básica.
 
-### Sesión 13: Matrices y organización tabular de información
+### Sesión 13: Funciones, parámetros, retorno y modularización
+
+**Cuaderno de trabajo:** `S13_Funciones.ipynb`
 
 #### Objetivo
 
-Organizar y procesar información en tablas o matrices para resolver problemas que requieren recorridos por filas, columnas y posiciones.
+Dividir un problema en partes reutilizables mediante funciones con parámetros y retorno.
 
 #### Contenidos
 
-- Concepto de matriz o estructura bidimensional.
-- Representación tabular de información.
-- Recorrido por filas y columnas.
-- Consulta, actualización y presentación de datos en tablas.
-- Ejercicios de aplicación con matrices y organización tabular.
+- `def`.
+- Parámetros.
+- `return`.
+- Funciones con listas.
+- Funciones con condicionales.
+- Reutilización de código.
 
 #### Producto esperado
 
-Compendio parcial de ejercicios resueltos sobre matrices y organización tabular de información.
+Programa organizado en funciones claras que resuelvan subproblemas concretos.
 
 ---
 
-### Sesión 14: Persistencia básica de información
+### Sesión 14: Integración de funciones, colecciones y menús
+
+**Cuaderno de trabajo:** `S14_Integracion_Menus.ipynb`
 
 #### Objetivo
 
-Resolver ejercicios de almacenamiento y recuperación de datos en archivos u otros mecanismos básicos de persistencia según el lenguaje o entorno utilizado.
+Construir un programa que integre funciones, estructuras de datos y un menú sencillo de opciones.
+
+#### Contenidos
+
+- Menús con `while`.
+- Funciones para registrar, consultar y mostrar datos.
+- Listas.
+- Diccionarios.
+- Lista de diccionarios.
+- Pruebas de funcionamiento.
+
+#### Producto esperado
+
+Programa modular con menú, registro y consulta de información en memoria.
+
+---
+
+### Sesión 15: Persistencia básica de información
+
+**Cuaderno de trabajo:** `S15_Archivos.ipynb`
+
+#### Objetivo
+
+Registrar y recuperar información simple usando archivos de texto.
 
 #### Contenidos
 
 - Concepto de persistencia.
-- Archivos de texto y archivos estructurados simples.
-- Opciones de almacenamiento según el lenguaje: archivos estructurados o bases ligeras.
-- Registro, recuperación y consulta básica de información.
-- Ejercicios de aplicación con persistencia básica.
+- Escritura de archivos con modo `w`.
+- Lectura de archivos con modo `r`.
+- Agregado de datos con modo `a`.
+- Procesamiento de líneas con `strip()` y `split()`.
+- Cálculo de totales a partir de datos guardados.
 
 #### Producto esperado
 
-Compendio parcial de ejercicios resueltos sobre persistencia básica.
-
----
-
-### Sesión 15: Integración de organización y persistencia de información
-
-#### Objetivo
-
-Integrar organización de datos, funciones y persistencia para resolver ejercicios completos de registro, consulta y actualización de información.
-
-#### Contenidos
-
-- Organización de información en registros, listas o estructuras equivalentes.
-- Relación entre datos y operaciones asociadas.
-- Registro, consulta y actualización de información.
-- Validación de consistencia entre memoria y persistencia.
-- Ejercicios integradores de organización y persistencia de información.
-
-#### Producto esperado
-
-Compendio parcial de ejercicios resueltos sobre organización y persistencia de información.
+Programa que escriba datos en un archivo y luego los lea para mostrarlos o procesarlos.
 
 ---
 
 ### Sesión 16: Evaluación final del curso
+
+**Cuaderno de trabajo:** `S16_Evaluacion_Final.ipynb`
 
 #### Evidencia
 
@@ -555,7 +570,7 @@ Entrega final del compendio de ejercicios resueltos y evaluación individual del
 ```text
 Nombre del curso: Fundamentos de Programación (FP)
 Producto del curso: Compendio de resolución de ejercicios de programación
-Duración: 3 unidades de 5 semanas y 1 sesión final de cierre
+Duración: 16 sesiones teórico-prácticas
 
 Unidad 1 - U1: Estructuras secuenciales y condicionales
 Producto U1: Compendio parcial de ejercicios sobre estructuras secuenciales y condicionales
@@ -563,23 +578,23 @@ s1: Algoritmos, variables y tipos de datos (algoritmos, entrada-proceso-salida, 
 s2: Algoritmos secuenciales y operadores (algoritmo secuencial, operadores aritméticos, relacionales, lógicos)
 s3: Decisiones simples y compuestas (decisiones simples, decisiones compuestas, validación básica)
 s4: Decisiones múltiples y lógica anidada (decisiones anidadas, decisiones múltiples, clasificación de datos, casos límite)
-s5: Aplicación integrada de estructuras básicas (integración de variables, operadores, condicionales, pruebas)
-s6: Evaluación 1 (desempeño de la unidad 1)
+s5: Evaluación 1 (desempeño de la unidad 1)
 
-Unidad 2 - U2: Estructuras repetitivas, datos y subprogramas
-Producto U2: Compendio parcial de ejercicios sobre estructuras repetitivas, datos y subprogramas
-s7: Repetición definida y listas (for, range, listas, contadores, acumuladores, ordenación básica)
-s8: Repetición condicionada y captura de datos (while, condición de parada, centinelas, validación y cadenas)
-s9: Estructuración básica de datos (listas, índices, diccionarios simples, recorrido y consulta de datos)
-s10: Modularización con funciones (funciones, parámetros, retorno, reutilización de código)
-s11: Integración de repetición, datos y funciones (integración de bucles, listas, búsqueda secuencial, funciones y menú simple)
+Unidad 2 - U2: Estructuras repetitivas y procesamiento de datos
+Producto U2: Compendio parcial de ejercicios sobre estructuras repetitivas y procesamiento de datos
+s6: Repetición definida con for (for, range, contadores, acumuladores)
+s7: Repetición condicionada con while (while, condición de parada, centinelas, validación)
+s8: Listas y cadenas (listas, cadenas, recorridos, append, conteos y transformación de texto)
+s9: Búsqueda secuencial y ordenación básica (búsqueda, posición, intercambio y ordenación simple)
+s10: Matrices y organización tabular (filas, columnas, totales y promedios)
+s11: Diccionarios y organización clave-valor (claves, valores, consulta, actualización y lista de diccionarios)
 s12: Evaluación 2 (desempeño de la unidad 2)
 
-Unidad 3 - U3: Organización y persistencia de información
-Producto U3: Compendio parcial de ejercicios sobre organización y persistencia básica de información
-s13: Matrices y organización tabular de información (tablas, filas, columnas, consulta y actualización de datos)
-s14: Persistencia básica de información (archivos, almacenamiento estructurado simple y recuperación de datos)
-s15: Integración de organización y persistencia de información (registro, consulta, actualización y consistencia de datos)
+Unidad 3 - U3: Problemas estructurados y persistencia básica
+Producto U3: Compendio parcial de ejercicios sobre modularización, integración y persistencia básica
+s13: Funciones y modularización (funciones, parámetros, retorno y reutilización de código)
+s14: Integración de funciones, colecciones y menús (menús, listas, diccionarios y funciones)
+s15: Persistencia básica de información (archivos, escritura, lectura, agregado y procesamiento de registros)
 s16: Evaluación final del curso (entrega final, mejoras y dominio logrado)
 ```
 
