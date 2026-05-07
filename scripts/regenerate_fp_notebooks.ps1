@@ -294,6 +294,209 @@ function Get-MiniLab {
     }
 }
 
+function Get-ConceptDefinition {
+    param([string]$Concept)
+
+    switch ($Concept.ToLowerInvariant()) {
+        'algoritmos' { return 'un algoritmo es una secuencia finita y ordenada de pasos que permite resolver un problema o realizar una tarea. Su valor está en que describe con claridad qué hacer, en qué orden hacerlo y cuándo termina el proceso.' }
+        'entrada, proceso y salida' { return 'permite distinguir qué datos ingresan, qué transformación ocurre y qué resultado se obtiene.' }
+        'variables' { return 'una variable es un nombre asociado a un espacio de memoria donde se guarda un dato que puede usarse y cambiar durante la ejecución del programa. Sirve para representar información del problema de manera comprensible y manipulable.' }
+        'tipos de datos' { return 'los tipos de datos indican la clase de valor que una variable puede almacenar y la forma en que ese valor será tratado por el programa. Gracias a ellos se distingue si un dato representa texto, números o valores lógicos.' }
+        'salida formateada' { return 'ayuda a presentar la información de forma legible para que el resultado tenga sentido para el usuario.' }
+        'operadores aritméticos' { return 'permiten realizar cálculos como suma, resta, multiplicación, división y residuos.' }
+        'operadores relacionales' { return 'comparan valores y producen resultados lógicos como verdadero o falso.' }
+        'operadores lógicos' { return 'combinan condiciones para construir decisiones más completas.' }
+        'expresiones' { return 'integran datos, operadores y variables para producir un resultado nuevo.' }
+        'secuencia de instrucciones' { return 'organiza el programa en un orden de ejecución donde cada paso depende del anterior.' }
+        'if' { return 'permite ejecutar una acción solo cuando una condición se cumple.' }
+        'if-else' { return 'define dos caminos posibles según el resultado de una condición.' }
+        'condiciones compuestas' { return 'usan operadores lógicos para evaluar más de una regla al mismo tiempo.' }
+        'validación básica' { return 'sirve para comprobar si los datos ingresados tienen sentido antes de continuar.' }
+        'casos de prueba' { return 'permiten verificar si la solución funciona en situaciones normales, límite y excepcionales.' }
+        'if-elif-else' { return 'organiza varias alternativas cuando el problema tiene más de dos posibles respuestas.' }
+        'decisiones anidadas' { return 'aparecen cuando una decisión depende del resultado de otra decisión previa.' }
+        'clasificación' { return 'consiste en ubicar un dato dentro de una categoría según reglas definidas.' }
+        'prioridad de reglas' { return 'obliga a ordenar las condiciones para que cada caso caiga en la opción correcta.' }
+        'casos límite' { return 'son valores cercanos al cambio de regla y ayudan a descubrir errores lógicos.' }
+        'for' { return 'repite una acción un número conocido de veces.' }
+        'range' { return 'genera una secuencia de valores útil para controlar repeticiones con for.' }
+        'contadores' { return 'registran cuántas veces ocurre una condición o evento.' }
+        'acumuladores' { return 'guardan una suma u otro resultado que crece durante el ciclo.' }
+        'sumatorias' { return 'expresan la acumulación progresiva de valores dentro de un proceso repetitivo.' }
+        'while' { return 'repite acciones mientras una condición siga siendo verdadera.' }
+        'condición de parada' { return 'define cuándo debe detenerse el ciclo para evitar repeticiones infinitas.' }
+        'centinelas' { return 'son valores especiales usados para indicar el fin de un proceso de ingreso o repetición.' }
+        'validación iterativa' { return 'permite revisar datos dentro de un ciclo hasta que cumplan lo solicitado.' }
+        'control de ingreso' { return 'ayuda a mantener la calidad de los datos leídos durante la ejecución.' }
+        'listas' { return 'almacenan varios valores en una misma estructura y permiten recorrerlos o modificarlos.' }
+        'cadenas' { return 'representan texto y pueden analizarse carácter por carácter o como una unidad.' }
+        'recorrido de colecciones' { return 'implica visitar cada elemento de una estructura para procesarlo.' }
+        'conteos' { return 'permiten medir cuántos elementos cumplen una condición.' }
+        'transformación básica de texto' { return 'modifica cadenas para adaptarlas a una necesidad del problema.' }
+        'búsqueda secuencial' { return 'revisa los elementos uno por uno hasta encontrar el valor buscado o terminar la lista.' }
+        'comparación de elementos' { return 'permite decidir cuál valor es mayor, menor o igual en un conjunto de datos.' }
+        'ordenación básica' { return 'reorganiza los datos siguiendo un criterio, por ejemplo de menor a mayor.' }
+        'intercambio de valores' { return 'sirve para cambiar posiciones cuando un elemento debe ir antes o después de otro.' }
+        'análisis del proceso' { return 'permite entender por qué una técnica encuentra o reordena datos correctamente.' }
+        'matrices' { return 'organizan datos en filas y columnas para representar información tabular.' }
+        'organización tabular' { return 'permite consultar y procesar datos según su posición en una tabla.' }
+        'diccionarios' { return 'guardan información en pares clave-valor para acceder a ella de forma directa.' }
+        'organización clave-valor' { return 'relaciona un identificador con un dato asociado para simplificar consultas.' }
+        'consulta de datos' { return 'consiste en recuperar información específica desde una estructura ya organizada.' }
+        'funciones' { return 'agrupan instrucciones con una tarea clara para reutilizar y ordenar la solución.' }
+        'parámetros' { return 'permiten que una función reciba datos desde el exterior para trabajar con ellos.' }
+        'retorno' { return 'devuelve un resultado desde la función hacia la parte principal del programa.' }
+        'modularización' { return 'divide el problema en partes pequeñas para mejorar claridad y mantenimiento.' }
+        'persistencia básica' { return 'permite conservar información fuera de la memoria del programa mientras se usa un archivo.' }
+        default { return 'es un concepto clave que debe entenderse antes de aplicar la solución práctica.' }
+    }
+}
+
+function Get-ConceptTaxonomy {
+    param([string]$Concept)
+
+    switch ($Concept.ToLowerInvariant()) {
+        'algoritmos' { return 'pueden ser secuenciales cuando siguen pasos lineales, condicionales cuando toman decisiones y repetitivos cuando ejecutan acciones varias veces hasta cumplir una condición o un número de repeticiones.' }
+        'entrada, proceso y salida' { return 'entrada de datos, transformación de datos y presentación de resultados.' }
+        'variables' { return 'según el dato que guardan, suelen trabajar con valores numéricos, textos y valores lógicos. También pueden distinguirse por su función dentro del algoritmo, por ejemplo variables de entrada, de proceso o de salida.' }
+        'tipos de datos' { return 'en programación inicial se trabaja sobre todo con enteros, decimales, cadenas de texto y booleanos. Cada tipo define operaciones válidas y una forma distinta de representar la información.' }
+        'salida formateada' { return 'salida con texto fijo, salida con etiquetas y salida combinada con variables.' }
+        'operadores aritméticos' { return 'suma, resta, multiplicación, división, división entera, potencia y módulo.' }
+        'operadores relacionales' { return 'igualdad, diferencia, mayor que, menor que, mayor o igual y menor o igual.' }
+        'operadores lógicos' { return 'conjunción, disyunción y negación.' }
+        'expresiones' { return 'aritméticas, relacionales y lógicas.' }
+        'secuencia de instrucciones' { return 'lectura, cálculo y salida en orden lineal.' }
+        'if' { return 'decisión simple con una sola condición y una sola acción principal.' }
+        'if-else' { return 'decisión binaria con camino verdadero y camino falso.' }
+        'condiciones compuestas' { return 'condiciones unidas por and, or y not.' }
+        'validación básica' { return 'validación de rango, formato y consistencia.' }
+        'casos de prueba' { return 'casos normales, límite y excepcionales.' }
+        'if-elif-else' { return 'decisión múltiple con varias ramas ordenadas por prioridad.' }
+        'decisiones anidadas' { return 'una decisión interna dentro de una decisión externa.' }
+        'clasificación' { return 'por rangos, categorías o cumplimiento de reglas.' }
+        'prioridad de reglas' { return 'reglas más restrictivas primero y reglas generales después.' }
+        'casos límite' { return 'valores mínimos, máximos y de frontera entre categorías.' }
+        'for' { return 'recorrido por contador, por rango y por colección.' }
+        'range' { return 'inicio-fin, inicio-fin-paso y rango simple desde cero.' }
+        'contadores' { return 'conteo simple, conteo por condición y conteo acumulado por iteración.' }
+        'acumuladores' { return 'sumatorias, productos y agregaciones progresivas.' }
+        'sumatorias' { return 'sumatoria total, parcial y condicionada.' }
+        'while' { return 'ciclo por condición, ciclo con centinela y ciclo de validación.' }
+        'condición de parada' { return 'parada por valor objetivo, por centinela o por validación satisfactoria.' }
+        'centinelas' { return 'valores de cierre como 0, fin, salir u otra marca especial.' }
+        'validación iterativa' { return 'repetición hasta que el dato cumpla una regla.' }
+        'control de ingreso' { return 'lectura controlada, repetición de ingreso y verificación de regla.' }
+        'listas' { return 'listas de números, textos o estructuras compuestas.' }
+        'cadenas' { return 'texto completo, caracteres individuales y fragmentos.' }
+        'recorrido de colecciones' { return 'recorrido total, búsqueda parcial y filtrado por condición.' }
+        'conteos' { return 'conteo general y conteo condicionado.' }
+        'transformación básica de texto' { return 'conversión de mayúsculas, minúsculas, limpieza y concatenación.' }
+        'búsqueda secuencial' { return 'búsqueda con éxito, búsqueda sin éxito y búsqueda con corte anticipado.' }
+        'comparación de elementos' { return 'comparación par a par y comparación contra un valor de referencia.' }
+        'ordenación básica' { return 'orden ascendente y descendente mediante comparaciones sucesivas.' }
+        'intercambio de valores' { return 'intercambio simple entre dos posiciones durante una ordenación.' }
+        'análisis del proceso' { return 'seguimiento paso a paso, comparación de estados y verificación del resultado.' }
+        'matrices' { return 'filas, columnas y posiciones por índice.' }
+        'organización tabular' { return 'datos por fila, por columna y por celda.' }
+        'diccionarios' { return 'claves únicas con valores asociados.' }
+        'organización clave-valor' { return 'registro por identificador y consulta directa por clave.' }
+        'consulta de datos' { return 'consulta existente, consulta no encontrada y actualización de datos.' }
+        'funciones' { return 'funciones sin retorno, con retorno y con parámetros.' }
+        'parámetros' { return 'parámetros de entrada simples o múltiples.' }
+        'retorno' { return 'retorno único y retorno calculado a partir de parámetros.' }
+        'modularización' { return 'división en funciones pequeñas con responsabilidades claras.' }
+        'persistencia básica' { return 'escritura, lectura y recuperación simple desde archivos.' }
+        default { return 'categorías básicas, variantes de uso y casos comunes en la sesión.' }
+    }
+}
+
+function Get-ConceptExample {
+    param([string]$Concept)
+
+    switch ($Concept.ToLowerInvariant()) {
+        'algoritmos' { return 'un algoritmo para calcular el área de un rectángulo puede seguir estos pasos: leer base, leer altura, multiplicar ambos valores y mostrar el resultado.' }
+        'entrada, proceso y salida' { return 'leer edad, evaluar si es mayor de edad y mostrar el mensaje final.' }
+        'variables' { return 'nombre = "Ana", edad = 18 y promedio = 16.5 muestran cómo una variable puede representar distintos datos del mismo problema.' }
+        'tipos de datos' { return 'en Python, "Lima" es una cadena, 25 es un entero, 16.5 es un decimal y True es un booleano.' }
+        'salida formateada' { return 'print("Nombre:", nombre).' }
+        'operadores aritméticos' { return 'promedio = (n1 + n2 + n3) / 3.' }
+        'operadores relacionales' { return 'promedio >= 11.' }
+        'operadores lógicos' { return 'edad < 18 or tiene_carne == "si".' }
+        'expresiones' { return 'total = precio * cantidad.' }
+        'secuencia de instrucciones' { return 'leer datos, calcular y luego mostrar.' }
+        'if' { return 'if nota >= 11: print("Aprueba").' }
+        'if-else' { return 'if edad >= 18: print("Mayor") else: print("Menor").' }
+        'condiciones compuestas' { return 'if edad >= 18 and promedio >= 14: print("Beca").' }
+        'validación básica' { return 'if nota < 0 or nota > 20: print("Fuera de rango").' }
+        'casos de prueba' { return 'probar con 10.9, 11 y 20 para observar cambios de resultado.' }
+        'if-elif-else' { return 'clasificar una nota en destacado, esperado o refuerzo.' }
+        'decisiones anidadas' { return 'primero validar rango y luego clasificar el valor.' }
+        'clasificación' { return 'ubicar una temperatura en frío, templado o cálido.' }
+        'prioridad de reglas' { return 'evaluar primero monto >= 500 y luego monto >= 200.' }
+        'casos límite' { return 'probar exactamente 18 años o una nota igual a 14.' }
+        'for' { return 'for i in range(5): leer una nota.' }
+        'range' { return 'range(1, 6) genera cinco valores consecutivos.' }
+        'contadores' { return 'aprobados += 1 cuando la nota cumple la condición.' }
+        'acumuladores' { return 'suma += numero en cada repetición.' }
+        'sumatorias' { return 'sumar seis números ingresados por el usuario.' }
+        'while' { return 'while venta != 0: total += venta.' }
+        'condición de parada' { return 'terminar cuando el usuario ingresa 0.' }
+        'centinelas' { return 'usar 0 como marca de cierre del ingreso.' }
+        'validación iterativa' { return 'repetir el ingreso de contraseña hasta que cumpla la regla.' }
+        'control de ingreso' { return 'seguir pidiendo dato mientras sea inválido.' }
+        'listas' { return 'nombres = ["Ana", "Luis", "Elena"].' }
+        'cadenas' { return 'palabra.upper() convierte el texto a mayúsculas.' }
+        'recorrido de colecciones' { return 'for palabra in palabras: procesar cada elemento.' }
+        'conteos' { return 'contar cuántas palabras tienen más de cinco letras.' }
+        'transformación básica de texto' { return 'crear una nueva lista con cada palabra en mayúsculas.' }
+        'búsqueda secuencial' { return 'recorrer la lista hasta encontrar el valor buscado.' }
+        'comparación de elementos' { return 'comparar datos[j] < datos[i] antes de intercambiar.' }
+        'ordenación básica' { return 'reordenar una lista de menor a mayor con ciclos.' }
+        'intercambio de valores' { return 'datos[i], datos[j] = datos[j], datos[i].' }
+        'análisis del proceso' { return 'seguir el estado de la lista después de cada intercambio.' }
+        'matrices' { return 'matriz[1][0] accede a la fila 2, columna 1.' }
+        'organización tabular' { return 'sumar cada fila de una tabla de ventas.' }
+        'diccionarios' { return 'producto = {"nombre": "cuaderno", "precio": 5.5}.' }
+        'organización clave-valor' { return 'consultar producto["precio"] usando la clave.' }
+        'consulta de datos' { return 'mostrar el precio si la clave existe o avisar si no existe.' }
+        'funciones' { return 'def doble(x): return x * 2.' }
+        'parámetros' { return 'def saludar(nombre): print(nombre).' }
+        'retorno' { return 'return suma dentro de una función.' }
+        'modularización' { return 'crear una función para registrar y otra para consultar.' }
+        'persistencia básica' { return 'guardar productos en un archivo y luego leerlos.' }
+        default { return 'usar el concepto dentro de un ejercicio corto de la sesión.' }
+    }
+}
+
+function Get-SessionTheoryMarkdown {
+    param(
+        [string]$Objective,
+        [string[]]$Contents
+    )
+
+    $theoryLines = @(
+        '## Base conceptual de la sesión'
+    )
+
+    for ($i = 0; $i -lt $Contents.Count; $i++) {
+        $concept = $Contents[$i]
+        $theoryLines += @(
+            '',
+            ('### {0}. {1}' -f ($i + 1), (Get-Culture).TextInfo.ToTitleCase($concept)),
+            ('#### Definición'),
+            (Get-ConceptDefinition -Concept $concept),
+            '',
+            ('#### Tipos principales'),
+            (Get-ConceptTaxonomy -Concept $concept),
+            '',
+            ('#### Ejemplo'),
+            (Get-ConceptExample -Concept $concept)
+        )
+    }
+
+    return $theoryLines -join "`n"
+}
+
 function Get-PracticeActivities {
     param([int]$SessionNumber)
 
@@ -767,6 +970,7 @@ function New-SessionNotebook {
         [string]$Objective,
         [string]$Result,
         [string[]]$Contents,
+        [string]$TheoryMarkdown,
         [string]$GuidedTitle,
         [string]$GuidedText,
         [string]$GuidedCode,
@@ -796,6 +1000,12 @@ function New-SessionNotebook {
     $contentsMd = ($Contents | ForEach-Object { "- $_" }) -join "`n"
     $checklistMd = ($Checklist | ForEach-Object { "- $_" }) -join "`n"
     $autonomousPracticeMd = ((@('## Aprendizaje autónomo', '') + ($autonomousPractice | ForEach-Object { "- $_" }))) -join "`n"
+    $theoryMd = if ([string]::IsNullOrWhiteSpace($TheoryMarkdown)) {
+        Get-SessionTheoryMarkdown -Objective $Objective -Contents $Contents
+    }
+    else {
+        $TheoryMarkdown
+    }
     $routeMd = @(
         '## Método o Ruta de trabajo',
         '',
@@ -823,6 +1033,11 @@ function New-SessionNotebook {
         "## $($miniLab.Title)",
         '',
         $miniLab.Text
+    ) -join "`n"
+    $practiceSectionMd = @(
+        '## Actividad práctica',
+        '',
+        'La sesión se desarrolla con exploración inicial, ejercicios guiados, ejercicios de aplicación y una tarea tipo competencia.'
     ) -join "`n"
     $guidedTitle = '## Ejercicio 1'
     if ($null -ne $introExercise) {
@@ -878,8 +1093,10 @@ $difficulty
 
 ## Contenidos
 $contentsMd"),
+        (New-MarkdownCell $theoryMd),
         (New-MarkdownCell $routeMd),
         (New-MarkdownCell $architectureMd),
+        (New-MarkdownCell $practiceSectionMd),
     (New-MarkdownCell $miniLabMd),
         (New-CodeCell $miniLab.Code)
     )
@@ -934,7 +1151,7 @@ $contentsMd"),
         (New-MarkdownCell $challengeMd),
         (New-CodeCell $StarterCode),
         (New-MarkdownCell $autonomousPracticeMd),
-        (New-MarkdownCell "## Checklist de cierre
+        (New-MarkdownCell "## Evaluación de la sesión
 
 $checklistMd")
     )
@@ -1037,7 +1254,7 @@ if (-not $SkipGuide) {
 }
 
 $sessionSpecs = @(
-    @{ Filename='Sesion_01_Pensamiento_Algoritmico_Variables_Tipos_Datos.ipynb'; Title='Sesión 1: Pensamiento algorítmico, variables y tipos de datos'; Objective='Comprender la lógica de entrada, proceso y salida, y representar información con variables y tipos de datos básicos.'; Result='Programa que capture datos de una persona y los muestre de manera clara y ordenada.'; Contents=@('algoritmos','entrada, proceso y salida','variables','tipos de datos','salida formateada'); GuidedTitle='Ejemplo guiado'; GuidedText='Construiremos un programa que solicite nombre, edad y carrera de un estudiante y luego muestre una ficha resumida.'; GuidedCode="nombre = input('Nombre: ')
+     @{ Filename='Sesion_01_Pensamiento_Algoritmico_Variables_Tipos_Datos.ipynb'; Title='Sesión 1: Pensamiento algorítmico, variables y tipos de datos'; Objective='Comprender la lógica de entrada, proceso y salida, y representar información con variables y tipos de datos básicos.'; Result='Programa que capture datos de una persona y los muestre de manera clara y ordenada.'; Contents=@('algoritmos','entrada, proceso y salida','variables','tipos de datos','salida formateada'); GuidedTitle='Ejemplo guiado'; GuidedText='Construiremos un programa que solicite nombre, edad y carrera de un estudiante y luego muestre una ficha resumida.'; GuidedCode="nombre = input('Nombre: ')
 edad = int(input('Edad: '))
 carrera = input('Carrera: ')
 
@@ -1311,7 +1528,7 @@ with open('productos_persistencia.txt', 'r', encoding='utf-8') as archivo:
 )
 
 foreach ($spec in $sessionSpecs) {
-    $nb = New-SessionNotebook -Filename $spec.Filename -Title $spec.Title -Objective $spec.Objective -Result $spec.Result -Contents $spec.Contents -GuidedTitle $spec.GuidedTitle -GuidedText $spec.GuidedText -GuidedCode $spec.GuidedCode -ChallengeTitle $spec.ChallengeTitle -ChallengeText $spec.ChallengeText -StarterCode $spec.StarterCode -Checklist $spec.Checklist
+    $nb = New-SessionNotebook -Filename $spec.Filename -Title $spec.Title -Objective $spec.Objective -Result $spec.Result -Contents $spec.Contents -TheoryMarkdown $spec.TheoryMarkdown -GuidedTitle $spec.GuidedTitle -GuidedText $spec.GuidedText -GuidedCode $spec.GuidedCode -ChallengeTitle $spec.ChallengeTitle -ChallengeText $spec.ChallengeText -StarterCode $spec.StarterCode -Checklist $spec.Checklist
     Write-NotebookFile -Path (Join-Path $root $spec.Filename) -Notebook $nb
 }
 
