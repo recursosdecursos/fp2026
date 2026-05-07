@@ -40,19 +40,24 @@ markdown_extensions:
 
 nav:
     - Inicio: index.md
-    - Sílabo: Silabo_Programacion.md
+    - Sílabo: Silabo_FP.md
     - Guía de apoyo: Guia_algoritmo_a_codigo.ipynb
     - Unidad 1:
-            - Sesión 1: Sesion_01_Algoritmos_Tipos_Datos_Variables.ipynb
-            - Sesión 2: Sesion_02_Operadores_Algoritmos_Secuenciales.ipynb
-            - Sesión 3: Sesion_03_Decisiones_Inteligentes_Simples.ipynb
-            - Sesión 4: Sesion_04_Decisiones_Anidadas_Multiples.ipynb
-            - Sesión 5: Sesion_05_Integracion_Fundamentos.ipynb
-            - Sesión 6: Sesion_06_Evaluacion_Unidad_1.ipynb
+            - Sesión 1: Sesion_01_Pensamiento_Algoritmico_Variables_Tipos_Datos.ipynb
+            - Sesión 2: Sesion_02_Operadores_Expresiones_Secuencia.ipynb
+            - Sesión 3: Sesion_03_Decisiones_Simples_Compuestas.ipynb
+            - Sesión 4: Sesion_04_Decisiones_Multiples_Casos_Limite.ipynb
+            - Sesión 5: Sesion_05_Evaluacion_1.ipynb
     - Unidad 2:
-            - Sesión 7: Sesion_07_For_Arreglos_Acumuladores_Contadores.ipynb
-            - Sesión 8: Sesion_08_While_con_Listas_Aplicacion.ipynb
-            - Sesión 9: Sesion_09_Introduccion_Estructuras_Datos.ipynb
-            - Sesión 10: Sesion_10_Funciones_en_Accion.ipynb
-            - Sesión 11: Sesion_11_Integracion_Bucles_Listas_Funciones.ipynb
-            - Sesión 12: Sesion_12_Evaluacion_Unidad_2.ipynb
+            - Sesión 6: Sesion_06_Repeticion_Definida_For.ipynb
+            - Sesión 7: Sesion_07_Repeticion_Condicionada_While.ipynb
+            - Sesión 8: Sesion_08_Listas_Cadenas_Procesamiento_Colecciones.ipynb
+            - Sesión 9: Sesion_09_Busqueda_Secuencial_Ordenacion_Basica.ipynb
+            - Sesión 10: Sesion_10_Matrices_Organizacion_Tabular.ipynb
+            - Sesión 11: Sesion_11_Diccionarios_Consulta_Datos.ipynb
+            - Sesión 12: Sesion_12_Evaluacion_2.ipynb
+    - Unidad 3:
+            - Sesión 13: Sesion_13_Funciones_Parametros_Retorno_Modularizacion.ipynb
+            - Sesión 14: Sesion_14_Integracion_Funciones_Colecciones_Menus.ipynb
+            - Sesión 15: Sesion_15_Persistencia_Basica_Archivos.ipynb
+            - Sesión 16: Sesion_16_Evaluacion_Final.ipynb
