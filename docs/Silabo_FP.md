@@ -163,7 +163,7 @@ Compendio de ejercicios resueltos sobre estructuras secuenciales y condicionales
 
 ### Sesión 1: Pensamiento algorítmico: algoritmos, variables y tipos de datos
 
-**Cuaderno de trabajo:** `Sesion_01_Algoritmos_Tipos_Datos_Variables.ipynb`
+**Cuaderno de trabajo:** `S01_Algoritmos_Datos.ipynb`
 
 #### Objetivo
 
@@ -195,7 +195,7 @@ Programa que capture y muestre datos básicos de forma estructurada.
 
 ### Sesión 2: Expresiones y secuencia en la solución de problemas
 
-**Cuaderno de trabajo:** `Sesion_02_Operadores_Algoritmos_Secuenciales.ipynb`
+**Cuaderno de trabajo:** `S02_Operadores_Secuencia.ipynb`
 
 #### Objetivo
 
@@ -226,7 +226,7 @@ Programas que leen datos, realizan cálculos y muestran resultados correctamente
 
 ### Sesión 3: Decisiones simples en la lógica del programa
 
-**Cuaderno de trabajo:** `Sesion_03_Decisiones_Inteligentes_Simples.ipynb`
+**Cuaderno de trabajo:** `S03_Decisiones.ipynb`
 
 #### Objetivo
 
@@ -248,7 +248,7 @@ Programas que responden de manera diferente según las condiciones de entrada.
 
 ### Sesión 4: Decisiones múltiples y lógica anidada
 
-**Cuaderno de trabajo:** `Sesion_04_Decisiones_Anidadas_Multiples.ipynb`
+**Cuaderno de trabajo:** `S04_Decisiones_Multiples.ipynb`
 
 #### Objetivo
 
@@ -270,7 +270,7 @@ Programas que clasifican y toman decisiones de acuerdo con varios criterios.
 
 ### Sesión 5: Aplicación integrada de estructuras básicas
 
-**Cuaderno de trabajo:** `Sesion_05_Integracion_Fundamentos.ipynb`
+**Cuaderno de trabajo:** `S05_Evaluacion_1.ipynb`
 
 #### Objetivo
 
@@ -292,7 +292,7 @@ Compendio parcial de ejercicios resueltos con procesamiento secuencial y decisio
 
 ### Sesión 6: Evaluación de desempeño de la unidad 1
 
-**Cuaderno de trabajo:** `Sesion_06_Evaluacion_Unidad_1.ipynb`
+**Cuaderno de trabajo:** `S06_For.ipynb`
 
 #### Evidencia
 
@@ -331,7 +331,7 @@ Compendio de ejercicios resueltos sobre estructuras repetitivas, datos y subprog
 
 ### Sesión 7: Repetición definida y procesamiento con listas
 
-**Cuaderno de trabajo:** `Sesion_07_For_Arreglos_Acumuladores_Contadores.ipynb`
+**Cuaderno de trabajo:** `S07_While.ipynb`
 
 #### Objetivo
 
@@ -355,7 +355,7 @@ Programas que procesan, ordenan y resumen conjuntos básicos de datos.
 
 ### Sesión 8: Repetición condicionada y captura dinámica de datos
 
-**Cuaderno de trabajo:** `Sesion_08_While_con_Listas_Aplicacion.ipynb`
+**Cuaderno de trabajo:** `S08_Listas_Cadenas.ipynb`
 
 #### Objetivo
 
@@ -378,7 +378,7 @@ Programa que permita ingresar una cantidad variable de datos, validarlos y proce
 
 ### Sesión 9: Estructuración básica de datos
 
-**Cuaderno de trabajo:** `Sesion_09_Introduccion_Estructuras_Datos.ipynb`
+**Cuaderno de trabajo:** `S09_Busqueda_Ordenacion.ipynb`
 
 #### Objetivo
 
@@ -399,7 +399,7 @@ Programa que registre y consulte información organizada.
 
 ### Sesión 10: Modularización de soluciones con funciones
 
-**Cuaderno de trabajo:** `Sesion_10_Funciones_en_Accion.ipynb`
+**Cuaderno de trabajo:** `S10_Matrices.ipynb`
 
 #### Objetivo
 
@@ -421,7 +421,7 @@ Programa estructurado en funciones claras y reutilizables.
 
 ### Sesión 11: Integración de repetición, datos y funciones
 
-**Cuaderno de trabajo:** `Sesion_11_Integracion_Bucles_Listas_Funciones.ipynb`
+**Cuaderno de trabajo:** `S11_Diccionarios.ipynb`
 
 #### Objetivo
 
@@ -443,7 +443,7 @@ Compendio parcial de ejercicios resueltos con repetición, organización de dato
 
 ### Sesión 12: Evaluación de desempeño de la unidad 2
 
-**Cuaderno de trabajo:** `Sesion_12_Evaluacion_Unidad_2.ipynb`
+**Cuaderno de trabajo:** `S12_Evaluacion_2.ipynb`
 
 #### Evidencia
 

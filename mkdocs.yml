@@ -1,4 +1,4 @@
-site_name: Libro Digital de Programación
+site_name: Libro Digital de Fundamentos de Programación
 site_description: Cuadernos de programación convertidos a libro digital estático con MkDocs.
 site_author: UPeU
 copyright: Angel Sullon @asullom
@@ -51,21 +51,21 @@ nav:
     - Sílabo: Silabo_FP.md
     - Guía de apoyo: Guia_algoritmo_a_codigo.ipynb
     - Capítulo 1. Resolución de problemas básicos:
-            - Sesión 1: Sesion_01_Pensamiento_Algoritmico_Variables_Tipos_Datos.ipynb
-            - Sesión 2: Sesion_02_Operadores_Expresiones_Secuencia.ipynb
-            - Sesión 3: Sesion_03_Decisiones_Simples_Compuestas.ipynb
-            - Sesión 4: Sesion_04_Decisiones_Multiples_Casos_Limite.ipynb
-            - Sesión 5: Sesion_05_Evaluacion_1.ipynb
+            - 1 Algoritmos y datos: S01_Algoritmos_Datos.ipynb
+            - 2 Operadores y secuencia: S02_Operadores_Secuencia.ipynb
+            - 3 Decisiones: S03_Decisiones.ipynb
+            - 4 Decisiones múltiples: S04_Decisiones_Multiples.ipynb
+            - 5 Evaluación 1: S05_Evaluacion_1.ipynb
     - Capítulo 2. Resolución de problemas iterativos y procesamiento de datos:
-            - Sesión 6: Sesion_06_Repeticion_Definida_For.ipynb
-            - Sesión 7: Sesion_07_Repeticion_Condicionada_While.ipynb
-            - Sesión 8: Sesion_08_Listas_Cadenas_Procesamiento_Colecciones.ipynb
-            - Sesión 9: Sesion_09_Busqueda_Secuencial_Ordenacion_Basica.ipynb
-            - Sesión 10: Sesion_10_Matrices_Organizacion_Tabular.ipynb
-            - Sesión 11: Sesion_11_Diccionarios_Consulta_Datos.ipynb
-            - Sesión 12: Sesion_12_Evaluacion_2.ipynb
+            - 6 Repetición for: S06_For.ipynb
+            - 7 Repetición while: S07_While.ipynb
+            - 8 Listas y cadenas: S08_Listas_Cadenas.ipynb
+            - 9 Búsqueda y ordenación: S09_Busqueda_Ordenacion.ipynb
+            - 10 Matrices: S10_Matrices.ipynb
+            - 11 Diccionarios: S11_Diccionarios.ipynb
+            - 12 Evaluación 2: S12_Evaluacion_2.ipynb
     - Capítulo 3. Resolución de problemas estructurados y persistencia básica:
-            - Sesión 13: Sesion_13_Funciones_Parametros_Retorno_Modularizacion.ipynb
-            - Sesión 14: Sesion_14_Integracion_Funciones_Colecciones_Menus.ipynb
-            - Sesión 15: Sesion_15_Persistencia_Basica_Archivos.ipynb
-            - Sesión 16: Sesion_16_Evaluacion_Final.ipynb
+            - 13 Funciones: S13_Funciones.ipynb
+            - 14 Integración y menús: S14_Integracion_Menus.ipynb
+            - 15 Archivos: S15_Archivos.ipynb
+            - 16 Evaluación final: S16_Evaluacion_Final.ipynb

@@ -1326,7 +1326,7 @@ function New-SessionNotebook {
         [string[]]$Checklist
     )
 
-    $sessionNumber = [int](([regex]::Match($Filename, 'Sesion_(\d+)_')).Groups[1].Value)
+    $sessionNumber = [int](([regex]::Match($Filename, '^(?:Sesion_|S)(\d+)_')).Groups[1].Value)
     if ($sessionNumber -le 4) {
         $difficulty = 'Básico'
     }
@@ -1522,7 +1522,7 @@ function New-EvaluationNotebook {
         [array]$Problems
     )
 
-    $sessionNumber = [int](([regex]::Match($Filename, 'Sesion_(\d+)_')).Groups[1].Value)
+    $sessionNumber = [int](([regex]::Match($Filename, '^(?:Sesion_|S)(\d+)_')).Groups[1].Value)
     $criteriaMd = ($Criteria | ForEach-Object { "- $_" }) -join "`n"
     $theoryMd = switch ($sessionNumber) {
         5 {
@@ -1669,7 +1669,7 @@ if (-not $SkipGuide) {
 }
 
 $sessionSpecs = @(
-     @{ Filename='Sesion_01_Pensamiento_Algoritmico_Variables_Tipos_Datos.ipynb'; Title='Sesión 1: Pensamiento algorítmico, variables y tipos de datos'; Objective='Comprender la lógica de entrada, proceso y salida, y representar información con variables y tipos de datos básicos.'; Result='Programa que capture datos de una persona y los muestre de manera clara y ordenada.'; Contents=@('algoritmos','entrada, proceso y salida','variables','tipos de datos','salida formateada'); GuidedTitle='Ejemplo guiado'; GuidedText='Construiremos un programa que solicite nombre, edad y carrera de un estudiante y luego muestre una ficha resumida.'; GuidedCode="nombre = input('Nombre: ')
+     @{ Filename='S01_Algoritmos_Datos.ipynb'; Title='Sesión 1: Pensamiento algorítmico, variables y tipos de datos'; Objective='Comprender la lógica de entrada, proceso y salida, y representar información con variables y tipos de datos básicos.'; Result='Programa que capture datos de una persona y los muestre de manera clara y ordenada.'; Contents=@('algoritmos','entrada, proceso y salida','variables','tipos de datos','salida formateada'); GuidedTitle='Ejemplo guiado'; GuidedText='Construiremos un programa que solicite nombre, edad y carrera de un estudiante y luego muestre una ficha resumida.'; GuidedCode="nombre = input('Nombre: ')
 edad = int(input('Edad: '))
 carrera = input('Carrera: ')
 
@@ -1686,7 +1686,7 @@ print('--- Resumen de compra ---')
 print('Producto:', producto)
 print('Cantidad:', cantidad)
 print('Total:', round(total, 2))"; Checklist=@('Identifiqué las entradas antes de programar.','Usé variables con nombres claros.','Elegí tipos de datos adecuados.','Probé al menos dos entradas diferentes.') },
-    @{ Filename='Sesion_02_Operadores_Expresiones_Secuencia.ipynb'; Title='Sesión 2: Operadores, expresiones y secuencia de instrucciones'; Objective='Resolver problemas secuenciales usando operadores aritméticos, relacionales y lógicos.'; Result='Programa secuencial que realice cálculos y muestre resultados correctamente.'; Contents=@('operadores aritméticos','operadores relacionales','operadores lógicos','expresiones','secuencia de instrucciones'); GuidedTitle='Ejemplo guiado'; GuidedText='Calcularemos el promedio de tres notas y determinaremos si el estudiante aprueba con una condición simple.'; GuidedCode="nota1 = float(input('Nota 1: '))
+    @{ Filename='S02_Operadores_Secuencia.ipynb'; Title='Sesión 2: Operadores, expresiones y secuencia de instrucciones'; Objective='Resolver problemas secuenciales usando operadores aritméticos, relacionales y lógicos.'; Result='Programa secuencial que realice cálculos y muestre resultados correctamente.'; Contents=@('operadores aritméticos','operadores relacionales','operadores lógicos','expresiones','secuencia de instrucciones'); GuidedTitle='Ejemplo guiado'; GuidedText='Calcularemos el promedio de tres notas y determinaremos si el estudiante aprueba con una condición simple.'; GuidedCode="nota1 = float(input('Nota 1: '))
 nota2 = float(input('Nota 2: '))
 nota3 = float(input('Nota 3: '))
 
@@ -1699,7 +1699,7 @@ bono = sueldo_base * porcentaje_bono / 100
 sueldo_final = sueldo_base + bono
 print('Sueldo final:', round(sueldo_final, 2))
 print('¿Supera 2000?:', sueldo_final > 2000)"; Checklist=@('Separé claramente el cálculo principal.','Usé operadores adecuados para cada expresión.','Comprobé el resultado con datos simples.','Entiendo por qué la solución no requiere decisiones múltiples.') },
-    @{ Filename='Sesion_03_Decisiones_Simples_Compuestas.ipynb'; Title='Sesión 3: Decisiones simples y compuestas'; Objective='Resolver problemas que requieren evaluar condiciones simples y compuestas.'; Result='Programa que tome decisiones correctas según los datos de entrada.'; Contents=@('if','if-else','condiciones compuestas','validación básica','casos de prueba'); GuidedTitle='Ejemplo guiado'; GuidedText='Determinaremos si una persona accede a un descuento según su edad y si cuenta con carné estudiantil.'; GuidedCode="edad = int(input('Edad: '))
+    @{ Filename='S03_Decisiones.ipynb'; Title='Sesión 3: Decisiones simples y compuestas'; Objective='Resolver problemas que requieren evaluar condiciones simples y compuestas.'; Result='Programa que tome decisiones correctas según los datos de entrada.'; Contents=@('if','if-else','condiciones compuestas','validación básica','casos de prueba'); GuidedTitle='Ejemplo guiado'; GuidedText='Determinaremos si una persona accede a un descuento según su edad y si cuenta con carné estudiantil.'; GuidedCode="edad = int(input('Edad: '))
 tiene_carne = input('¿Tiene carné estudiantil? (si/no): ').strip().lower()
 
 if edad < 18 or tiene_carne == 'si':
@@ -1713,7 +1713,7 @@ elif temperatura <= 25:
     print('Clima templado')
 else:
     print('Clima cálido')"; Checklist=@('Escribí condiciones legibles.','Probé al menos un caso verdadero y uno falso.','Usé operadores lógicos cuando era necesario.','La salida explica claramente la decisión tomada.') },
-    @{ Filename='Sesion_04_Decisiones_Multiples_Casos_Limite.ipynb'; Title='Sesión 4: Decisiones múltiples, anidadas y casos límite'; Objective='Resolver problemas con varios caminos lógicos y considerar casos límite en la solución.'; Result='Programa que clasifique correctamente situaciones usando decisiones múltiples.'; Contents=@('if-elif-else','decisiones anidadas','clasificación','prioridad de reglas','casos límite'); GuidedTitle='Ejemplo guiado'; GuidedText='Clasificaremos una nota final en niveles de desempeño y controlaremos el caso de entradas fuera de rango.'; GuidedCode="nota = float(input('Nota final: '))
+    @{ Filename='S04_Decisiones_Multiples.ipynb'; Title='Sesión 4: Decisiones múltiples, anidadas y casos límite'; Objective='Resolver problemas con varios caminos lógicos y considerar casos límite en la solución.'; Result='Programa que clasifique correctamente situaciones usando decisiones múltiples.'; Contents=@('if-elif-else','decisiones anidadas','clasificación','prioridad de reglas','casos límite'); GuidedTitle='Ejemplo guiado'; GuidedText='Clasificaremos una nota final en niveles de desempeño y controlaremos el caso de entradas fuera de rango.'; GuidedCode="nota = float(input('Nota final: '))
 
 if nota < 0 or nota > 20:
     print('Nota fuera de rango.')
@@ -1735,7 +1735,7 @@ else:
 
 print('Descuento aplicado:', descuento * 100, '%')
 print('Monto final:', round(monto * (1 - descuento), 2))"; Checklist=@('Ordené correctamente las condiciones.','Consideré datos fuera de rango o extremos.','La clasificación no deja casos sin cubrir.','Probé varios escenarios antes de cerrar.') },
-    @{ Filename='Sesion_06_Repeticion_Definida_For.ipynb'; Title='Sesión 6: Repetición definida con for'; Objective='Resolver problemas que requieren repetir una acción un número conocido de veces.'; Result='Programa que use for, contadores y acumuladores para procesar varios datos.'; Contents=@('for','range','contadores','acumuladores','sumatorias'); GuidedTitle='Ejemplo guiado'; GuidedText='Contaremos cuántos estudiantes aprueban dentro de un grupo de cinco registros ingresados por teclado.'; GuidedCode="aprobados = 0
+    @{ Filename='S06_For.ipynb'; Title='Sesión 6: Repetición definida con for'; Objective='Resolver problemas que requieren repetir una acción un número conocido de veces.'; Result='Programa que use for, contadores y acumuladores para procesar varios datos.'; Contents=@('for','range','contadores','acumuladores','sumatorias'); GuidedTitle='Ejemplo guiado'; GuidedText='Contaremos cuántos estudiantes aprueban dentro de un grupo de cinco registros ingresados por teclado.'; GuidedCode="aprobados = 0
 for i in range(5):
     nota = float(input(f'Nota {i + 1}: '))
     if nota >= 11:
@@ -1752,7 +1752,7 @@ for i in range(6):
 
 print('Suma:', suma)
 print('Pares:', pares)"; Checklist=@('Usé un contador cuando necesitaba contar casos.','Usé un acumulador cuando necesitaba sumar valores.','El ciclo repite exactamente el número esperado de veces.','Probé la solución con datos pequeños.') },
-    @{ Filename='Sesion_07_Repeticion_Condicionada_While.ipynb'; Title='Sesión 7: Repetición condicionada con while'; Objective='Resolver problemas en los que la repetición depende de una condición de parada.'; Result='Programa que use while, centinelas y validación iterativa de datos.'; Contents=@('while','condición de parada','centinelas','validación iterativa','control de ingreso'); GuidedTitle='Ejemplo guiado'; GuidedText='Registraremos ventas hasta que el usuario ingrese 0 como señal de cierre.'; GuidedCode="total = 0
+    @{ Filename='S07_While.ipynb'; Title='Sesión 7: Repetición condicionada con while'; Objective='Resolver problemas en los que la repetición depende de una condición de parada.'; Result='Programa que use while, centinelas y validación iterativa de datos.'; Contents=@('while','condición de parada','centinelas','validación iterativa','control de ingreso'); GuidedTitle='Ejemplo guiado'; GuidedText='Registraremos ventas hasta que el usuario ingrese 0 como señal de cierre.'; GuidedCode="total = 0
 venta = float(input('Venta (0 para terminar): '))
 
 while venta != 0:
@@ -1772,7 +1772,7 @@ while True:
     contrasena = input('Ingrese contraseña: ')
 
 print('Contraseña válida')"; Checklist=@('Definí claramente la condición de parada.','Evité ciclos infinitos.','Validé los datos dentro del proceso iterativo.','La salida refleja correctamente el estado final del ciclo.') },
-    @{ Filename='Sesion_08_Listas_Cadenas_Procesamiento_Colecciones.ipynb'; Title='Sesión 8: Listas, cadenas y procesamiento de colecciones'; Objective='Procesar conjuntos de datos usando listas y cadenas en problemas de recorrido y análisis simple.'; Result='Programa que recorra una colección, cuente elementos y transforme información textual.'; Contents=@('listas','cadenas','recorrido de colecciones','conteos','transformación básica de texto'); GuidedTitle='Ejemplo guiado'; GuidedText='Analizaremos una lista de nombres para contar cuántos empiezan con una vocal.'; GuidedCode="nombres = ['Ana', 'Luis', 'Elena', 'Oscar', 'Marta']
+    @{ Filename='S08_Listas_Cadenas.ipynb'; Title='Sesión 8: Listas, cadenas y procesamiento de colecciones'; Objective='Procesar conjuntos de datos usando listas y cadenas en problemas de recorrido y análisis simple.'; Result='Programa que recorra una colección, cuente elementos y transforme información textual.'; Contents=@('listas','cadenas','recorrido de colecciones','conteos','transformación básica de texto'); GuidedTitle='Ejemplo guiado'; GuidedText='Analizaremos una lista de nombres para contar cuántos empiezan con una vocal.'; GuidedCode="nombres = ['Ana', 'Luis', 'Elena', 'Oscar', 'Marta']
 vocales = 'aeiou'
 contador = 0
 
@@ -1791,7 +1791,7 @@ for palabra in palabras:
 
 print('Cantidad con más de 5 letras:', contador)
 print('Mayúsculas:', mayusculas)"; Checklist=@('Recorrí correctamente la colección completa.','Usé condiciones para contar casos específicos.','Transformé texto sin perder la información original.','Probé con palabras de distinto tamaño.') },
-    @{ Filename='Sesion_09_Busqueda_Secuencial_Ordenacion_Basica.ipynb'; Title='Sesión 9: Búsqueda secuencial y ordenación básica'; Objective='Resolver problemas de localización y ordenamiento de datos usando técnicas básicas.'; Result='Programa que encuentre elementos y ordene listas con una estrategia elemental.'; Contents=@('búsqueda secuencial','comparación de elementos','ordenación básica','intercambio de valores','análisis del proceso'); GuidedTitle='Ejemplo guiado'; GuidedText='Buscaremos un valor en una lista y luego aplicaremos una ordenación simple por intercambio.'; GuidedCode="datos = [8, 3, 6, 1, 9]
+    @{ Filename='S09_Busqueda_Ordenacion.ipynb'; Title='Sesión 9: Búsqueda secuencial y ordenación básica'; Objective='Resolver problemas de localización y ordenamiento de datos usando técnicas básicas.'; Result='Programa que encuentre elementos y ordene listas con una estrategia elemental.'; Contents=@('búsqueda secuencial','comparación de elementos','ordenación básica','intercambio de valores','análisis del proceso'); GuidedTitle='Ejemplo guiado'; GuidedText='Buscaremos un valor en una lista y luego aplicaremos una ordenación simple por intercambio.'; GuidedCode="datos = [8, 3, 6, 1, 9]
 buscado = 6
 
 indice = -1
@@ -1823,7 +1823,7 @@ for i in range(len(numeros)):
 
 print('Mayor:', mayor)
 print('Lista ordenada:', numeros)"; Checklist=@('Distinguí entre buscar y ordenar.','Usé ciclos correctamente para comparar elementos.','No utilicé funciones automáticas de ordenación.','Probé con listas ya ordenadas y desordenadas.') },
-    @{ Filename='Sesion_10_Matrices_Organizacion_Tabular.ipynb'; Title='Sesión 10: Matrices y organización tabular de información'; Objective='Representar y procesar datos organizados en filas y columnas.'; Result='Programa que recorra una matriz y obtenga resúmenes por filas o columnas.'; Contents=@('matrices','filas','columnas','recorrido bidimensional','consulta y actualización'); GuidedTitle='Ejemplo guiado'; GuidedText='Calcularemos el total de asistencia por estudiante usando una matriz simple de 0 y 1.'; GuidedCode="asistencia = [
+    @{ Filename='S10_Matrices.ipynb'; Title='Sesión 10: Matrices y organización tabular de información'; Objective='Representar y procesar datos organizados en filas y columnas.'; Result='Programa que recorra una matriz y obtenga resúmenes por filas o columnas.'; Contents=@('matrices','filas','columnas','recorrido bidimensional','consulta y actualización'); GuidedTitle='Ejemplo guiado'; GuidedText='Calcularemos el total de asistencia por estudiante usando una matriz simple de 0 y 1.'; GuidedCode="asistencia = [
     [1, 1, 0],
     [1, 0, 1],
     [1, 1, 1]
@@ -1848,7 +1848,7 @@ for fila in range(len(ventas)):
     print('Fila', fila + 1, total_fila)
 
 print('Total general:', total_general)"; Checklist=@('Identifiqué filas y columnas correctamente.','Usé ciclos anidados cuando fue necesario.','La consulta de posiciones fue clara y precisa.','Probé con matrices pequeñas antes de cerrar.') },
-    @{ Filename='Sesion_11_Diccionarios_Consulta_Datos.ipynb'; Title='Sesión 11: Diccionarios, organización clave-valor y consulta de datos'; Objective='Modelar información mediante pares clave-valor para registrar y consultar datos de forma directa.'; Result='Programa que use diccionarios para guardar, consultar y actualizar información.'; Contents=@('diccionarios','claves y valores','registro de datos','consulta','actualización'); GuidedTitle='Ejemplo guiado'; GuidedText='Registraremos notas por estudiante usando un diccionario y consultaremos una clave específica.'; GuidedCode="notas = {
+    @{ Filename='S11_Diccionarios.ipynb'; Title='Sesión 11: Diccionarios, organización clave-valor y consulta de datos'; Objective='Modelar información mediante pares clave-valor para registrar y consultar datos de forma directa.'; Result='Programa que use diccionarios para guardar, consultar y actualizar información.'; Contents=@('diccionarios','claves y valores','registro de datos','consulta','actualización'); GuidedTitle='Ejemplo guiado'; GuidedText='Registraremos notas por estudiante usando un diccionario y consultaremos una clave específica.'; GuidedCode="notas = {
     'Ana': 18,
     'Luis': 14,
     'Marta': 16
@@ -1871,7 +1871,7 @@ if nombre in productos:
     print('Diccionario actualizado:', productos)
 else:
     print('Producto no encontrado')"; Checklist=@('Usé claves adecuadas para identificar cada dato.','Consulté información sin recorrer toda la estructura cuando no era necesario.','Actualicé valores sin perder el resto de los datos.','Probé claves existentes y no existentes.') },
-    @{ Filename='Sesion_13_Funciones_Parametros_Retorno_Modularizacion.ipynb'; Title='Sesión 13: Funciones, parámetros, retorno y modularización'; Objective='Dividir un problema en partes reutilizables mediante funciones con parámetros y retorno.'; Result='Programa organizado en funciones claras que resuelvan subproblemas concretos.'; Contents=@('funciones','parámetros','return','modularización','reutilización'); GuidedTitle='Ejemplo guiado'; GuidedText='Crearemos una función para calcular el promedio y otra para decidir el resultado final del estudiante.'; GuidedCode="def calcular_promedio(n1, n2, n3):
+    @{ Filename='S13_Funciones.ipynb'; Title='Sesión 13: Funciones, parámetros, retorno y modularización'; Objective='Dividir un problema en partes reutilizables mediante funciones con parámetros y retorno.'; Result='Programa organizado en funciones claras que resuelvan subproblemas concretos.'; Contents=@('funciones','parámetros','return','modularización','reutilización'); GuidedTitle='Ejemplo guiado'; GuidedText='Crearemos una función para calcular el promedio y otra para decidir el resultado final del estudiante.'; GuidedCode="def calcular_promedio(n1, n2, n3):
     return (n1 + n2 + n3) / 3
 
 def obtener_resultado(promedio):
@@ -1890,7 +1890,7 @@ print('Resultado:', obtener_resultado(promedio))"; ChallengeTitle='Reto aplicado
 
 datos = [7, 12, 5, 18, 9]
 print(mayor_lista(datos))"; Checklist=@('Cada función resuelve una tarea específica.','Usé parámetros para evitar repetir código.','El valor de retorno fue aprovechado en el programa principal.','Probé la función con más de un caso.') },
-    @{ Filename='Sesion_14_Integracion_Funciones_Colecciones_Menus.ipynb'; Title='Sesión 14: Integración de funciones, colecciones y menús'; Objective='Construir un programa que integre funciones, estructuras de datos y un menú sencillo de opciones.'; Result='Programa modular con menú, registro y consulta de información en memoria.'; Contents=@('menús','integración de funciones','listas o diccionarios','flujo del programa','organización de opciones'); GuidedTitle='Ejemplo guiado'; GuidedText='Construiremos un menú básico para registrar y mostrar nombres en una lista.'; GuidedCode="def mostrar_menu():
+    @{ Filename='S14_Integracion_Menus.ipynb'; Title='Sesión 14: Integración de funciones, colecciones y menús'; Objective='Construir un programa que integre funciones, estructuras de datos y un menú sencillo de opciones.'; Result='Programa modular con menú, registro y consulta de información en memoria.'; Contents=@('menús','integración de funciones','listas o diccionarios','flujo del programa','organización de opciones'); GuidedTitle='Ejemplo guiado'; GuidedText='Construiremos un menú básico para registrar y mostrar nombres en una lista.'; GuidedCode="def mostrar_menu():
     print('1. Agregar nombre')
     print('2. Mostrar nombres')
     print('3. Salir')
@@ -1925,7 +1925,7 @@ while opcion != '3':
             print('Precio:', productos[nombre])
         else:
             print('Producto no encontrado')"; Checklist=@('El menú organiza claramente las opciones del programa.','Separé tareas del flujo principal en funciones.','La estructura de datos elegida responde al problema.','El programa puede ejecutarse varias veces sin romperse.') },
-    @{ Filename='Sesion_15_Persistencia_Basica_Archivos.ipynb'; Title='Sesión 15: Persistencia básica de información'; Objective='Registrar y recuperar información simple usando archivos de texto.'; Result='Programa que escriba datos en un archivo y luego los lea para mostrarlos o procesarlos.'; Contents=@('persistencia','archivos de texto','escritura','lectura','registro y recuperación'); GuidedTitle='Ejemplo guiado'; GuidedText='Guardaremos nombres en un archivo de texto y luego los recuperaremos para mostrarlos en pantalla.'; GuidedCode="with open('nombres.txt', 'w', encoding='utf-8') as archivo:
+    @{ Filename='S15_Archivos.ipynb'; Title='Sesión 15: Persistencia básica de información'; Objective='Registrar y recuperar información simple usando archivos de texto.'; Result='Programa que escriba datos en un archivo y luego los lea para mostrarlos o procesarlos.'; Contents=@('persistencia','archivos de texto','escritura','lectura','registro y recuperación'); GuidedTitle='Ejemplo guiado'; GuidedText='Guardaremos nombres en un archivo de texto y luego los recuperaremos para mostrarlos en pantalla.'; GuidedCode="with open('nombres.txt', 'w', encoding='utf-8') as archivo:
     archivo.write('Ana\n')
     archivo.write('Luis\n')
 
@@ -1947,7 +1947,7 @@ foreach ($spec in $sessionSpecs) {
     Write-NotebookFile -Path (Join-Path $root $spec.Filename) -Notebook $nb
 }
 
-$eval1 = New-EvaluationNotebook -Filename 'Sesion_05_Evaluacion_1.ipynb' -Title 'Sesión 5: Evaluación 1' -Purpose 'Evaluar la resolución de problemas secuenciales y condicionales con validación básica.' -Criteria @('Identifica correctamente entradas, proceso y salida.','Usa operadores y decisiones de manera coherente.','Presenta salidas claras y comprobables.','Prueba la solución con casos distintos.') -Problems @(
+$eval1 = New-EvaluationNotebook -Filename 'S05_Evaluacion_1.ipynb' -Title 'Sesión 5: Evaluación 1' -Purpose 'Evaluar la resolución de problemas secuenciales y condicionales con validación básica.' -Criteria @('Identifica correctamente entradas, proceso y salida.','Usa operadores y decisiones de manera coherente.','Presenta salidas claras y comprobables.','Prueba la solución con casos distintos.') -Problems @(
     @{ Title='Problema 1: Control de consumo eléctrico'; Statement='Lee el consumo mensual en kWh y calcula el pago aplicando una tarifa base y un recargo si supera un umbral definido.'; Inputs='consumo mensual y tarifa base'; Output='monto total a pagar y mensaje de observación'; Starter="consumo = float(input('Consumo kWh: '))
 tarifa = float(input('Tarifa base: '))
 
@@ -1957,9 +1957,9 @@ puntaje = float(input('Puntaje: '))
 
 # Desarrolla aquí la solución" }
 )
-Write-NotebookFile -Path (Join-Path $root 'Sesion_05_Evaluacion_1.ipynb') -Notebook $eval1
+Write-NotebookFile -Path (Join-Path $root 'S05_Evaluacion_1.ipynb') -Notebook $eval1
 
-$eval2 = New-EvaluationNotebook -Filename 'Sesion_12_Evaluacion_2.ipynb' -Title 'Sesión 12: Evaluación 2' -Purpose 'Evaluar la resolución de problemas iterativos y de procesamiento de datos con listas, matrices y diccionarios.' -Criteria @('Selecciona la estructura de datos adecuada.','Aplica correctamente ciclos y condiciones.','Utiliza búsqueda u ordenación cuando el problema lo requiere.','Comprueba la solución con varios casos.') -Problems @(
+$eval2 = New-EvaluationNotebook -Filename 'S12_Evaluacion_2.ipynb' -Title 'Sesión 12: Evaluación 2' -Purpose 'Evaluar la resolución de problemas iterativos y de procesamiento de datos con listas, matrices y diccionarios.' -Criteria @('Selecciona la estructura de datos adecuada.','Aplica correctamente ciclos y condiciones.','Utiliza búsqueda u ordenación cuando el problema lo requiere.','Comprueba la solución con varios casos.') -Problems @(
     @{ Title='Problema 1: Control de ventas semanales'; Statement='Registra 5 montos de ventas, calcula el total, el promedio y luego ordena los montos de menor a mayor.'; Inputs='cinco montos numéricos'; Output='total, promedio y lista ordenada'; Starter="ventas = []
 for i in range(5):
     ventas.append(float(input(f'Venta {i + 1}: ')))
@@ -1970,9 +1970,9 @@ producto = input('Producto a consultar: ')
 
 # Desarrolla aquí la solución" }
 )
-Write-NotebookFile -Path (Join-Path $root 'Sesion_12_Evaluacion_2.ipynb') -Notebook $eval2
+Write-NotebookFile -Path (Join-Path $root 'S12_Evaluacion_2.ipynb') -Notebook $eval2
 
-$evalFinal = New-EvaluationNotebook -Filename 'Sesion_16_Evaluacion_Final.ipynb' -Title 'Sesión 16: Evaluación final' -Purpose 'Evaluar la resolución integrada de problemas con funciones, estructuras de datos y persistencia básica.' -Criteria @('Descompone el problema en funciones o etapas claras.','Selecciona correctamente estructuras de datos y persistencia básica.','Entrega una solución funcional y legible.','Comprueba el programa con casos representativos.') -Problems @(
+$evalFinal = New-EvaluationNotebook -Filename 'S16_Evaluacion_Final.ipynb' -Title 'Sesión 16: Evaluación final' -Purpose 'Evaluar la resolución integrada de problemas con funciones, estructuras de datos y persistencia básica.' -Criteria @('Descompone el problema en funciones o etapas claras.','Selecciona correctamente estructuras de datos y persistencia básica.','Entrega una solución funcional y legible.','Comprueba el programa con casos representativos.') -Problems @(
     @{ Title='Problema 1: Registro académico básico'; Statement='Construye un programa con menú que permita registrar estudiantes, guardar la información en archivo y consultar los registros almacenados.'; Inputs='opciones de menú, nombre del estudiante y nota'; Output='registro actualizado y consulta de datos almacenados'; Starter="def mostrar_menu():
     print('1. Registrar estudiante')
     print('2. Mostrar registros')
@@ -1983,7 +1983,7 @@ $evalFinal = New-EvaluationNotebook -Filename 'Sesion_16_Evaluacion_Final.ipynb'
 
 # Desarrolla aquí la solución completa" }
 )
-Write-NotebookFile -Path (Join-Path $root 'Sesion_16_Evaluacion_Final.ipynb') -Notebook $evalFinal
+Write-NotebookFile -Path (Join-Path $root 'S16_Evaluacion_Final.ipynb') -Notebook $evalFinal
 
 Write-Host ('Notebook files generated: ' + ((Get-ChildItem -Path $root -Filter '*.ipynb').Count))
 
