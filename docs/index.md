@@ -17,24 +17,24 @@ Este sitio está pensado como libro digital. El contenido se muestra como págin
 ## Estructura del libro
 
 - Capítulo 1: resolución de problemas básicos.
-- [1 Algoritmos y datos](S01_Algoritmos_Datos.ipynb)
-- [2 Operadores y secuencia](S02_Operadores_Secuencia.ipynb)
-- [3 Decisiones](S03_Decisiones.ipynb)
-- [4 Decisiones múltiples](S04_Decisiones_Multiples.ipynb)
-- [5 Evaluación 1](S05_Evaluacion_1.ipynb)
+- [Sesión 1: Pensamiento algorítmico, variables y tipos de datos](S01_Algoritmos_Datos.ipynb)
+- [Sesión 2: Operadores, expresiones y secuencia de instrucciones](S02_Operadores_Secuencia.ipynb)
+- [Sesión 3: Decisiones simples y compuestas](S03_Decisiones.ipynb)
+- [Sesión 4: Decisiones múltiples, anidadas y casos límite](S04_Decisiones_Multiples.ipynb)
+- [Sesión 5: Evaluación 1](S05_Evaluacion_1.ipynb)
 - Capítulo 2: resolución de problemas iterativos y procesamiento de datos.
-- [6 Repetición for](S06_For.ipynb)
-- [7 Repetición while](S07_While.ipynb)
-- [8 Listas y cadenas](S08_Listas_Cadenas.ipynb)
-- [9 Búsqueda y ordenación](S09_Busqueda_Ordenacion.ipynb)
-- [10 Matrices](S10_Matrices.ipynb)
-- [11 Diccionarios](S11_Diccionarios.ipynb)
-- [12 Evaluación 2](S12_Evaluacion_2.ipynb)
+- [Sesión 6: Repetición definida con for](S06_For.ipynb)
+- [Sesión 7: Repetición condicionada con while](S07_While.ipynb)
+- [Sesión 8: Listas, cadenas y procesamiento de colecciones](S08_Listas_Cadenas.ipynb)
+- [Sesión 9: Búsqueda secuencial y ordenación básica](S09_Busqueda_Ordenacion.ipynb)
+- [Sesión 10: Matrices y organización tabular de información](S10_Matrices.ipynb)
+- [Sesión 11: Diccionarios, organización clave-valor y consulta de datos](S11_Diccionarios.ipynb)
+- [Sesión 12: Evaluación 2](S12_Evaluacion_2.ipynb)
 - Capítulo 3: resolución de problemas estructurados y persistencia básica.
-- [13 Funciones](S13_Funciones.ipynb)
-- [14 Integración y menús](S14_Integracion_Menus.ipynb)
-- [15 Archivos](S15_Archivos.ipynb)
-- [16 Evaluación final](S16_Evaluacion_Final.ipynb)
+- [Sesión 13: Funciones, parámetros, retorno y modularización](S13_Funciones.ipynb)
+- [Sesión 14: Integración de funciones, colecciones y menús](S14_Integracion_Menus.ipynb)
+- [Sesión 15: Persistencia básica de información](S15_Archivos.ipynb)
+- [Sesión 16: Evaluación final](S16_Evaluacion_Final.ipynb)
 
 ## Recomendación de uso
 
