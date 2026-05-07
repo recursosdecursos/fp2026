@@ -42,7 +42,7 @@ En cada sesión, revise primero la base conceptual, luego desarrolle la activida
 
 
 ```mermaid
-flowchart LR
+flowchart TD
 
 A[Problema] --> B[Análisis<br>Entrada - Proceso - Salida]
 
