@@ -678,7 +678,7 @@ function Get-SessionOneTheoryMarkdown {
         '    inicio([Inicio / Fin])',
         '    proceso[Proceso]',
         '    decision{Decisión}',
-        '    entrada[/Entrada / Salida/]',
+        '    entrada[/Entrada y salida/]',
         '    inicio --> proceso --> decision --> entrada',
         '```',
         '',

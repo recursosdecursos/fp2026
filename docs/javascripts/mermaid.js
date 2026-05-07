@@ -1,7 +1,18 @@
-document$.subscribe(function () {
+document$.subscribe(async function () {
+  if (typeof mermaid === "undefined") {
+    return;
+  }
+
   mermaid.initialize({
-    startOnLoad: true,
+    startOnLoad: false,
     securityLevel: "loose"
   });
-  mermaid.run();
+
+  document.querySelectorAll(".jp-Mermaid").forEach(function (container) {
+    container.classList.add("jp-RenderedMermaid");
+  });
+
+  await mermaid.run({
+    querySelector: ".mermaid"
+  });
 });
