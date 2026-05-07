@@ -778,6 +778,28 @@ function Get-SessionOneTheoryMarkdown {
     ) -join "`n"
 }
 
+function Get-SessionOneMermaidCode {
+    return @(
+        '# Versión ejecutable del diagrama Mermaid para Jupyter o Colab.',
+        '# Si el paquete no está instalado, ejecuta primero: !pip install mermaid-py',
+        '',
+        'try:',
+        '    from mermaid import Mermaid',
+        'except ImportError:',
+        "    print('Instala primero mermaid-py con: !pip install mermaid-py')",
+        'else:',
+        '    Mermaid("""',
+        'flowchart TD',
+        '    inicio([Inicio / Fin])',
+        '    proceso[Proceso]',
+        '    decision{Decisión}',
+        '    entrada[/Entrada y salida/]',
+        '',
+        '    inicio --> proceso --> decision --> entrada',
+        '""")'
+    ) -join "`n"
+}
+
 function Get-SessionTheoryMarkdown {
     param(
         [string]$Objective,
@@ -1424,7 +1446,14 @@ $difficulty
 
 ## Contenidos
 $contentsMd"),
-        (New-MarkdownCell $theoryMd),
+        (New-MarkdownCell $theoryMd)
+    )
+
+    if ($sessionNumber -eq 1) {
+        $cells += (New-CodeCell (Get-SessionOneMermaidCode))
+    }
+
+    $cells += @(
         (New-MarkdownCell $routeMd),
         (New-MarkdownCell $architectureMd),
         (New-MarkdownCell $practiceSectionMd),
