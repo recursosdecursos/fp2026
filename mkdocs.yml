@@ -1,4 +1,4 @@
-site_name: Fundamentos de Programación - Libro digital
+﻿site_name: Fundamentos de Programación - Libro digital
 site_description: Cuadernos de programación convertidos a libro digital estático con MkDocs.
 site_author: UPeU
 copyright: Angel Sullon @asullom - UPeU v2026
@@ -7,24 +7,24 @@ theme:
   name: material
   language: es
   palette:
-        - scheme: default
-          primary: teal
-          accent: amber
+    - scheme: default
+      primary: blue
+      accent: amber
   features:
-        - navigation.sections
-        - navigation.expand
-        - navigation.top
-        - toc.follow
-        - content.code.copy
-        - search.suggest
-        - search.highlight
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.follow
+    - content.code.copy
+    - search.suggest
+    - search.highlight
 
 plugins:
   - search
   - mkdocs-jupyter:
-          execute: false
-          include_source: true
-          ignore_h1_titles: true
+      execute: false
+      include_source: true
+      ignore_h1_titles: true
 
 markdown_extensions:
   - admonition
@@ -32,40 +32,40 @@ markdown_extensions:
   - md_in_html
   - tables
   - toc:
-          permalink: true
+      permalink: true
   - pymdownx.details
   - pymdownx.tabbed:
-          alternate_style: true
+      alternate_style: true
   - pymdownx.superfences:
-          custom_fences:
-            - name: mermaid
-              class: mermaid
-              format: !!python/name:pymdownx.superfences.fence_code_format
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 extra_javascript:
   - https://unpkg.com/mermaid@10/dist/mermaid.min.js
   - javascripts/mermaid.js
 
 nav:
-    - Inicio: index.md
-    - Sílabo: Silabo_FP.md
-    - Guía de apoyo: Guia_algoritmo_a_codigo.ipynb
-    - Capítulo 1. Resolución de problemas básicos:
-            - 1 Algoritmos y datos: S01_Algoritmos_Datos.ipynb
-            - 2 Operadores y secuencia: S02_Operadores_Secuencia.ipynb
-            - 3 Decisiones: S03_Decisiones.ipynb
-            - 4 Decisiones múltiples: S04_Decisiones_Multiples.ipynb
-            - 5 Evaluación 1: S05_Evaluacion_1.ipynb
-    - Capítulo 2. Resolución de problemas iterativos y procesamiento de datos:
-            - 6 Repetición for: S06_For.ipynb
-            - 7 Repetición while: S07_While.ipynb
-            - 8 Listas y cadenas: S08_Listas_Cadenas.ipynb
-            - 9 Búsqueda y ordenación: S09_Busqueda_Ordenacion.ipynb
-            - 10 Matrices: S10_Matrices.ipynb
-            - 11 Diccionarios: S11_Diccionarios.ipynb
-            - 12 Evaluación 2: S12_Evaluacion_2.ipynb
-    - Capítulo 3. Resolución de problemas estructurados y persistencia básica:
-            - 13 Funciones: S13_Funciones.ipynb
-            - 14 Integración y menús: S14_Integracion_Menus.ipynb
-            - 15 Archivos: S15_Archivos.ipynb
-            - 16 Evaluación final: S16_Evaluacion_Final.ipynb
+  - Inicio: index.md
+  - Sílabo: Silabo_FP.md
+  - Guía de apoyo: Guia_algoritmo_a_codigo.ipynb
+  - Capítulo 1. Resolución de problemas básicos:
+      - 1 Algoritmos y datos: S01_Algoritmos_Datos.ipynb
+      - 2 Operadores y secuencia: S02_Operadores_Secuencia.ipynb
+      - 3 Decisiones: S03_Decisiones.ipynb
+      - 4 Decisiones múltiples: S04_Decisiones_Multiples.ipynb
+      - 5 Evaluación 1: S05_Evaluacion_1.ipynb
+  - Capítulo 2. Resolución de problemas iterativos y procesamiento de datos:
+      - 6 Repetición for: S06_For.ipynb
+      - 7 Repetición while: S07_While.ipynb
+      - 8 Listas y cadenas: S08_Listas_Cadenas.ipynb
+      - 9 Búsqueda y ordenación: S09_Busqueda_Ordenacion.ipynb
+      - 10 Matrices: S10_Matrices.ipynb
+      - 11 Diccionarios: S11_Diccionarios.ipynb
+      - 12 Evaluación 2: S12_Evaluacion_2.ipynb
+  - Capítulo 3. Resolución de problemas estructurados y persistencia básica:
+      - 13 Funciones: S13_Funciones.ipynb
+      - 14 Integración y menús: S14_Integracion_Menus.ipynb
+      - 15 Archivos: S15_Archivos.ipynb
+      - 16 Evaluación final: S16_Evaluacion_Final.ipynb
