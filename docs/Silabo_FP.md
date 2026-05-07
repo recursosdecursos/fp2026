@@ -39,7 +39,7 @@ El curso adopta un enfoque activo, progresivo y aplicado. En un curso de primer 
 La lógica metodológica del curso será:
 
 ```text
-Comprender -> Modelar -> Codificar -> Probar -> Explicar -> Mejorar
+Comprender -> Diseñar -> Codificar -> Probar -> Explicar -> Mejorar
 ```
 
 La arquitectura base de resolución de problemas será:
@@ -52,14 +52,15 @@ Entrada -> Proceso -> Salida
 Código
 ```
 
-Los cinco pasos operativos que se repetirán en cada sesión son:
+Los 6 pasos operativos que se repetirán en cada sesión son:
 
 ```text
 1. Comprender el problema
 2. Identificar entradas
 3. Diseñar el proceso
-4. Definir salidas y casos de prueba
-5. Implementar, ejecutar y corregir
+4. Definir salidas
+5. Casos de prueba
+6. Implementar, ejecutar y corregir
 ```
 
 ---
