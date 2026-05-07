@@ -44,17 +44,19 @@ En cada sesión, revise primero la base conceptual, luego desarrolle la activida
 ```mermaid
 flowchart LR
 
-A[Competencias del Programa<br>CE021 - CE024] --> B[Evidencias<br>CE02xx]
+A[Problema] --> B[Análisis<br>Entrada - Proceso - Salida]
 
-B --> C[Cursos del Programa<br>PS / PI]
+B --> C[Diseño del algoritmo<br>Pseudocódigo o diagrama de flujo]
 
-C --> D[Evidencias estructuradas<br>E1 - E5]
+C --> D[Implementación<br>Código en Python]
 
-D --> E[Producto del sistema]
+D --> E[Pruebas<br>Casos normales y límite]
 
-E --> F[Evaluación<br>Rúbricas]
+E --> F[Mejora<br>Corrección y explicación]
 
-F --> G[EPE<br>Evaluación Final]
+F --> G[Solución modular<br>Funciones y colecciones]
 
-G --> H[Perfil de Egreso]
+G --> H[Persistencia básica<br>Archivos]
+
+H --> I[Compilado de ejercicios<br>resueltos y explicados]
 ```
