@@ -39,3 +39,22 @@ Este sitio está pensado como libro digital. El contenido se muestra como págin
 ## Recomendación de uso
 
 En cada sesión, revise primero la base conceptual, luego desarrolle la actividad práctica, continúe con el aprendizaje autónomo y cierre con la evaluación de la sesión. La secuencia está diseñada para progresar desde problemas básicos hasta soluciones modulares con persistencia elemental.
+
+
+```mermaid
+flowchart LR
+
+A[Competencias del Programa<br>CE021 - CE024] --> B[Evidencias<br>CE02xx]
+
+B --> C[Cursos del Programa<br>PS / PI]
+
+C --> D[Evidencias estructuradas<br>E1 - E5]
+
+D --> E[Producto del sistema]
+
+E --> F[Evaluación<br>Rúbricas]
+
+F --> G[EPE<br>Evaluación Final]
+
+G --> H[Perfil de Egreso]
+```
