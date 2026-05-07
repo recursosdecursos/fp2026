@@ -48,7 +48,7 @@ A[Problema] --> B[Análisis<br>Entrada - Proceso - Salida]
 
 B --> C[Diseño del algoritmo<br>Pseudocódigo o diagrama de flujo]
 
-C --> D[Implementación<br>Código en Python]
+C --> D[Implementación<br>Código en Python/Java]
 
 D --> E[Pruebas<br>Casos normales y límite]
 
