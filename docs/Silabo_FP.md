@@ -140,13 +140,13 @@ La evaluación será continua, práctica y formativa. En programación inicial, 
 
 ---
 
-# Unidad 1: Estructuras secuenciales y condicionales
+## Unidad 1: Estructuras secuenciales y condicionales
 
-## Propósito de la unidad
+### Propósito de la unidad
 
 Que el estudiante comprenda la lógica de resolución de problemas computacionales y desarrolle programas básicos usando datos, operadores y estructuras condicionales.
 
-## Competencias de la unidad
+### Competencias de la unidad
 
 - Representa un problema mediante entrada, proceso y salida.
 - Usa variables y tipos de datos para modelar información.
@@ -155,21 +155,21 @@ Que el estudiante comprenda la lógica de resolución de problemas computacional
 - Resuelve problemas con decisiones simples, compuestas y múltiples.
 - Verifica resultados mediante pruebas básicas.
 
-## Producto de unidad
+### Producto de unidad
 
 Compendio de ejercicios resueltos sobre estructuras secuenciales y condicionales.
 
 ---
 
-## Sesión 1: Pensamiento algorítmico: algoritmos, variables y tipos de datos
+### Sesión 1: Pensamiento algorítmico: algoritmos, variables y tipos de datos
 
 **Cuaderno de trabajo:** `Sesion_01_Algoritmos_Tipos_Datos_Variables.ipynb`
 
-### Objetivo
+#### Objetivo
 
 Comprender qué es un algoritmo y representar información usando variables y tipos de datos básicos en un lenguaje de programación.
 
-### Secuencia didáctica sugerida
+#### Secuencia didáctica sugerida
 
 - Activación: distinguir una instrucción cotidiana de un algoritmo.
 - Modelado: resolver un problema simple usando entrada, proceso y salida.
@@ -177,7 +177,7 @@ Comprender qué es un algoritmo y representar información usando variables y ti
 - Reto: construir una ficha básica de usuario o estudiante.
 - Cierre: explicar qué diferencia existe entre dato, variable y tipo.
 
-### Contenidos
+#### Contenidos
 
 - Concepto de algoritmo.
 - Arquitectura de resolución de problemas.
@@ -187,21 +187,21 @@ Comprender qué es un algoritmo y representar información usando variables y ti
 - Tipos de datos: `str`, `int`, `float`, `bool`.
 - Variables y buenas prácticas de nombrado.
 
-### Producto esperado
+#### Producto esperado
 
 Programa que capture y muestre datos básicos de forma estructurada.
 
 ---
 
-## Sesión 2: Expresiones y secuencia en la solución de problemas
+### Sesión 2: Expresiones y secuencia en la solución de problemas
 
 **Cuaderno de trabajo:** `Sesion_02_Operadores_Algoritmos_Secuenciales.ipynb`
 
-### Objetivo
+#### Objetivo
 
 Resolver problemas secuenciales utilizando operadores y conversiones de datos en un lenguaje de programación.
 
-### Secuencia didáctica sugerida
+#### Secuencia didáctica sugerida
 
 - Activación: predecir el resultado de expresiones simples.
 - Modelado: construir un algoritmo que calcule un promedio o costo total.
@@ -209,7 +209,7 @@ Resolver problemas secuenciales utilizando operadores y conversiones de datos en
 - Reto: resolver un problema de cálculo con varias entradas.
 - Cierre: justificar por qué un programa secuencial no requiere decisiones.
 
-### Contenidos
+#### Contenidos
 
 - Operadores aritméticos.
 - Operadores relacionales.
@@ -218,21 +218,21 @@ Resolver problemas secuenciales utilizando operadores y conversiones de datos en
 - Estructura secuencial.
 - Verificación de resultados.
 
-### Producto esperado
+#### Producto esperado
 
 Programas que leen datos, realizan cálculos y muestran resultados correctamente formateados.
 
 ---
 
-## Sesión 3: Decisiones simples en la lógica del programa
+### Sesión 3: Decisiones simples en la lógica del programa
 
 **Cuaderno de trabajo:** `Sesion_03_Decisiones_Inteligentes_Simples.ipynb`
 
-### Objetivo
+#### Objetivo
 
 Construir programas que tomen decisiones usando estructuras `if` y `if-else`.
 
-### Contenidos
+#### Contenidos
 
 - Expresiones condicionales.
 - `if`.
@@ -240,21 +240,21 @@ Construir programas que tomen decisiones usando estructuras `if` y `if-else`.
 - Condiciones compuestas con `and` y `or`.
 - Validación básica de datos.
 
-### Producto esperado
+#### Producto esperado
 
 Programas que responden de manera diferente según las condiciones de entrada.
 
 ---
 
-## Sesión 4: Decisiones múltiples y lógica anidada
+### Sesión 4: Decisiones múltiples y lógica anidada
 
 **Cuaderno de trabajo:** `Sesion_04_Decisiones_Anidadas_Multiples.ipynb`
 
-### Objetivo
+#### Objetivo
 
 Resolver problemas con varios caminos lógicos usando estructuras `if-elif-else` y condicionales anidados.
 
-### Contenidos
+#### Contenidos
 
 - Condicionales anidados.
 - Condicionales múltiples con `if-elif-else`.
@@ -262,21 +262,21 @@ Resolver problemas con varios caminos lógicos usando estructuras `if-elif-else`
 - Clasificación de datos.
 - Casos límite.
 
-### Producto esperado
+#### Producto esperado
 
 Programas que clasifican y toman decisiones de acuerdo con varios criterios.
 
 ---
 
-## Sesión 5: Aplicación integrada de estructuras básicas
+### Sesión 5: Aplicación integrada de estructuras básicas
 
 **Cuaderno de trabajo:** `Sesion_05_Integracion_Fundamentos.ipynb`
 
-### Objetivo
+#### Objetivo
 
 Integrar variables, operadores y estructuras condicionales en la resolución de problemas completos.
 
-### Contenidos
+#### Contenidos
 
 - Entrada, proceso y salida.
 - Variables y conversiones.
@@ -284,21 +284,21 @@ Integrar variables, operadores y estructuras condicionales en la resolución de 
 - Condicionales.
 - Pruebas con casos normales y límite.
 
-### Producto esperado
+#### Producto esperado
 
 Compendio parcial de ejercicios resueltos con procesamiento secuencial y decisiones básicas.
 
 ---
 
-## Sesión 6: Evaluación de desempeño de la unidad 1
+### Sesión 6: Evaluación de desempeño de la unidad 1
 
 **Cuaderno de trabajo:** `Sesion_06_Evaluacion_Unidad_1.ipynb`
 
-### Evidencia
+#### Evidencia
 
 Programa individual que integre entrada de datos, procesamiento secuencial, validación y decisiones.
 
-### Criterios específicos
+#### Criterios específicos
 
 - Analiza bien el problema.
 - Usa datos y operadores con corrección.
@@ -308,13 +308,13 @@ Programa individual que integre entrada de datos, procesamiento secuencial, vali
 
 ---
 
-# Unidad 2: Estructuras repetitivas, datos y subprogramas
+## Unidad 2: Estructuras repetitivas, datos y subprogramas
 
-## Propósito de la unidad
+### Propósito de la unidad
 
 Que el estudiante automatice tareas mediante bucles, procese datos en listas y cadenas, y estructure soluciones mediante funciones.
 
-## Competencias de la unidad
+### Competencias de la unidad
 
 - Usa estructuras repetitivas para automatizar procesos.
 - Aplica contadores y acumuladores.
@@ -323,21 +323,21 @@ Que el estudiante automatice tareas mediante bucles, procese datos en listas y c
 - Aplica búsqueda secuencial y ordenación básica en problemas sencillos.
 - Integra varias estructuras en un programa completo.
 
-## Producto de unidad
+### Producto de unidad
 
 Compendio de ejercicios resueltos sobre estructuras repetitivas, datos y subprogramas.
 
 ---
 
-## Sesión 7: Repetición definida y procesamiento con listas
+### Sesión 7: Repetición definida y procesamiento con listas
 
 **Cuaderno de trabajo:** `Sesion_07_For_Arreglos_Acumuladores_Contadores.ipynb`
 
-### Objetivo
+#### Objetivo
 
 Resolver problemas repetitivos con `for`, listas, contadores, acumuladores y ordenación básica.
 
-### Contenidos
+#### Contenidos
 
 - Bucle `for`.
 - Uso de `range()`.
@@ -347,21 +347,21 @@ Resolver problemas repetitivos con `for`, listas, contadores, acumuladores y ord
 - Ordenación básica de datos en listas.
 - Sumatorias y conteos condicionados.
 
-### Producto esperado
+#### Producto esperado
 
 Programas que procesan, ordenan y resumen conjuntos básicos de datos.
 
 ---
 
-## Sesión 8: Repetición condicionada y captura dinámica de datos
+### Sesión 8: Repetición condicionada y captura dinámica de datos
 
 **Cuaderno de trabajo:** `Sesion_08_While_con_Listas_Aplicacion.ipynb`
 
-### Objetivo
+#### Objetivo
 
 Usar `while` para controlar el ingreso de datos hasta cumplir una condición de parada y validar entradas en datos numéricos o textuales.
 
-### Contenidos
+#### Contenidos
 
 - Bucle `while`.
 - Condición de parada.
@@ -370,42 +370,42 @@ Usar `while` para controlar el ingreso de datos hasta cumplir una condición de 
 - Cadenas y operaciones básicas de procesamiento textual.
 - Registro de datos en listas.
 
-### Producto esperado
+#### Producto esperado
 
 Programa que permita ingresar una cantidad variable de datos, validarlos y procesarlos.
 
 ---
 
-## Sesión 9: Estructuración básica de datos
+### Sesión 9: Estructuración básica de datos
 
 **Cuaderno de trabajo:** `Sesion_09_Introduccion_Estructuras_Datos.ipynb`
 
-### Objetivo
+#### Objetivo
 
 Organizar información utilizando listas y diccionarios simples según la estructura que requiera el problema.
 
-### Contenidos
+#### Contenidos
 
 - Listas e índices.
 - Diccionarios simples.
 - Selección de la estructura según el problema.
 - Recorrido y consulta de datos.
 
-### Producto esperado
+#### Producto esperado
 
 Programa que registre y consulte información organizada.
 
 ---
 
-## Sesión 10: Modularización de soluciones con funciones
+### Sesión 10: Modularización de soluciones con funciones
 
 **Cuaderno de trabajo:** `Sesion_10_Funciones_en_Accion.ipynb`
 
-### Objetivo
+#### Objetivo
 
 Modularizar programas mediante funciones con parámetros y retorno.
 
-### Contenidos
+#### Contenidos
 
 - `def`.
 - Parámetros.
@@ -413,21 +413,21 @@ Modularizar programas mediante funciones con parámetros y retorno.
 - Reutilización de código.
 - Diseño modular.
 
-### Producto esperado
+#### Producto esperado
 
 Programa estructurado en funciones claras y reutilizables.
 
 ---
 
-## Sesión 11: Integración de repetición, datos y funciones
+### Sesión 11: Integración de repetición, datos y funciones
 
 **Cuaderno de trabajo:** `Sesion_11_Integracion_Bucles_Listas_Funciones.ipynb`
 
-### Objetivo
+#### Objetivo
 
 Integrar repetición, almacenamiento, búsqueda secuencial y modularización en una solución completa.
 
-### Contenidos
+#### Contenidos
 
 - Menús simples.
 - Integración de bucles y listas.
@@ -435,21 +435,21 @@ Integrar repetición, almacenamiento, búsqueda secuencial y modularización en 
 - Funciones para organizar el flujo.
 - Pruebas de funcionamiento.
 
-### Producto esperado
+#### Producto esperado
 
 Compendio parcial de ejercicios resueltos con repetición, organización de datos y funciones de apoyo.
 
 ---
 
-## Sesión 12: Evaluación de desempeño de la unidad 2
+### Sesión 12: Evaluación de desempeño de la unidad 2
 
 **Cuaderno de trabajo:** `Sesion_12_Evaluacion_Unidad_2.ipynb`
 
-### Evidencia
+#### Evidencia
 
 Programa aplicado que use datos de entrada, decisiones, bucles, listas y funciones.
 
-### Criterios específicos
+#### Criterios específicos
 
 - Integra correctamente las estructuras estudiadas.
 - Organiza el código en bloques claros.
@@ -459,29 +459,29 @@ Programa aplicado que use datos de entrada, decisiones, bucles, listas y funcion
 
 ---
 
-# Unidad 3: Organización y persistencia de información
+## Unidad 3: Organización y persistencia de información
 
-## Propósito de la unidad
+### Propósito de la unidad
 
 Que el estudiante organice información de manera estructurada y use mecanismos básicos de persistencia para resolver problemas aplicados con mayor claridad, control y continuidad de los datos.
 
-## Competencias de la unidad
+### Competencias de la unidad
 
 - Organiza información para su registro, consulta y actualización según necesidades de persistencia.
 - Lee, escribe y recupera información en mecanismos básicos de persistencia.
 - Relaciona datos, operaciones y estructura del programa para resolver ejercicios de forma ordenada y consistente.
 
-## Producto de la unidad
+### Producto de la unidad
 
 Compendio parcial de ejercicios resueltos sobre organización y persistencia básica de información.
 
-## Sesión 13: Matrices y organización tabular de información
+### Sesión 13: Matrices y organización tabular de información
 
-### Objetivo
+#### Objetivo
 
 Organizar y procesar información en tablas o matrices para resolver problemas que requieren recorridos por filas, columnas y posiciones.
 
-### Contenidos
+#### Contenidos
 
 - Concepto de matriz o estructura bidimensional.
 - Representación tabular de información.
@@ -489,19 +489,19 @@ Organizar y procesar información en tablas o matrices para resolver problemas q
 - Consulta, actualización y presentación de datos en tablas.
 - Ejercicios de aplicación con matrices y organización tabular.
 
-### Producto esperado
+#### Producto esperado
 
 Compendio parcial de ejercicios resueltos sobre matrices y organización tabular de información.
 
 ---
 
-## Sesión 14: Persistencia básica de información
+### Sesión 14: Persistencia básica de información
 
-### Objetivo
+#### Objetivo
 
 Resolver ejercicios de almacenamiento y recuperación de datos en archivos u otros mecanismos básicos de persistencia según el lenguaje o entorno utilizado.
 
-### Contenidos
+#### Contenidos
 
 - Concepto de persistencia.
 - Archivos de texto y archivos estructurados simples.
@@ -509,19 +509,19 @@ Resolver ejercicios de almacenamiento y recuperación de datos en archivos u otr
 - Registro, recuperación y consulta básica de información.
 - Ejercicios de aplicación con persistencia básica.
 
-### Producto esperado
+#### Producto esperado
 
 Compendio parcial de ejercicios resueltos sobre persistencia básica.
 
 ---
 
-## Sesión 15: Integración de organización y persistencia de información
+### Sesión 15: Integración de organización y persistencia de información
 
-### Objetivo
+#### Objetivo
 
 Integrar organización de datos, funciones y persistencia para resolver ejercicios completos de registro, consulta y actualización de información.
 
-### Contenidos
+#### Contenidos
 
 - Organización de información en registros, listas o estructuras equivalentes.
 - Relación entre datos y operaciones asociadas.
@@ -529,19 +529,19 @@ Integrar organización de datos, funciones y persistencia para resolver ejercici
 - Validación de consistencia entre memoria y persistencia.
 - Ejercicios integradores de organización y persistencia de información.
 
-### Producto esperado
+#### Producto esperado
 
 Compendio parcial de ejercicios resueltos sobre organización y persistencia de información.
 
 ---
 
-## Sesión 16: Evaluación final del curso
+### Sesión 16: Evaluación final del curso
 
-### Evidencia
+#### Evidencia
 
 Entrega final del compendio de ejercicios resueltos y evaluación individual del dominio logrado en el curso.
 
-### Criterios específicos
+#### Criterios específicos
 
 - Presenta un compendio final consistente, ordenado y funcional.
 - Corrige observaciones relevantes derivadas de las evaluaciones parciales.

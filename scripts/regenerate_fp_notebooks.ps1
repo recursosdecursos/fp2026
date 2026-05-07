@@ -103,7 +103,7 @@ function Get-ResolutionBlock {
     )
 
     $resolutionLines = @(
-        '## Resolución guiada aplicada',
+        '#### Resolución guiada aplicada',
         '',
         "1. Comprender: $Understanding",
         "2. Entradas: $Entries"
@@ -339,14 +339,34 @@ function Get-ConceptDefinition {
         'intercambio de valores' { return 'sirve para cambiar posiciones cuando un elemento debe ir antes o después de otro.' }
         'análisis del proceso' { return 'permite entender por qué una técnica encuentra o reordena datos correctamente.' }
         'matrices' { return 'organizan datos en filas y columnas para representar información tabular.' }
+        'filas' { return 'una fila es un conjunto horizontal de datos relacionados dentro de una matriz o tabla. Suele representar un registro completo, como un estudiante, un producto o un día.' }
+        'columnas' { return 'una columna es un conjunto vertical de datos del mismo tipo o significado dentro de una tabla. Permite analizar una característica común en varios registros.' }
+        'recorrido bidimensional' { return 'es el proceso de visitar los elementos de una matriz usando dos niveles de recorrido: uno para las filas y otro para las columnas.' }
+        'consulta y actualización' { return 'consiste en acceder a una posición o clave para leer su contenido y, cuando el problema lo exige, modificar el dato almacenado.' }
         'organización tabular' { return 'permite consultar y procesar datos según su posición en una tabla.' }
         'diccionarios' { return 'guardan información en pares clave-valor para acceder a ella de forma directa.' }
+        'claves y valores' { return 'una clave identifica un dato y el valor contiene la información asociada. Esta relación permite recuperar información sin buscar posición por posición.' }
+        'registro de datos' { return 'es la acción de almacenar información nueva en una estructura, cuidando que cada dato quede asociado a un identificador o posición clara.' }
+        'consulta' { return 'es la recuperación de un dato almacenado para mostrarlo, compararlo, actualizarlo o usarlo en un cálculo posterior.' }
+        'actualización' { return 'es la modificación controlada de un dato ya registrado sin perder el resto de la información almacenada.' }
         'organización clave-valor' { return 'relaciona un identificador con un dato asociado para simplificar consultas.' }
         'consulta de datos' { return 'consiste en recuperar información específica desde una estructura ya organizada.' }
         'funciones' { return 'agrupan instrucciones con una tarea clara para reutilizar y ordenar la solución.' }
         'parámetros' { return 'permiten que una función reciba datos desde el exterior para trabajar con ellos.' }
+        'return' { return 'es la instrucción que entrega al programa principal el resultado producido por una función.' }
         'retorno' { return 'devuelve un resultado desde la función hacia la parte principal del programa.' }
         'modularización' { return 'divide el problema en partes pequeñas para mejorar claridad y mantenimiento.' }
+        'reutilización' { return 'consiste en diseñar una solución para usarla más de una vez con distintos datos, evitando repetir código.' }
+        'menús' { return 'presentan opciones al usuario y permiten dirigir el flujo del programa hacia diferentes operaciones.' }
+        'integración de funciones' { return 'une funciones pequeñas dentro de una solución mayor, donde cada función aporta una parte del proceso.' }
+        'listas o diccionarios' { return 'son estructuras de datos básicas que permiten organizar varios valores; la lista conserva orden por posición y el diccionario organiza por clave.' }
+        'flujo del programa' { return 'es el orden general en que se ejecutan las instrucciones, se toman decisiones, se llaman funciones y se muestran resultados.' }
+        'organización de opciones' { return 'consiste en ordenar las alternativas de un programa para que cada acción sea comprensible y tenga una respuesta definida.' }
+        'persistencia' { return 'es la capacidad de conservar datos más allá de la ejecución del programa mediante almacenamiento externo.' }
+        'archivos de texto' { return 'son documentos simples que guardan información legible como líneas de caracteres.' }
+        'escritura' { return 'es el proceso de enviar datos desde el programa hacia un archivo para conservarlos.' }
+        'lectura' { return 'es el proceso de recuperar datos desde un archivo para mostrarlos o procesarlos dentro del programa.' }
+        'registro y recuperación' { return 'agrupa las operaciones de guardar datos y volver a leerlos posteriormente de forma coherente.' }
         'persistencia básica' { return 'permite conservar información fuera de la memoria del programa mientras se usa un archivo.' }
         default { return 'es un concepto clave que debe entenderse antes de aplicar la solución práctica.' }
     }
@@ -397,14 +417,34 @@ function Get-ConceptTaxonomy {
         'intercambio de valores' { return 'intercambio simple entre dos posiciones durante una ordenación.' }
         'análisis del proceso' { return 'seguimiento paso a paso, comparación de estados y verificación del resultado.' }
         'matrices' { return 'filas, columnas y posiciones por índice.' }
+        'filas' { return 'filas de datos numéricos, textuales o mixtos, cada una asociada a un registro.' }
+        'columnas' { return 'columnas de atributos, columnas de totales y columnas de consulta.' }
+        'recorrido bidimensional' { return 'recorrido por filas, recorrido por columnas y recorrido por celda.' }
+        'consulta y actualización' { return 'consulta por posición, actualización de celda y verificación de límites.' }
         'organización tabular' { return 'datos por fila, por columna y por celda.' }
         'diccionarios' { return 'claves únicas con valores asociados.' }
+        'claves y valores' { return 'claves textuales, numéricas o códigos; valores simples o compuestos.' }
+        'registro de datos' { return 'registro nuevo, reemplazo de registro y registro validado.' }
+        'consulta' { return 'consulta directa, consulta condicionada y consulta no encontrada.' }
+        'actualización' { return 'actualización de valor, incremento de cantidad y reemplazo de información.' }
         'organización clave-valor' { return 'registro por identificador y consulta directa por clave.' }
         'consulta de datos' { return 'consulta existente, consulta no encontrada y actualización de datos.' }
         'funciones' { return 'funciones sin retorno, con retorno y con parámetros.' }
         'parámetros' { return 'parámetros de entrada simples o múltiples.' }
+        'return' { return 'retorno de un valor calculado, retorno de texto y retorno lógico.' }
         'retorno' { return 'retorno único y retorno calculado a partir de parámetros.' }
         'modularización' { return 'división en funciones pequeñas con responsabilidades claras.' }
+        'reutilización' { return 'uso repetido de una función con distintos argumentos.' }
+        'menús' { return 'menú de registro, consulta, actualización y salida.' }
+        'integración de funciones' { return 'funciones de entrada, proceso, salida y control.' }
+        'listas o diccionarios' { return 'listas para datos ordenados y diccionarios para datos identificados por clave.' }
+        'flujo del programa' { return 'inicio, repetición de menú, ejecución de opción y cierre.' }
+        'organización de opciones' { return 'opciones numeradas, validación de opción y operación asociada.' }
+        'persistencia' { return 'persistencia en archivos de texto y recuperación en memoria.' }
+        'archivos de texto' { return 'archivos línea por línea, registros separados por comas y texto plano.' }
+        'escritura' { return 'escritura nueva y escritura agregada al final.' }
+        'lectura' { return 'lectura completa, lectura línea por línea y separación de campos.' }
+        'registro y recuperación' { return 'guardar registros, leer registros y reconstruir datos.' }
         'persistencia básica' { return 'escritura, lectura y recuperación simple desde archivos.' }
         default { return 'categorías básicas, variantes de uso y casos comunes en la sesión.' }
     }
@@ -455,17 +495,284 @@ function Get-ConceptExample {
         'intercambio de valores' { return 'datos[i], datos[j] = datos[j], datos[i].' }
         'análisis del proceso' { return 'seguir el estado de la lista después de cada intercambio.' }
         'matrices' { return 'matriz[1][0] accede a la fila 2, columna 1.' }
+        'filas' { return 'sumar todos los valores de una fila para obtener el total de un estudiante.' }
+        'columnas' { return 'sumar una columna para conocer el total de ventas de un producto.' }
+        'recorrido bidimensional' { return 'usar un ciclo para filas y otro para columnas al procesar una tabla.' }
+        'consulta y actualización' { return 'matriz[0][1] = 15 modifica el dato de la primera fila y segunda columna.' }
         'organización tabular' { return 'sumar cada fila de una tabla de ventas.' }
         'diccionarios' { return 'producto = {"nombre": "cuaderno", "precio": 5.5}.' }
+        'claves y valores' { return 'productos["cuaderno"] = 5.5 asocia una clave con su precio.' }
+        'registro de datos' { return 'guardar productos[nombre] = precio después de leer ambos datos.' }
+        'consulta' { return 'if nombre in productos: print(productos[nombre]).' }
+        'actualización' { return 'productos["lapiz"] = 1.5 cambia el precio registrado.' }
         'organización clave-valor' { return 'consultar producto["precio"] usando la clave.' }
         'consulta de datos' { return 'mostrar el precio si la clave existe o avisar si no existe.' }
         'funciones' { return 'def doble(x): return x * 2.' }
         'parámetros' { return 'def saludar(nombre): print(nombre).' }
+        'return' { return 'def sumar(a, b): return a + b.' }
         'retorno' { return 'return suma dentro de una función.' }
         'modularización' { return 'crear una función para registrar y otra para consultar.' }
+        'reutilización' { return 'usar calcular_promedio() para varios estudiantes sin repetir la fórmula.' }
+        'menús' { return 'mostrar 1. Registrar, 2. Consultar y 3. Salir.' }
+        'integración de funciones' { return 'mostrar_menu(), registrar() y consultar() trabajan juntas en el programa principal.' }
+        'listas o diccionarios' { return 'usar una lista para nombres y un diccionario para productos con precio.' }
+        'flujo del programa' { return 'leer opción, ejecutar la acción elegida y volver al menú hasta salir.' }
+        'organización de opciones' { return 'if opcion == "1": registrar; elif opcion == "2": consultar.' }
+        'persistencia' { return 'guardar notas en un archivo para revisarlas después de cerrar el programa.' }
+        'archivos de texto' { return 'productos.txt puede contener una línea por producto.' }
+        'escritura' { return 'archivo.write("Ana,18\n") guarda un registro.' }
+        'lectura' { return 'for linea in archivo: print(linea.strip()).' }
+        'registro y recuperación' { return 'guardar "cuaderno,5.5" y luego separar la línea con split(",").' }
         'persistencia básica' { return 'guardar productos en un archivo y luego leerlos.' }
         default { return 'usar el concepto dentro de un ejercicio corto de la sesión.' }
     }
+}
+
+function Get-ConceptUseRule {
+    param([string]$Concept)
+
+    switch ($Concept.ToLowerInvariant()) {
+        'algoritmos' { return 'Antes de programar conviene escribir la solución como pasos claros: identificar entradas, ordenar el proceso, prever decisiones o repeticiones y definir la salida esperada.' }
+        'entrada, proceso y salida' { return 'Todo problema inicial debe analizarse con la pregunta clásica: qué datos ingresan, qué se hace con ellos y qué resultado debe entregarse al usuario.' }
+        'variables' { return 'El nombre de una variable debe representar su propósito dentro del problema. Debe evitarse usar nombres ambiguos, espacios, símbolos especiales o identificadores que empiecen con números.' }
+        'tipos de datos' { return 'El tipo se elige según la naturaleza del dato y las operaciones necesarias: números para calcular, cadenas para texto y booleanos para decisiones.' }
+        'salida formateada' { return 'Una salida correcta no solo muestra valores; también incluye etiquetas, orden y formato para que el usuario entienda el resultado sin revisar el código.' }
+        'operadores aritméticos' { return 'Se usan cuando el proceso requiere transformar datos numéricos. Es importante cuidar la precedencia y usar paréntesis cuando la expresión pueda ser ambigua.' }
+        'operadores relacionales' { return 'Se emplean para formular preguntas sobre los datos. El resultado de una comparación alimenta decisiones, validaciones y filtros.' }
+        'operadores lógicos' { return 'Permiten unir condiciones simples. Deben usarse con cuidado porque cambian el significado de la decisión: and exige que todo se cumpla, or acepta alternativas y not invierte la condición.' }
+        'expresiones' { return 'Una expresión debe ser legible y verificable. Si combina varios cálculos, puede dividirse en variables intermedias para mejorar claridad.' }
+        'secuencia de instrucciones' { return 'En una estructura secuencial, el orden importa: primero se leen o definen datos, luego se calculan resultados y finalmente se muestran las salidas.' }
+        'if' { return 'Se usa cuando una acción depende de una condición. Si la condición es falsa y no existe otra rama, el programa continúa con la siguiente instrucción.' }
+        'if-else' { return 'Se usa cuando el problema exige escoger entre dos caminos excluyentes. Cada camino debe producir un resultado coherente para el usuario.' }
+        'condiciones compuestas' { return 'Conviene construirlas a partir de condiciones simples ya entendidas. Si una condición se vuelve extensa, debe separarse en variables lógicas con nombres claros.' }
+        'validación básica' { return 'La validación protege al algoritmo de datos imposibles o incoherentes antes de realizar cálculos, clasificaciones o salidas finales.' }
+        'casos de prueba' { return 'Una solución debe probarse con datos normales, valores de frontera y entradas inválidas o poco frecuentes.' }
+        'if-elif-else' { return 'Se usa cuando hay varias categorías posibles. El orden de las condiciones debe ir de lo más específico a lo más general.' }
+        'decisiones anidadas' { return 'Son útiles cuando una pregunta depende de otra, pero deben mantenerse simples para no dificultar la lectura del algoritmo.' }
+        'clasificación' { return 'Clasificar exige definir rangos o reglas sin contradicciones, sin vacíos y con límites claramente tratados.' }
+        'prioridad de reglas' { return 'Cuando varias reglas podrían cumplirse, debe decidirse cuál tiene preferencia y ubicarla primero en el algoritmo.' }
+        'casos límite' { return 'Sirven para comprobar si los operadores relacionales elegidos incluyen o excluyen correctamente los extremos de cada rango.' }
+        'for' { return 'Se usa cuando se conoce de antemano cuántas veces se repetirá una acción o cuando se recorrerá una colección completa.' }
+        'range' { return 'Ayuda a controlar repeticiones mediante una secuencia numérica. Debe revisarse siempre el inicio, el fin no incluido y el paso.' }
+        'contadores' { return 'Un contador se inicializa antes del ciclo y aumenta cuando ocurre el evento que se desea contar.' }
+        'acumuladores' { return 'Un acumulador se inicializa con un valor neutro y se actualiza en cada repetición con el dato procesado.' }
+        'sumatorias' { return 'Una sumatoria requiere definir qué valores participan, cuándo se suman y qué variable conservará el total.' }
+        'while' { return 'Se usa cuando la repetición depende de una condición que puede cambiar durante la ejecución. Siempre debe existir una actualización que acerque el ciclo a su fin.' }
+        'condición de parada' { return 'Debe ser clara, alcanzable y comprobable. Una condición mal definida puede provocar ciclos infinitos o terminar antes de tiempo.' }
+        'centinelas' { return 'El centinela debe ser un valor fácil de reconocer y que no se confunda con datos válidos del problema.' }
+        'validación iterativa' { return 'Se aplica cuando el programa debe insistir hasta recibir un dato aceptable, evitando continuar con información incorrecta.' }
+        'control de ingreso' { return 'Ordena la lectura de datos para que el programa trabaje con valores consistentes durante todo el proceso.' }
+        'listas' { return 'Se usan cuando varios datos del mismo problema deben almacenarse juntos, conservar su orden o procesarse mediante recorridos.' }
+        'cadenas' { return 'Se tratan como datos textuales y también como colecciones de caracteres, por eso permiten búsqueda, conteo, transformación y validación.' }
+        'recorrido de colecciones' { return 'Debe quedar claro qué se hace con cada elemento: mostrarlo, contarlo, transformarlo, compararlo o seleccionarlo.' }
+        'conteos' { return 'Requieren una regla de conteo precisa y una variable que aumente solo cuando el elemento cumple la condición.' }
+        'transformación básica de texto' { return 'Antes de comparar texto conviene normalizarlo, por ejemplo usando minúsculas, mayúsculas o eliminación de espacios innecesarios.' }
+        'búsqueda secuencial' { return 'Es adecuada para colecciones pequeñas o no ordenadas. El algoritmo debe indicar qué ocurre si el dato se encuentra y qué ocurre si no aparece.' }
+        'comparación de elementos' { return 'Comparar elementos permite encontrar mayores, menores, coincidencias o posiciones que deben cambiarse.' }
+        'ordenación básica' { return 'Se aplica para reorganizar datos según un criterio. En programación inicial interesa comprender el proceso más que usar funciones automáticas.' }
+        'intercambio de valores' { return 'El intercambio debe conservar ambos datos; por eso se realiza con una variable auxiliar o con asignación múltiple cuando el lenguaje lo permite.' }
+        'análisis del proceso' { return 'Consiste en seguir los cambios del algoritmo paso a paso para explicar por qué llega al resultado correcto.' }
+        'matrices' { return 'Se usan cuando la información tiene dos dimensiones naturales, como filas y columnas, estudiantes y notas, días y productos.' }
+        'filas' { return 'Una fila agrupa datos de un mismo registro o unidad de análisis; recorrer filas permite obtener resúmenes por registro.' }
+        'columnas' { return 'Una columna agrupa el mismo atributo en varios registros; recorrer columnas permite comparar o totalizar una característica común.' }
+        'recorrido bidimensional' { return 'Requiere normalmente dos ciclos: uno para filas y otro para columnas. El orden del recorrido debe coincidir con el análisis solicitado.' }
+        'consulta y actualización' { return 'Consultar recupera un valor existente y actualizar modifica una posición específica sin alterar el resto de la estructura.' }
+        'organización tabular' { return 'Antes de calcular, debe definirse qué representa cada fila, cada columna y cada celda.' }
+        'diccionarios' { return 'Se usan cuando cada dato puede identificarse mediante una clave única, como código, nombre o identificador.' }
+        'claves y valores' { return 'La clave identifica y el valor contiene la información asociada. La clave debe ser estable para que la consulta sea confiable.' }
+        'registro de datos' { return 'Registrar datos implica decidir qué clave se usará, qué valor se guardará y cómo se tratarán claves repetidas.' }
+        'consulta' { return 'Antes de consultar una clave conviene verificar si existe para evitar errores y ofrecer una respuesta clara.' }
+        'actualización' { return 'Actualizar significa cambiar un valor asociado a una clave ya existente o crear una nueva entrada cuando el problema lo permite.' }
+        'organización clave-valor' { return 'Es útil cuando interesa acceder directamente a un dato sin recorrer toda la colección.' }
+        'consulta de datos' { return 'Debe contemplar dos escenarios: dato encontrado y dato no encontrado.' }
+        'funciones' { return 'Se usan para dividir un problema en subproblemas. Una buena función tiene nombre claro, responsabilidad única y entradas definidas.' }
+        'parámetros' { return 'Permiten que la función trabaje con datos variables sin depender de valores escritos directamente dentro de ella.' }
+        'return' { return 'Devuelve el resultado calculado por una función para que pueda usarse en otra parte del programa.' }
+        'retorno' { return 'Debe usarse cuando la función produce un valor que será almacenado, mostrado, comparado o enviado a otra función.' }
+        'modularización' { return 'Ayuda a construir programas más claros: cada módulo resuelve una parte y el programa principal coordina el flujo general.' }
+        'reutilización' { return 'Una solución reutilizable evita repetir instrucciones y permite aplicar la misma función con datos diferentes.' }
+        'menús' { return 'Un menú organiza las opciones disponibles y normalmente se combina con un ciclo para permitir varias operaciones en una misma ejecución.' }
+        'integración de funciones' { return 'Integrar funciones exige definir qué función resuelve cada tarea y cómo se comunican mediante parámetros y retornos.' }
+        'listas o diccionarios' { return 'La estructura se elige según la forma de acceso: listas para recorridos ordenados y diccionarios para consultas directas por clave.' }
+        'flujo del programa' { return 'El flujo principal debe coordinar lectura, decisión, llamada a funciones, actualización de datos y salida.' }
+        'organización de opciones' { return 'Las opciones deben ser claras, mutuamente distinguibles y tener una respuesta prevista cuando el usuario ingresa una alternativa inválida.' }
+        'persistencia básica' { return 'Se aplica cuando los datos deben conservarse después de terminar el programa. El archivo actúa como almacenamiento externo simple.' }
+        'persistencia' { return 'Permite separar la memoria temporal del programa de la información que necesita guardarse para usos posteriores.' }
+        'archivos de texto' { return 'Son adecuados para guardar datos simples y legibles. Cada línea puede representar un registro.' }
+        'escritura' { return 'La escritura crea o actualiza el contenido de un archivo. Debe cuidarse si se reemplaza todo el archivo o se agrega información al final.' }
+        'lectura' { return 'La lectura recupera datos desde un archivo y suele requerir limpieza o separación de campos antes de procesarlos.' }
+        'registro y recuperación' { return 'Registrar y recuperar exige mantener un formato consistente para que lo guardado pueda interpretarse correctamente después.' }
+        default { return 'Debe relacionarse con el esquema general de solución: problema, datos de entrada, proceso, salida y prueba.' }
+    }
+}
+
+function Convert-InitialToUpper {
+    param([string]$Text)
+
+    if ([string]::IsNullOrWhiteSpace($Text)) {
+        return $Text
+    }
+
+    return $Text.Substring(0, 1).ToUpperInvariant() + $Text.Substring(1)
+}
+
+function Get-SessionOneTheoryMarkdown {
+    return @(
+        '## Base conceptual de la sesión',
+        '',
+        'La programación inicia con la capacidad de resolver problemas de manera ordenada. Antes de escribir código, se debe comprender el problema, identificar los datos necesarios, diseñar un algoritmo y representar la solución de una forma clara.',
+        '',
+        '### 1. Algoritmos',
+        '#### Concepto',
+        'Un algoritmo es un conjunto ordenado, lógico y finito de pasos que permite resolver un problema o realizar una tarea específica.',
+        '',
+        '#### Características',
+        '- **Preciso:** cada instrucción debe ser clara y específica.',
+        '- **Definido:** con los mismos datos de entrada produce el mismo resultado.',
+        '- **Finito:** debe terminar después de ejecutar una cantidad limitada de pasos.',
+        '- **Ordenado:** sigue una secuencia lógica.',
+        '- **Eficiente:** busca resolver el problema correctamente usando los recursos necesarios.',
+        '',
+        '#### Ejemplo de aplicación',
+        'Para calcular el promedio de tres notas: leer las tres notas, sumarlas, dividir el resultado entre tres y mostrar el promedio.',
+        '',
+        '### 2. Estructura básica de un algoritmo',
+        '#### Concepto',
+        'La estructura básica de un algoritmo organiza la solución en tres partes: entrada, proceso y salida. Esta estructura ayuda a comprender qué datos se necesitan, qué operaciones se realizarán y qué resultado debe obtenerse.',
+        '',
+        '#### Elementos',
+        '- **Entrada:** datos que recibe el algoritmo.',
+        '- **Proceso:** operaciones, cálculos, decisiones o transformaciones realizadas con los datos.',
+        '- **Salida:** resultado obtenido después del procesamiento.',
+        '',
+        '#### Ejemplo de aplicación',
+        'En el cálculo de un promedio, las entradas son las notas, el proceso es la suma y división, y la salida es el promedio final.',
+        '',
+        '### 3. Representación de algoritmos',
+        '#### Concepto',
+        'Representar un algoritmo permite expresar la solución antes de programarla. Esto reduce errores porque obliga a ordenar las ideas y revisar la lógica.',
+        '',
+        '#### Formas principales',
+        '- **Lenguaje natural:** describe los pasos usando palabras comunes.',
+        '- **Pseudocódigo:** usa una escritura cercana a un lenguaje de programación, pero sin depender de una sintaxis específica.',
+        '- **Diagrama de flujo:** representa gráficamente los pasos mediante símbolos.',
+        '',
+        '#### Ejemplo en lenguaje natural',
+        '1. Leer dos números.',
+        '2. Sumar los números.',
+        '3. Mostrar el resultado.',
+        '',
+        '#### Ejemplo en pseudocódigo',
+        '```text',
+        'Inicio',
+        '   Leer numero1',
+        '   Leer numero2',
+        '   suma <- numero1 + numero2',
+        '   Escribir suma',
+        'Fin',
+        '```',
+        '',
+        '#### Símbolos comunes en diagramas de flujo',
+        '| Símbolo | Función |',
+        '|---|---|',
+        '| Óvalo | Inicio / Fin |',
+        '| Rectángulo | Proceso |',
+        '| Rombo | Decisión |',
+        '| Paralelogramo | Entrada / Salida |',
+        '| Flecha | Dirección del flujo |',
+        '',
+        '### 4. Datos y tipos de datos',
+        '#### Concepto',
+        'Un dato es una representación de información que puede ser almacenada y procesada por una computadora. El tipo de dato indica qué clase de valor se guarda y qué operaciones pueden realizarse con él.',
+        '',
+        '#### Datos simples',
+        '- **Entero:** número sin decimales. Ejemplos: `5`, `-10`, `200`.',
+        '- **Real:** número con decimales. Ejemplos: `3.14`, `25.8`, `-7.5`.',
+        '- **Carácter:** un solo símbolo o letra. Ejemplos: `"A"`, `"7"`, `"#"`.',
+        '- **Cadena:** conjunto de caracteres. Ejemplos: `"Carlos"`, `"Lima"`.',
+        '- **Lógico o booleano:** valor de verdad. Ejemplos: `Verdadero`, `Falso`.',
+        '',
+        '#### Datos estructurados',
+        'Permiten almacenar varios datos relacionados. Algunos ejemplos son arreglos, matrices, registros, listas y diccionarios.',
+        '',
+        '#### Criterio de uso',
+        'El tipo de dato debe elegirse según la naturaleza de la información: números para calcular, cadenas para texto y valores lógicos para representar condiciones.',
+        '',
+        '### 5. Variables',
+        '#### Concepto',
+        'Una variable es un espacio de memoria identificado por un nombre, donde se almacena un dato cuyo valor puede cambiar durante la ejecución del programa.',
+        '',
+        '#### Componentes',
+        '| Elemento | Descripción |',
+        '|---|---|',
+        '| Nombre | Identificador de la variable |',
+        '| Tipo | Clase de dato almacenado |',
+        '| Valor | Información guardada |',
+        '',
+        '#### Reglas para nombrar variables',
+        'Son adecuados nombres como `edad`, `promedio`, `total_ventas` y `nota_final`, porque describen el dato almacenado. No son adecuados `1edad`, `total ventas` o `@numero`, porque incumplen reglas de identificación.',
+        '',
+        '#### Declaración y asignación',
+        'En pseudocódigo se puede declarar una variable indicando su nombre y tipo:',
+        '',
+        '```text',
+        'Definir edad Como Entero',
+        'Definir sueldo Como Real',
+        'Definir nombre Como Cadena',
+        '```',
+        '',
+        'Asignar un valor significa almacenar información en la variable:',
+        '',
+        '```text',
+        'edad <- 20',
+        'sueldo <- 1500.50',
+        'nombre <- "Carlos"',
+        '```',
+        '',
+        '### 6. Constantes',
+        '#### Concepto',
+        'Una constante es un valor que no cambia durante la ejecución del programa. Se usa cuando un dato debe permanecer fijo en todo el algoritmo.',
+        '',
+        '#### Ejemplo de aplicación',
+        '```text',
+        'PI <- 3.1416',
+        '```',
+        '',
+        '### Relación entre algoritmo, datos y variables',
+        '```text',
+        'Problema',
+        '   |',
+        'Algoritmo',
+        '   |',
+        'Variables + Datos',
+        '   |',
+        'Procesamiento',
+        '   |',
+        'Resultado',
+        '```',
+        '',
+        '### Ejemplo completo',
+        '#### Problema',
+        'Calcular el promedio de tres notas.',
+        '',
+        '#### Pseudocódigo',
+        '```text',
+        'Inicio',
+        '   Definir n1, n2, n3, promedio Como Real',
+        '',
+        '   Leer n1',
+        '   Leer n2',
+        '   Leer n3',
+        '',
+        '   promedio <- (n1 + n2 + n3) / 3',
+        '',
+        '   Escribir promedio',
+        'Fin',
+        '```',
+        '',
+        '### Idea central',
+        'Programar no empieza escribiendo instrucciones en Python. Empieza comprendiendo el problema, diseñando un algoritmo, eligiendo datos y variables adecuados, y representando la solución antes de codificarla.'
+    ) -join "`n"
 }
 
 function Get-SessionTheoryMarkdown {
@@ -483,16 +790,32 @@ function Get-SessionTheoryMarkdown {
         $theoryLines += @(
             '',
             ('### {0}. {1}' -f ($i + 1), (Get-Culture).TextInfo.ToTitleCase($concept)),
-            ('#### Definición'),
-            (Get-ConceptDefinition -Concept $concept),
+            ('#### Concepto'),
+            (Convert-InitialToUpper (Get-ConceptDefinition -Concept $concept)),
             '',
-            ('#### Tipos principales'),
-            (Get-ConceptTaxonomy -Concept $concept),
+            ('#### Elementos o clasificación'),
+            (Convert-InitialToUpper (Get-ConceptTaxonomy -Concept $concept)),
             '',
-            ('#### Ejemplo'),
-            (Get-ConceptExample -Concept $concept)
+            ('#### Criterio de uso'),
+            (Get-ConceptUseRule -Concept $concept),
+            '',
+            ('#### Ejemplo de aplicación'),
+            (Convert-InitialToUpper (Get-ConceptExample -Concept $concept))
         )
     }
+
+    $theoryLines += @(
+        '',
+        '### Síntesis de la sesión',
+        'Para resolver ejercicios, no basta con escribir instrucciones en Python. Es necesario reconocer los datos, nombrarlos correctamente, elegir operaciones o estructuras de control apropiadas y comprobar el resultado con casos de prueba.',
+        '',
+        '| Aspecto | Pregunta guía |',
+        '|---|---|',
+        '| Entrada | ¿Qué datos necesita recibir el programa? |',
+        '| Proceso | ¿Qué cálculos, decisiones o repeticiones transforman los datos? |',
+        '| Salida | ¿Qué resultado debe mostrarse y con qué formato? |',
+        '| Prueba | ¿Con qué casos se demuestra que la solución funciona? |'
+    )
 
     return $theoryLines -join "`n"
 }
@@ -504,7 +827,7 @@ function Get-PracticeActivities {
         1 {
             return @(
                 @{
-                    Title = '## Ejercicio 2'
+                    Title = '### Ejercicio 2'
                     Text = 'Solicita nombre, ciclo y promedio de un estudiante. Luego muestra un resumen e indica si su promedio está por encima de 14.'
                     Guidance = @(
                         'Antes de programar:',
@@ -515,7 +838,7 @@ function Get-PracticeActivities {
                     Code = "nombre = input('Nombre: ')`nciclo = input('Ciclo: ')`npromedio = float(input('Promedio: '))`n`nprint('--- Resumen del estudiante ---')`nprint('Nombre:', nombre)`nprint('Ciclo:', ciclo)`nprint('Promedio:', promedio)`nprint('¿Supera 14?:', promedio > 14)"
                 },
                 @{
-                    Title = '## Ejercicio 3'
+                    Title = '### Ejercicio 3'
                     Text = 'Lee el nombre de una mascota, su edad y su peso. Luego muestra una ficha ordenada con esos datos.'
                     Guidance = @(
                         'Antes de programar:',
@@ -530,7 +853,7 @@ function Get-PracticeActivities {
         2 {
             return @(
                 @{
-                    Title = '## Ejercicio 2'
+                    Title = '### Ejercicio 2'
                     Text = 'Solicita cuatro notas, calcula el promedio y muestra también la nota mayor ingresada.'
                     Guidance = @(
                         'Antes de programar:',
@@ -541,7 +864,7 @@ function Get-PracticeActivities {
                     Code = "n1 = float(input('Nota 1: '))`nn2 = float(input('Nota 2: '))`nn3 = float(input('Nota 3: '))`nn4 = float(input('Nota 4: '))`n`npromedio = (n1 + n2 + n3 + n4) / 4`nmayor = max(n1, n2, n3, n4)`n`nprint('Promedio:', round(promedio, 2))`nprint('Nota mayor:', mayor)"
                 },
                 @{
-                    Title = '## Ejercicio 3'
+                    Title = '### Ejercicio 3'
                     Text = 'Pide el precio de un producto y el porcentaje de descuento. Luego calcula el precio final y muestra cuánto se ahorró el cliente.'
                     Guidance = @(
                         'Antes de programar:',
@@ -556,7 +879,7 @@ function Get-PracticeActivities {
         3 {
             return @(
                 @{
-                    Title = '## Ejercicio 2'
+                    Title = '### Ejercicio 2'
                     Text = 'Solicita la edad y la estatura de una persona. Indica si puede ingresar a un juego que exige ser mayor o medir más de 1.60 m.'
                     Guidance = @(
                         'Antes de programar:',
@@ -567,7 +890,7 @@ function Get-PracticeActivities {
                     Code = "edad = int(input('Edad: '))`nestatura = float(input('Estatura: '))`npuede_ingresar = edad >= 18 or estatura > 1.60`n`nprint('¿Puede ingresar?:', puede_ingresar)"
                 },
                 @{
-                    Title = '## Ejercicio 3'
+                    Title = '### Ejercicio 3'
                     Text = 'Pide el promedio final y la asistencia de un estudiante. Determina si aprueba solo si el promedio es al menos 11 y la asistencia supera 70%.'
                     Guidance = @(
                         'Antes de programar:',
@@ -582,7 +905,7 @@ function Get-PracticeActivities {
         4 {
             return @(
                 @{
-                    Title = '## Ejercicio 2'
+                    Title = '### Ejercicio 2'
                     Text = 'Solicita la edad de una persona y clasifícala como niño, adolescente, adulto o adulto mayor.'
                     Guidance = @(
                         'Antes de programar:',
@@ -593,7 +916,7 @@ function Get-PracticeActivities {
                     Code = "edad = int(input('Edad: '))`n`nif edad < 12:`n    etapa = 'Niño'`nelif edad < 18:`n    etapa = 'Adolescente'`nelif edad < 60:`n    etapa = 'Adulto'`nelse:`n    etapa = 'Adulto mayor'`n`nprint('Etapa:', etapa)"
                 },
                 @{
-                    Title = '## Ejercicio 3'
+                    Title = '### Ejercicio 3'
                     Text = 'Lee tres números y muestra cuál es el mayor. Si alguno es igual a otro, indícalo claramente.'
                     Guidance = @(
                         'Antes de programar:',
@@ -608,7 +931,7 @@ function Get-PracticeActivities {
         6 {
             return @(
                 @{
-                    Title = '## Ejercicio 2'
+                    Title = '### Ejercicio 2'
                     Text = 'Solicita 5 edades y muestra cuántas corresponden a personas mayores de edad.'
                     Guidance = @(
                         'Antes de programar:',
@@ -619,7 +942,7 @@ function Get-PracticeActivities {
                     Code = "mayores = 0`nfor i in range(5):`n    edad = int(input(f'Edad {i + 1}: '))`n    if edad >= 18:`n        mayores += 1`n`nprint('Mayores de edad:', mayores)"
                 },
                 @{
-                    Title = '## Ejercicio 3'
+                    Title = '### Ejercicio 3'
                     Text = 'Solicita 4 precios y calcula el total acumulado y el promedio de compra.'
                     Guidance = @(
                         'Antes de programar:',
@@ -634,7 +957,7 @@ function Get-PracticeActivities {
         7 {
             return @(
                 @{
-                    Title = '## Ejercicio 2'
+                    Title = '### Ejercicio 2'
                     Text = 'Solicita números hasta que el usuario ingrese -1. Luego muestra la suma total de los valores ingresados.'
                     Guidance = @(
                         'Antes de programar:',
@@ -645,7 +968,7 @@ function Get-PracticeActivities {
                     Code = "total = 0`nnumero = int(input('Número (-1 para salir): '))`n`nwhile numero != -1:`n    total += numero`n    numero = int(input('Número (-1 para salir): '))`n`nprint('Total:', total)"
                 },
                 @{
-                    Title = '## Ejercicio 3'
+                    Title = '### Ejercicio 3'
                     Text = 'Pide una contraseña hasta que tenga al menos 8 caracteres. Luego muestra un mensaje de acceso permitido.'
                     Guidance = @(
                         'Antes de programar:',
@@ -660,7 +983,7 @@ function Get-PracticeActivities {
         8 {
             return @(
                 @{
-                    Title = '## Ejercicio 2'
+                    Title = '### Ejercicio 2'
                     Text = 'Dada una lista de cursos, cuenta cuántos tienen más de 6 letras y muéstralos en mayúscula.'
                     Guidance = @(
                         'Antes de programar:',
@@ -671,7 +994,7 @@ function Get-PracticeActivities {
                     Code = "cursos = ['calculo', 'fisica', 'programacion', 'redes']`ncontador = 0`n`nfor curso in cursos:`n    if len(curso) > 6:`n        contador += 1`n        print(curso.upper())`n`nprint('Cantidad de cursos con más de 6 letras:', contador)"
                 },
                 @{
-                    Title = '## Ejercicio 3'
+                    Title = '### Ejercicio 3'
                     Text = 'Recorre una cadena ingresada por teclado y cuenta cuántas vocales contiene.'
                     Guidance = @(
                         'Antes de programar:',
@@ -686,7 +1009,7 @@ function Get-PracticeActivities {
         9 {
             return @(
                 @{
-                    Title = '## Ejercicio 2'
+                    Title = '### Ejercicio 2'
                     Text = 'Dada una lista de enteros, busca un valor ingresado por el usuario y muestra si fue encontrado.'
                     Guidance = @(
                         'Antes de programar:',
@@ -697,7 +1020,7 @@ function Get-PracticeActivities {
                     Code = "datos = [4, 9, 2, 7, 5]`nbuscado = int(input('Valor a buscar: '))`nencontrado = False`n`nfor numero in datos:`n    if numero == buscado:`n        encontrado = True`n        break`n`nprint('Encontrado:', encontrado)"
                 },
                 @{
-                    Title = '## Ejercicio 3'
+                    Title = '### Ejercicio 3'
                     Text = 'Ordena una lista de 4 números de menor a mayor sin usar sort().' 
                     Guidance = @(
                         'Antes de programar:',
@@ -712,7 +1035,7 @@ function Get-PracticeActivities {
         10 {
             return @(
                 @{
-                    Title = '## Ejercicio 2'
+                    Title = '### Ejercicio 2'
                     Text = 'Calcula la suma de cada fila de una matriz de 3x3 y muestra el resultado por fila.'
                     Guidance = @(
                         'Antes de programar:',
@@ -723,7 +1046,7 @@ function Get-PracticeActivities {
                     Code = "matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]`n`nfor fila in range(len(matriz)):`n    total = 0`n    for columna in range(len(matriz[fila])):`n        total += matriz[fila][columna]`n    print('Fila', fila + 1, total)"
                 },
                 @{
-                    Title = '## Ejercicio 3'
+                    Title = '### Ejercicio 3'
                     Text = 'Dada una tabla de notas, calcula el promedio de cada estudiante.'
                     Guidance = @(
                         'Antes de programar:',
@@ -738,7 +1061,7 @@ function Get-PracticeActivities {
         11 {
             return @(
                 @{
-                    Title = '## Ejercicio 2'
+                    Title = '### Ejercicio 2'
                     Text = 'Crea un diccionario con tres estudiantes y sus promedios. Luego consulta uno por nombre.'
                     Guidance = @(
                         'Antes de programar:',
@@ -749,7 +1072,7 @@ function Get-PracticeActivities {
                     Code = "promedios = {'Ana': 16, 'Luis': 14, 'Marta': 18}`nnombre = input('Nombre a consultar: ')`n`nif nombre in promedios:`n    print('Promedio:', promedios[nombre])`nelse:`n    print('Estudiante no encontrado')"
                 },
                 @{
-                    Title = '## Ejercicio 3'
+                    Title = '### Ejercicio 3'
                     Text = 'Construye un diccionario de productos y actualiza el precio de uno de ellos.'
                     Guidance = @(
                         'Antes de programar:',
@@ -764,7 +1087,7 @@ function Get-PracticeActivities {
         13 {
             return @(
                 @{
-                    Title = '## Ejercicio 2'
+                    Title = '### Ejercicio 2'
                     Text = 'Escribe una función que reciba la base y la altura de un triángulo y retorne su área.'
                     Guidance = @(
                         'Antes de programar:',
@@ -775,7 +1098,7 @@ function Get-PracticeActivities {
                     Code = "def area_triangulo(base, altura):`n    return (base * altura) / 2`n`nprint(area_triangulo(10, 4))"
                 },
                 @{
-                    Title = '## Ejercicio 3'
+                    Title = '### Ejercicio 3'
                     Text = 'Escribe una función que reciba un número y retorne True si es par o False si es impar.'
                     Guidance = @(
                         'Antes de programar:',
@@ -790,7 +1113,7 @@ function Get-PracticeActivities {
         14 {
             return @(
                 @{
-                    Title = '## Ejercicio 2'
+                    Title = '### Ejercicio 2'
                     Text = 'Amplía el menú para permitir eliminar un nombre registrado de la lista.'
                     Guidance = @(
                         'Antes de programar:',
@@ -801,7 +1124,7 @@ function Get-PracticeActivities {
                     Code = "def mostrar_menu():`n    print('1. Agregar nombre')`n    print('2. Mostrar nombres')`n    print('3. Eliminar nombre')`n    print('4. Salir')`n`nnombres = []`nopcion = ''`n`nwhile opcion != '4':`n    mostrar_menu()`n    opcion = input('Opción: ')`n    if opcion == '1':`n        nombres.append(input('Nombre: '))`n    elif opcion == '2':`n        print(nombres)`n    elif opcion == '3':`n        nombre = input('Nombre a eliminar: ')`n        if nombre in nombres:`n            nombres.remove(nombre)`n            print('Nombre eliminado')`n        else:`n            print('Nombre no encontrado')"
                 },
                 @{
-                    Title = '## Ejercicio 3'
+                    Title = '### Ejercicio 3'
                     Text = 'Construye un menú para registrar cursos y consultar si un curso ya fue ingresado.'
                     Guidance = @(
                         'Antes de programar:',
@@ -816,7 +1139,7 @@ function Get-PracticeActivities {
         15 {
             return @(
                 @{
-                    Title = '## Ejercicio 2'
+                    Title = '### Ejercicio 2'
                     Text = 'Guarda tres nombres de estudiantes en un archivo y luego léelos para mostrarlos numerados.'
                     Guidance = @(
                         'Antes de programar:',
@@ -827,7 +1150,7 @@ function Get-PracticeActivities {
                     Code = "with open('estudiantes.txt', 'w', encoding='utf-8') as archivo:`n    archivo.write('Ana`n')`n    archivo.write('Luis`n')`n    archivo.write('Marta`n')`n`nwith open('estudiantes.txt', 'r', encoding='utf-8') as archivo:`n    for indice, linea in enumerate(archivo, start=1):`n        print(indice, linea.strip())"
                 },
                 @{
-                    Title = '## Ejercicio 3'
+                    Title = '### Ejercicio 3'
                     Text = 'Registra productos con su precio en un archivo de texto y luego recupéralos para mostrarlos en pantalla.'
                     Guidance = @(
                         'Antes de programar:',
@@ -842,7 +1165,7 @@ function Get-PracticeActivities {
         default {
             return @(
                 @{
-                    Title = '## Ejercicio 2'
+                    Title = '### Ejercicio 2'
                     Text = 'Resuelve un problema guiado adicional aplicando la técnica principal de la sesión.'
                     Guidance = @(
                         'Antes de programar:',
@@ -853,7 +1176,7 @@ function Get-PracticeActivities {
                     Code = "# Resuelve aquí el ejercicio 2"
                 },
                 @{
-                    Title = '## Ejercicio 3'
+                    Title = '### Ejercicio 3'
                     Text = 'Resuelve un segundo problema guiado para reforzar la misma técnica en otro contexto.'
                     Guidance = @(
                         'Antes de programar:',
@@ -938,7 +1261,7 @@ function Get-IntroExercise {
     switch ($SessionNumber) {
         1 {
             return @{
-                Title = '## Ejercicio 1'
+                Title = '### Ejercicio 1'
                 Text = 'Mostrar distintos tipos de salida.'
                 Guidance = Get-ResolutionBlock `
                     -Understanding 'queremos comprobar que Python puede mostrar diferentes clases de datos, no solo texto.' `
@@ -1001,7 +1324,12 @@ function New-SessionNotebook {
     $checklistMd = ($Checklist | ForEach-Object { "- $_" }) -join "`n"
     $autonomousPracticeMd = ((@('## Aprendizaje autónomo', '') + ($autonomousPractice | ForEach-Object { "- $_" }))) -join "`n"
     $theoryMd = if ([string]::IsNullOrWhiteSpace($TheoryMarkdown)) {
-        Get-SessionTheoryMarkdown -Objective $Objective -Contents $Contents
+        if ($sessionNumber -eq 1) {
+            Get-SessionOneTheoryMarkdown
+        }
+        else {
+            Get-SessionTheoryMarkdown -Objective $Objective -Contents $Contents
+        }
     }
     else {
         $TheoryMarkdown
@@ -1030,7 +1358,7 @@ function New-SessionNotebook {
         '```'
     ) -join "`n"
     $miniLabMd = @(
-        "## $($miniLab.Title)",
+        "### $($miniLab.Title)",
         '',
         $miniLab.Text
     ) -join "`n"
@@ -1039,9 +1367,9 @@ function New-SessionNotebook {
         '',
         'La sesión se desarrolla con exploración inicial, ejercicios guiados, ejercicios de aplicación y una tarea tipo competencia.'
     ) -join "`n"
-    $guidedTitle = '## Ejercicio 1'
+    $guidedTitle = '### Ejercicio 1'
     if ($null -ne $introExercise) {
-        $guidedTitle = '## Ejercicio 2'
+        $guidedTitle = '### Ejercicio 2'
     }
     $guidedMd = @(
         $guidedTitle,
@@ -1071,7 +1399,7 @@ function New-SessionNotebook {
             'caso excepcional: revisa qué ocurre con una entrada vacía, inválida o fuera de rango.'
         ))) -join "`n"
     $challengeMd = @(
-        '## Tarea tipo competencia',
+        '### Tarea tipo competencia',
         '',
         $ChallengeText,
         '',
@@ -1120,11 +1448,11 @@ $contentsMd"),
 
     foreach ($practice in $practiceActivities) {
         if ($null -ne $introExercise) {
-            if ($practice.Title -eq '## Ejercicio 2') {
-                $practiceTitle = '## Ejercicio 3'
+            if ($practice.Title -eq '### Ejercicio 2') {
+                $practiceTitle = '### Ejercicio 3'
             }
-            elseif ($practice.Title -eq '## Ejercicio 3') {
-                $practiceTitle = '## Ejercicio 4'
+            elseif ($practice.Title -eq '### Ejercicio 3') {
+                $practiceTitle = '### Ejercicio 4'
             }
             else {
                 $practiceTitle = $practice.Title
@@ -1168,7 +1496,69 @@ function New-EvaluationNotebook {
         [array]$Problems
     )
 
+    $sessionNumber = [int](([regex]::Match($Filename, 'Sesion_(\d+)_')).Groups[1].Value)
     $criteriaMd = ($Criteria | ForEach-Object { "- $_" }) -join "`n"
+    $theoryMd = switch ($sessionNumber) {
+        5 {
+            @(
+                '## Base conceptual de la sesión',
+                '',
+                'Esta evaluación integra la resolución de problemas secuenciales y condicionales. El punto de partida sigue siendo el algoritmo: comprender el enunciado, reconocer los datos de entrada, ordenar el proceso y definir una salida verificable.',
+                '',
+                '### Conceptos que debes activar',
+                '- **Entrada, proceso y salida:** todo problema debe separarse en datos recibidos, operaciones realizadas y resultado mostrado.',
+                '- **Variables y tipos de datos:** cada dato debe tener un nombre claro y un tipo adecuado para calcular, comparar o mostrar.',
+                '- **Operadores y expresiones:** los cálculos y comparaciones deben respetar precedencia, paréntesis y significado lógico.',
+                '- **Decisiones:** las estructuras `if`, `if-else` e `if-elif-else` permiten seleccionar caminos según condiciones.',
+                '- **Validación:** antes de clasificar o calcular, conviene controlar rangos, datos imposibles y casos límite.',
+                '',
+                '### Criterio de resolución',
+                'Antes de escribir código, redacta el algoritmo en lenguaje natural o pseudocódigo. Luego implementa la solución y pruébala con un caso normal, un caso límite y un caso inválido.'
+            ) -join "`n"
+        }
+        12 {
+            @(
+                '## Base conceptual de la sesión',
+                '',
+                'Esta evaluación integra ciclos y estructuras de datos. La lógica central consiste en procesar varios datos de manera ordenada, conservarlos cuando sea necesario y obtener resultados mediante recorridos, conteos, acumulaciones, búsquedas o consultas.',
+                '',
+                '### Conceptos que debes activar',
+                '- **Repetición definida y condicionada:** `for` se usa cuando se conoce el número de repeticiones; `while` cuando la parada depende de una condición.',
+                '- **Contadores y acumuladores:** permiten contar eventos y construir resultados progresivos dentro de un ciclo.',
+                '- **Listas y cadenas:** almacenan colecciones que pueden recorrerse, filtrarse, transformarse o analizarse.',
+                '- **Búsqueda y ordenación básica:** permiten localizar elementos y reorganizar datos mediante comparaciones.',
+                '- **Matrices y diccionarios:** organizan información tabular o clave-valor para facilitar consultas y actualizaciones.',
+                '',
+                '### Criterio de resolución',
+                'Elige la estructura de datos antes de programar. Después define el recorrido, la condición de procesamiento, la salida y los casos de prueba.'
+            ) -join "`n"
+        }
+        16 {
+            @(
+                '## Base conceptual de la sesión',
+                '',
+                'La evaluación final exige integrar el curso completo: análisis del problema, estructuras de control, colecciones, funciones y persistencia básica. La solución debe ser correcta, clara y organizada en partes que puedan probarse.',
+                '',
+                '### Conceptos que debes activar',
+                '- **Modularización:** divide el problema en funciones pequeñas con una responsabilidad definida.',
+                '- **Parámetros y retorno:** las funciones deben recibir datos, procesarlos y devolver resultados cuando corresponda.',
+                '- **Colecciones:** listas, matrices o diccionarios deben elegirse según la forma de organizar y consultar la información.',
+                '- **Menús y flujo del programa:** el programa principal coordina opciones, llamadas a funciones, validaciones y salidas.',
+                '- **Persistencia:** los archivos de texto permiten guardar y recuperar datos después de cerrar el programa.',
+                '',
+                '### Criterio de resolución',
+                'Diseña primero la arquitectura general: funciones necesarias, datos que administran, formato de archivo y casos de prueba. Luego implementa por partes y verifica cada operación antes de integrar todo.'
+            ) -join "`n"
+        }
+        default {
+            @(
+                '## Base conceptual de la sesión',
+                '',
+                'Esta sesión evalúa la aplicación integrada de los conceptos trabajados. Analiza entradas, procesos, salidas y pruebas antes de escribir código.'
+            ) -join "`n"
+        }
+    }
+
     $cells = @(
         (New-ColabCell $Filename),
         (New-MarkdownCell "# $Title
@@ -1178,6 +1568,7 @@ $Purpose
 
 ## Criterios de evaluación
 $criteriaMd"),
+        (New-MarkdownCell $theoryMd),
         (New-MarkdownCell "## Indicaciones
 
 - Lee cada problema completo antes de escribir código.
@@ -1203,8 +1594,6 @@ Antes de entregar, revisa que tu solución funcione con varios casos de prueba y
 
     return New-Notebook $cells
 }
-
-Get-ChildItem -Path $root -Filter 'Sesion_*.ipynb' | Remove-Item -Force
 
 $guide = New-Notebook @(
     (New-ColabCell 'Guia_algoritmo_a_codigo.ipynb'),
