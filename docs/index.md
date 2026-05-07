@@ -1,4 +1,4 @@
-# Libro Digital de Programación
+# Libro Digital de Fundamentos de Programación - UPeU
 
 Este repositorio publica el curso como un libro digital orientado a competencias. Cada unidad funciona como un capítulo y cada sesión integra base conceptual, actividad práctica, aprendizaje autónomo y evaluación de cierre.
 
@@ -12,7 +12,7 @@ Este repositorio publica el curso como un libro digital orientado a competencias
 
 ## Importante
 
-Este sitio está pensado como libro digital. El contenido se muestra como páginas estáticas y no ejecuta código en el navegador.
+Este sitio está pensado como libro digital. El contenido se muestra como páginas estáticas; para ejecutar el código, abra los cuadernos en Google Colab o en Jupyter local.
 
 ## Estructura del libro
 
@@ -30,7 +30,7 @@ Este sitio está pensado como libro digital. El contenido se muestra como págin
 - [Sesión 10: Matrices y organización tabular de información](S10_Matrices.ipynb)
 - [Sesión 11: Diccionarios, organización clave-valor y consulta de datos](S11_Diccionarios.ipynb)
 - [Sesión 12: Evaluación 2](S12_Evaluacion_2.ipynb)
-- 3:Rresolución de problemas estructurados y persistencia básica.
+- 3: Resolución de problemas estructurados y persistencia básica.
 - [Sesión 13: Funciones, parámetros, retorno y modularización](S13_Funciones.ipynb)
 - [Sesión 14: Integración de funciones, colecciones y menús](S14_Integracion_Menus.ipynb)
 - [Sesión 15: Persistencia básica de información](S15_Archivos.ipynb)
