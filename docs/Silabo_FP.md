@@ -196,7 +196,7 @@ Programa que capture y muestre datos básicos de forma estructurada.
 
 ### Sesión 2: Expresiones y secuencia en la solución de problemas
 
-**Cuaderno de trabajo:** `S02_Operadores_Secuencia.ipynb`
+**Cuaderno de trabajo:** `S02_Operadores_Algoritmos_Secuenciales.ipynb`
 
 #### Objetivo
 

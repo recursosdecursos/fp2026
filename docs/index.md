@@ -54,7 +54,7 @@ flowchart LR
 ### Unidad 1: Resolución de problemas básicos
 
 - [Sesión 1: Algoritmos, datos y variables](S01_Algoritmos_Datos.ipynb)
-- [Sesión 2: Operadores y algoritmos secuenciales](S02_Operadores_Secuencia.ipynb)
+- [Sesión 2: Operadores y algoritmos secuenciales](S02_Operadores_Algoritmos_Secuenciales.ipynb)
 - [Sesión 3: Decisiones simples y compuestas](S03_Decisiones.ipynb)
 - [Sesión 4: Decisiones múltiples, anidadas y casos límite](S04_Decisiones_Multiples.ipynb)
 - [Sesión 5: Evaluación 1](S05_Evaluacion_1.ipynb)
