@@ -1,7 +1,7 @@
 ﻿site_name: Fundamentos de Programación - Libro digital
 site_description: Cuadernos de programación convertidos a libro digital estático con MkDocs.
 site_author: UPeU
-copyright: Angel Sullon @asullom - UPeU v2026
+copyright: Angel Sullon @asullom - UPeU 2026
 
 theme:
   name: material
