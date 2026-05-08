@@ -162,13 +162,13 @@ Compendio de ejercicios resueltos sobre estructuras secuenciales y condicionales
 
 ---
 
-### Sesión 1: Pensamiento algorítmico: algoritmos, variables y tipos de datos
+### Sesión 1: Pensamiento algorítmico, datos y variables
 
 **Cuaderno de trabajo:** `S01_Algoritmos_Datos.ipynb`
 
 #### Objetivo
 
-Comprender qué es un algoritmo y representar información usando variables y tipos de datos básicos en un lenguaje de programación.
+Comprender qué es un algoritmo, organizar una solución mediante entrada, proceso y salida, e identificar datos para almacenarlos en variables según su tipo.
 
 #### Secuencia didáctica sugerida
 
@@ -574,7 +574,7 @@ Duración: 16 sesiones teórico-prácticas
 
 Unidad 1 - U1: Estructuras secuenciales y condicionales
 Producto U1: Compendio parcial de ejercicios sobre estructuras secuenciales y condicionales
-s1: Algoritmos, variables y tipos de datos (algoritmos, entrada-proceso-salida, variables, tipos de datos)
+s1: Pensamiento algorítmico, datos y variables (algoritmos, entrada-proceso-salida, variables, tipos de datos)
 s2: Algoritmos secuenciales y operadores (algoritmo secuencial, operadores aritméticos, relacionales, lógicos)
 s3: Decisiones simples y compuestas (decisiones simples, decisiones compuestas, validación básica)
 s4: Decisiones múltiples y lógica anidada (decisiones anidadas, decisiones múltiples, clasificación de datos, casos límite)

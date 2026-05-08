@@ -96,7 +96,7 @@ Puedes probar el libro localmente con cualquiera de estas opciones:
 
 ### Unidad 1: Resolución de problemas básicos
 
-- S01: Algoritmos, variables y tipos de datos.
+- S01: Pensamiento algorítmico, datos y variables.
 - S02: Operadores, expresiones y secuencia.
 - S03: Decisiones simples y compuestas.
 - S04: Decisiones múltiples, anidadas y casos límite.

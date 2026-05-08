@@ -17,7 +17,7 @@ Este sitio está pensado como libro digital. El contenido se muestra como págin
 ## Estructura del libro
 
 - 1: Resolución de problemas básicos.
-- [Sesión 1: Pensamiento algorítmico, variables y tipos de datos](S01_Algoritmos_Datos.ipynb)
+- [Sesión 1: Pensamiento algorítmico, datos y variables](S01_Algoritmos_Datos.ipynb)
 - [Sesión 2: Operadores, expresiones y secuencia de instrucciones](S02_Operadores_Secuencia.ipynb)
 - [Sesión 3: Decisiones simples y compuestas](S03_Decisiones.ipynb)
 - [Sesión 4: Decisiones múltiples, anidadas y casos límite](S04_Decisiones_Multiples.ipynb)
