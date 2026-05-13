@@ -1,3 +1,5 @@
+```text
+
 Nombre del curso: Programación Orientada a Objetos (POO)
 Curso orientado a la construcción progresiva de un sistema mediante modelado orientado a objetos.
 Producto del curso: Sistema orientado a objetos con interfaz gráfica, persistencia en base de datos ligera y organización modular para resolver un problema aplicado.
@@ -29,3 +31,5 @@ s13: excepciones, validación robusta, control de errores
 s14: organización en módulos, capas o paquetes, revisión de diseño
 s15: sustentación del proyecto de fin de curso
 s16: evaluación final
+
+```

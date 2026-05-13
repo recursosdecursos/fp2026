@@ -139,6 +139,29 @@ La evaluación será continua, práctica y formativa. En programación inicial, 
 - Evaluaciones prácticas por unidad.
 - Compendio de ejercicios resueltos por unidad.
 
+## Roadmap del curso
+
+```mermaid
+flowchart TD
+   A[S01<br>Algoritmos, datos y variables] --> B[S02<br>Operadores y algoritmos secuenciales]
+   B --> C[S03<br>Decisiones]
+   C --> D[S04<br>Decisiones múltiples]
+   D --> E[S05<br>Evaluación 1]
+
+   E --> F[S06<br>For, contadores y acumuladores]
+   F --> G[S07<br>While y centinelas]
+   G --> H[S08<br>Listas y cadenas]
+   H --> I[S09<br>Búsqueda y ordenación]
+   I --> J[S10<br>Matrices]
+   J --> K[S11<br>Diccionarios]
+   K --> L[S12<br>Evaluación 2]
+
+   L --> M[S13<br>Funciones]
+   M --> N[S14<br>Integración y menús]
+   N --> O[S15<br>Archivos]
+   O --> P[S16<br>Evaluación final]
+```
+
 ---
 
 ## Unidad 1: Estructuras secuenciales y condicionales
@@ -181,12 +204,15 @@ Comprender qué es un algoritmo, organizar una solución mediante entrada, proce
 #### Contenidos
 
 - Concepto de algoritmo.
-- Arquitectura de resolución de problemas.
+- Estructura entrada, proceso y salida.
+- Representación de algoritmos en lenguaje natural, pseudocódigo y diagrama de flujo.
 - Entorno de trabajo según el lenguaje y la herramienta seleccionada.
 - Salidas con `print()`.
 - Entradas con `input()`.
 - Tipos de datos: `str`, `int`, `float`, `bool`.
 - Variables y buenas prácticas de nombrado.
+- Constantes.
+- Metodología para resolver problemas y casos de prueba.
 
 #### Producto esperado
 
@@ -212,11 +238,14 @@ Resolver problemas secuenciales utilizando operadores y conversiones de datos en
 
 #### Contenidos
 
+- Operadores de asignación.
 - Operadores aritméticos.
 - Operadores relacionales.
 - Operadores lógicos.
+- Expresiones y precedencia de operadores.
 - Conversión con `int()` y `float()`.
 - Estructura secuencial.
+- Organización en entrada, proceso y salida.
 - Verificación de resultados.
 
 #### Producto esperado
@@ -240,6 +269,7 @@ Construir programas que tomen decisiones usando estructuras `if` y `if-else`.
 - `if-else`.
 - Condiciones compuestas con `and` y `or`.
 - Validación básica de datos.
+- Casos de prueba.
 
 #### Producto esperado
 
@@ -253,19 +283,20 @@ Programas que responden de manera diferente según las condiciones de entrada.
 
 #### Objetivo
 
-Resolver problemas con varios caminos lógicos usando estructuras `if-elif-else` y condicionales anidados.
+Resolver problemas con varios caminos lógicos usando estructuras `if-elif-else`, `match-case` y condicionales anidados.
 
 #### Contenidos
 
 - Condicionales anidados.
 - Condicionales múltiples con `if-elif-else`.
+- Selección de casos con `match-case`.
 - Priorización de condiciones.
 - Clasificación de datos.
 - Casos límite.
 
 #### Producto esperado
 
-Programas que clasifican y toman decisiones de acuerdo con varios criterios.
+Programas que clasifican y toman decisiones de acuerdo con varios criterios usando decisiones múltiples, `match-case` o lógica anidada.
 
 ---
 
@@ -275,15 +306,15 @@ Programas que clasifican y toman decisiones de acuerdo con varios criterios.
 
 #### Evidencia
 
-Programa individual que integre entrada de datos, procesamiento secuencial, validación y decisiones.
+Programa individual que integre variables, operadores, decisiones simples, múltiples o anidadas y selección con `match-case`, organizando la solución en entrada, proceso y salida.
 
 #### Criterios específicos
 
 - Analiza bien el problema.
 - Usa datos y operadores con corrección.
-- Implementa decisiones apropiadas.
+- Implementa decisiones simples, múltiples, anidadas o `match-case` según el problema.
 - Presenta resultados claros.
-- Realiza pruebas básicas antes de entregar.
+- Realiza pruebas con casos normales y límite antes de entregar.
 
 ---
 
@@ -322,8 +353,7 @@ Resolver problemas que requieren repetir una acción un número conocido de vece
 - Uso de `range()`.
 - Contadores.
 - Acumuladores.
-- Sumatorias y conteos condicionados.
-- Recorrido inicial de listas.
+- Sumatorias.
 
 #### Producto esperado
 
@@ -344,9 +374,8 @@ Resolver problemas en los que la repetición depende de una condición de parada
 - Bucle `while`.
 - Condición de parada.
 - Centinelas.
-- Validación repetida.
-- Acumulación con cantidad desconocida de datos.
-- Menús simples.
+- Validación iterativa.
+- Control de ingreso de datos.
 
 #### Producto esperado
 
@@ -369,7 +398,6 @@ Procesar conjuntos de datos usando listas y cadenas en problemas de recorrido y 
 - Recorrido de colecciones.
 - Conteos condicionados.
 - Transformación básica de texto.
-- Construcción de nuevas listas con `append()`.
 
 #### Producto esperado
 
@@ -388,10 +416,10 @@ Resolver problemas de localización y ordenamiento de datos usando técnicas bá
 #### Contenidos
 
 - Búsqueda secuencial.
-- Variable de control para encontrado/no encontrado.
-- Búsqueda con posición.
 - Comparación entre elementos.
+- Intercambio de valores.
 - Ordenación básica por intercambio.
+- Análisis del proceso de búsqueda u ordenación.
 
 #### Producto esperado
 
@@ -405,7 +433,7 @@ Programa que encuentre elementos y ordene listas con una estrategia elemental.
 
 #### Objetivo
 
-Representar y procesar datos organizados en filas y columnas.
+Representar y procesar datos organizados en filas y columnas, incluyendo operaciones matemáticas básicas con matrices.
 
 #### Contenidos
 
@@ -415,10 +443,15 @@ Representar y procesar datos organizados en filas y columnas.
 - Promedios y totales por fila.
 - Totales por columna.
 - Organización tabular de información.
+- Consulta y actualización de datos.
+- Transpuesta.
+- Producto por escalar.
+- Producto de matrices.
+- Inversa 2x2.
 
 #### Producto esperado
 
-Programa que recorra una matriz y obtenga resúmenes por filas o columnas.
+Programa que recorra una matriz y obtenga resúmenes por filas o columnas, o que aplique operaciones matriciales básicas.
 
 ---
 
@@ -434,10 +467,8 @@ Modelar información mediante pares clave-valor para registrar y consultar datos
 
 - Diccionarios.
 - Claves y valores.
+- Registro de datos.
 - Consulta y actualización de datos.
-- Recorrido de diccionarios.
-- Lista de diccionarios.
-- Selección de estructuras según el problema.
 
 #### Producto esperado
 
@@ -451,15 +482,16 @@ Programa que use diccionarios para guardar, consultar y actualizar información.
 
 #### Evidencia
 
-Programa aplicado que use datos de entrada, decisiones, bucles, listas, búsqueda, matrices o diccionarios según el problema.
+Programa aplicado que use ciclos y estructuras de datos de la unidad 2, integrando `for`, `while`, listas, cadenas, búsqueda, ordenación, matrices y diccionarios según el problema.
 
 #### Criterios específicos
 
 - Integra correctamente las estructuras estudiadas.
 - Organiza el código en bloques claros.
 - Procesa múltiples datos sin errores graves.
+- Resuelve correctamente recorridos, búsquedas, ordenación u operaciones con matrices cuando corresponda.
 - Presenta resultados comprensibles.
-- Demuestra pruebas mínimas del funcionamiento.
+- Demuestra pruebas con casos normales y límite.
 
 ---
 
@@ -493,13 +525,12 @@ Dividir un problema en partes reutilizables mediante funciones con parámetros y
 - `def`.
 - Parámetros.
 - `return`.
-- Funciones con listas.
-- Funciones con condicionales.
+- Modularización.
 - Reutilización de código.
 
 #### Producto esperado
 
-Programa organizado en funciones claras que resuelvan subproblemas concretos.
+Programa organizado en funciones claras que resuelvan subproblemas concretos y presenten resultados verificables.
 
 ---
 
@@ -513,16 +544,15 @@ Construir un programa que integre funciones, estructuras de datos y un menú sen
 
 #### Contenidos
 
-- Menús con `while`.
-- Funciones para registrar, consultar y mostrar datos.
-- Listas.
-- Diccionarios.
-- Lista de diccionarios.
+- Menús para organizar opciones del programa.
+- Integración de funciones con listas o diccionarios.
+- Registro, consulta, actualización y salida.
+- Coordinación del flujo del programa.
 - Pruebas de funcionamiento.
 
 #### Producto esperado
 
-Programa modular con menú, registro y consulta de información en memoria.
+Programa modular con menú que registre, consulte o actualice información en memoria.
 
 ---
 
@@ -537,11 +567,11 @@ Registrar y recuperar información simple usando archivos de texto.
 #### Contenidos
 
 - Concepto de persistencia.
-- Escritura de archivos con modo `w`.
-- Lectura de archivos con modo `r`.
-- Agregado de datos con modo `a`.
-- Procesamiento de líneas con `strip()` y `split()`.
-- Cálculo de totales a partir de datos guardados.
+- Archivos de texto.
+- Escritura.
+- Lectura.
+- Registro y recuperación de datos.
+- Procesamiento básico de información guardada.
 
 #### Producto esperado
 
@@ -555,13 +585,14 @@ Programa que escriba datos en un archivo y luego los lea para mostrarlos o proce
 
 #### Evidencia
 
-Entrega final del compendio de ejercicios resueltos y evaluación individual del dominio logrado en el curso.
+Evaluación práctica integradora con problemas que combinen funciones, menús, colecciones y persistencia básica, organizada en entrada, proceso y salida y acompañada por el compendio trabajado en el curso.
 
 #### Criterios específicos
 
-- Presenta un compendio final consistente, ordenado y funcional.
-- Corrige observaciones relevantes derivadas de las evaluaciones parciales.
-- Demuestra comprensión integral de los fundamentos de programación.
+- Integra funciones, menús, colecciones y archivos según el problema.
+- Organiza la solución en bloques claros y verificables.
+- Presenta resultados correctos, ordenados y comprensibles.
+- Demuestra comprensión integral de los fundamentos de programación mediante pruebas básicas.
 
 ---
 
@@ -574,28 +605,28 @@ Duración: 16 sesiones teórico-prácticas
 
 Unidad 1 - U1: Estructuras secuenciales y condicionales
 Producto U1: Compendio parcial de ejercicios sobre estructuras secuenciales y condicionales
-s1: Pensamiento algorítmico, datos y variables (algoritmos, entrada-proceso-salida, variables, tipos de datos)
-s2: Algoritmos secuenciales y operadores (algoritmo secuencial, operadores aritméticos, relacionales, lógicos)
-s3: Decisiones simples y compuestas (decisiones simples, decisiones compuestas, validación básica)
-s4: Decisiones múltiples y lógica anidada (decisiones anidadas, decisiones múltiples, clasificación de datos, casos límite)
-s5: Evaluación 1 (desempeño de la unidad 1)
+s1: Pensamiento algorítmico, datos y variables (algoritmos, representación, entrada-proceso-salida, variables, tipos de datos y constantes)
+s2: Algoritmos secuenciales y operadores (asignación, operadores aritméticos, relacionales y lógicos, expresiones y conversión)
+s3: Decisiones simples y compuestas (if, if-else, condiciones compuestas, validación y casos de prueba)
+s4: Decisiones múltiples y lógica anidada (if-elif-else, match-case, decisiones anidadas, clasificación y casos límite)
+s5: Evaluación 1 (variables, operadores, decisiones y match-case)
 
 Unidad 2 - U2: Estructuras repetitivas y procesamiento de datos
 Producto U2: Compendio parcial de ejercicios sobre estructuras repetitivas y procesamiento de datos
-s6: Repetición definida con for (for, range, contadores, acumuladores)
-s7: Repetición condicionada con while (while, condición de parada, centinelas, validación)
-s8: Listas y cadenas (listas, cadenas, recorridos, append, conteos y transformación de texto)
-s9: Búsqueda secuencial y ordenación básica (búsqueda, posición, intercambio y ordenación simple)
-s10: Matrices y organización tabular (filas, columnas, totales y promedios)
-s11: Diccionarios y organización clave-valor (claves, valores, consulta, actualización y lista de diccionarios)
-s12: Evaluación 2 (desempeño de la unidad 2)
+s6: Repetición definida con for (for, range, contadores, acumuladores y sumatorias)
+s7: Repetición condicionada con while (while, condición de parada, centinelas, validación y control de ingreso)
+s8: Listas y cadenas (listas, cadenas, recorridos, conteos y transformación de texto)
+s9: Búsqueda secuencial y ordenación básica (búsqueda, comparación, intercambio y análisis del proceso)
+s10: Matrices y organización tabular (filas, columnas, recorridos y operaciones matriciales básicas)
+s11: Diccionarios y organización clave-valor (claves, valores, registro, consulta y actualización)
+s12: Evaluación 2 (ciclos, listas, cadenas, búsqueda, ordenación, matrices y diccionarios)
 
 Unidad 3 - U3: Problemas estructurados y persistencia básica
 Producto U3: Compendio parcial de ejercicios sobre modularización, integración y persistencia básica
-s13: Funciones y modularización (funciones, parámetros, retorno y reutilización de código)
-s14: Integración de funciones, colecciones y menús (menús, listas, diccionarios y funciones)
-s15: Persistencia básica de información (archivos, escritura, lectura, agregado y procesamiento de registros)
-s16: Evaluación final del curso (entrega final, mejoras y dominio logrado)
+s13: Funciones y modularización (funciones, parámetros, return, modularización y reutilización)
+s14: Integración de funciones, colecciones y menús (menús, listas o diccionarios, flujo y opciones del programa)
+s15: Persistencia básica de información (archivos de texto, escritura, lectura, registro y recuperación)
+s16: Evaluación final del curso (integración de funciones, menús, colecciones y persistencia)
 ```
 
 ---

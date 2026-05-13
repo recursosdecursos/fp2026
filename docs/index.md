@@ -29,7 +29,7 @@ Durante el curso, el estudiante construirá un compendio de ejercicios resueltos
 ## Roadmap del curso
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[S01<br>Algoritmos, datos y variables] --> B[S02<br>Operadores y algoritmos secuenciales]
     B --> C[S03<br>Decisiones]
     C --> D[S04<br>Decisiones múltiples]
