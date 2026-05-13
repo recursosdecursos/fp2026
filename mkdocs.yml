@@ -53,7 +53,7 @@ nav:
   - Guía de apoyo: Guia_algoritmo_a_codigo.ipynb
   - 1. Resolución de problemas básicos:
       - 1 Algoritmos y datos: S01_Algoritmos_Datos.ipynb
-      - 2 Operadores y algoritmos secuenciales: S02_Operadores_Algoritmos_Secuenciales.ipynb
+      - 2 Operadores y Algo. secuencial: S02_Operadores_Algoritmos_Secuenciales.ipynb
       - 3 Decisiones: S03_Decisiones.ipynb
       - 4 Decisiones múltiples: S04_Decisiones_Multiples.ipynb
       - 5 Evaluación 1: S05_Evaluacion_1.ipynb

@@ -26,29 +26,6 @@ Durante el curso, el estudiante construirá un compendio de ejercicios resueltos
 | Problemas con varios datos | 6-12 | Repetición, listas, cadenas, búsqueda, ordenación, matrices y diccionarios. |
 | Problemas estructurados | 13-16 | Funciones, menús, integración de colecciones y persistencia en archivos. |
 
-## Roadmap del curso
-
-```mermaid
-flowchart TD
-    A[S01<br>Algoritmos, datos y variables] --> B[S02<br>Operadores y algoritmos secuenciales]
-    B --> C[S03<br>Decisiones]
-    C --> D[S04<br>Decisiones múltiples]
-    D --> E[S05<br>Evaluación 1]
-
-    E --> F[S06<br>For, contadores y acumuladores]
-    F --> G[S07<br>While y centinelas]
-    G --> H[S08<br>Listas y cadenas]
-    H --> I[S09<br>Búsqueda y ordenación]
-    I --> J[S10<br>Matrices]
-    J --> K[S11<br>Diccionarios]
-    K --> L[S12<br>Evaluación 2]
-
-    L --> M[S13<br>Funciones]
-    M --> N[S14<br>Integración y menús]
-    N --> O[S15<br>Archivos]
-    O --> P[S16<br>Evaluación final]
-```
-
 ## Sesiones del libro
 
 ### Unidad 1: Resolución de problemas básicos
