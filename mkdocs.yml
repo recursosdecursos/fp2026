@@ -50,8 +50,9 @@ nav:
   - Inicio: index.md
   - Sílabo: Silabo_FP.md
   - Plan POO: POO.md
+  - Taller POO 01: POOTaller01.md
   - Guía de apoyo: Guia_algoritmo_a_codigo.ipynb
-  - 1. Resolución de problemas básicos:
+  - 1. Resolución de problemas secuenciales y condicionales:
       - 1 Algoritmos y datos: S01_Algoritmos_Datos.ipynb
       - 2 Operadores y Algo. secuencial: S02_Operadores_Algoritmos_Secuenciales.ipynb
       - 3 Decisiones: S03_Decisiones.ipynb
