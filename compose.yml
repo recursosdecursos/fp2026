@@ -3,12 +3,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: mkdocs_linea_software
     working_dir: /docs
     volumes:
       - ./:/docs
     ports:
-      - "8000:8000"
+      - "8001:8000"
     environment:
       - WATCHFILES_FORCE_POLLING=true
     command: mkdocs serve -a 0.0.0.0:8000 --livereload --watch docs --dirtyreload

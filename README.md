@@ -19,7 +19,7 @@ docker compose up
 Luego abre en tu navegador:
 
 ```text
-http://127.0.0.1:8000/
+http://127.0.0.1:8001/
 ```
 
 Para detener el servidor, presiona `Ctrl+C` en la terminal.
@@ -46,7 +46,7 @@ mkdocs serve
 Después abre:
 
 ```text
-http://127.0.0.1:8000/
+http://127.0.0.1:8001/
 ```
 
 ### Generar el sitio estático
