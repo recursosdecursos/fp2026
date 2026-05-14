@@ -1,0 +1,4014 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Cuadernos de programación convertidos a libro digital estático con MkDocs.">
+      
+      
+        <meta name="author" content="UPeU">
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../S01_Algoritmos_Datos/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Sílabo - Fundamentos de Programación - Libro digital</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#silabo-del-curso-fundamentos-de-programacion" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Fundamentos de Programación - Libro digital" class="md-header__button md-logo" aria-label="Fundamentos de Programación - Libro digital" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Fundamentos de Programación - Libro digital
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Sílabo
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="amber"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Fundamentos de Programación - Libro digital" class="md-nav__button md-logo" aria-label="Fundamentos de Programación - Libro digital" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Fundamentos de Programación - Libro digital
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sílabo
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sílabo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-datos-generales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Datos generales
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-descripcion-del-curso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Descripción del curso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-proposito-formativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Propósito formativo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Propósito formativo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#producto-del-curso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto del curso
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-enfoque-pedagogico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Enfoque pedagógico
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-como-deberia-ser-una-sesion-de-clase-de-programacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Cómo debería ser una sesión de clase de programación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Cómo debería ser una sesión de clase de programación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-inicio-de-la-sesion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Inicio de la sesión
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-construccion-guiada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Construcción guiada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-practica-acompanada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Práctica acompañada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-reto-aplicado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Reto aplicado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-cierre-y-metacognicion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Cierre y metacognición
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56-estructura-sugerida-de-tiempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6 Estructura sugerida de tiempo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-evaluacion-del-aprendizaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Evaluación del aprendizaje
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Evaluación del aprendizaje">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criterios-generales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Criterios generales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evidencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidencias
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unidad-1-estructuras-secuenciales-y-condicionales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unidad 1: Estructuras secuenciales y condicionales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unidad 1: Estructuras secuenciales y condicionales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proposito-de-la-unidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propósito de la unidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#competencias-de-la-unidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Competencias de la unidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-de-unidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto de unidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-1-pensamiento-algoritmico-datos-y-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 1: Pensamiento algorítmico, datos y variables
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 1: Pensamiento algorítmico, datos y variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secuencia-didactica-sugerida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secuencia didáctica sugerida
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-2-expresiones-y-secuencia-en-la-solucion-de-problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 2: Expresiones y secuencia en la solución de problemas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 2: Expresiones y secuencia en la solución de problemas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secuencia-didactica-sugerida_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secuencia didáctica sugerida
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-3-decisiones-simples-en-la-logica-del-programa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 3: Decisiones simples en la lógica del programa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 3: Decisiones simples en la lógica del programa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-4-decisiones-multiples-y-logica-anidada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 4: Decisiones múltiples y lógica anidada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 4: Decisiones múltiples y lógica anidada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-5-evaluacion-de-desempeno-de-la-unidad-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 5: Evaluación de desempeño de la unidad 1
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 5: Evaluación de desempeño de la unidad 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#evidencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-especificos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Criterios específicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unidad-2-estructuras-repetitivas-y-procesamiento-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unidad 2: Estructuras repetitivas y procesamiento de datos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unidad 2: Estructuras repetitivas y procesamiento de datos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proposito-de-la-unidad_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propósito de la unidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#competencias-de-la-unidad_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Competencias de la unidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-de-unidad_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto de unidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-6-repeticion-definida-con-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 6: Repetición definida con for
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 6: Repetición definida con for">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-7-repeticion-condicionada-con-while" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 7: Repetición condicionada con while
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 7: Repetición condicionada con while">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-8-listas-cadenas-y-procesamiento-de-colecciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 8: Listas, cadenas y procesamiento de colecciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 8: Listas, cadenas y procesamiento de colecciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-9-busqueda-secuencial-y-ordenacion-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 9: Búsqueda secuencial y ordenación básica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 9: Búsqueda secuencial y ordenación básica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-10-matrices-y-organizacion-tabular-de-informacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 10: Matrices y organización tabular de información
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 10: Matrices y organización tabular de información">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-11-diccionarios-organizacion-clave-valor-y-consulta-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 11: Diccionarios, organización clave-valor y consulta de datos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 11: Diccionarios, organización clave-valor y consulta de datos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-12-evaluacion-de-desempeno-de-la-unidad-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 12: Evaluación de desempeño de la unidad 2
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 12: Evaluación de desempeño de la unidad 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#evidencia_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-especificos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Criterios específicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unidad-3-problemas-estructurados-y-persistencia-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unidad 3: Problemas estructurados y persistencia básica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unidad 3: Problemas estructurados y persistencia básica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proposito-de-la-unidad_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propósito de la unidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#competencias-de-la-unidad_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Competencias de la unidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-de-la-unidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto de la unidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-13-funciones-parametros-retorno-y-modularizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 13: Funciones, parámetros, retorno y modularización
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 13: Funciones, parámetros, retorno y modularización">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-14-integracion-de-funciones-colecciones-y-menus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 14: Integración de funciones, colecciones y menús
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 14: Integración de funciones, colecciones y menús">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-15-persistencia-basica-de-informacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 15: Persistencia básica de información
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 15: Persistencia básica de información">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-16-evaluacion-final-del-curso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 16: Evaluación final del curso
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 16: Evaluación final del curso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#evidencia_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-especificos_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Criterios específicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-distribucion-resumida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Distribución resumida
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Recursos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-recomendacion-pedagogica-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Recomendación pedagógica final
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Resolución de problemas secuenciales y condicionales
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1. Resolución de problemas secuenciales y condicionales
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../S01_Algoritmos_Datos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 Algoritmos y datos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../S02_Operadores_Algoritmos_Secuenciales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2 Operadores y Algo. secuencial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../S03_Decisiones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3 Decisiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../S04_Decisiones_Multiples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4 Decisiones múltiples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../S05_Evaluacion_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 Evaluación 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Resolución de problemas iterativos y procesamiento de datos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2. Resolución de problemas iterativos y procesamiento de datos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../S06_For/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6 Repetición for
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../S07_While/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7 Repetición while
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../S08_Listas_Cadenas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8 Listas y cadenas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../S09_Busqueda_Ordenacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9 Búsqueda y ordenación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../S10_Matrices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 Matrices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../S11_Diccionarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 Diccionarios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../S12_Evaluacion_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12 Evaluación 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Resolución de problemas estructurados y persistencia básica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    3. Resolución de problemas estructurados y persistencia básica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../S13_Funciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13 Funciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../S14_Integracion_Menus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14 Integración y menús
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../S15_Archivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15 Archivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../S16_Evaluacion_Final/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16 Evaluación final
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Anexos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    4. Anexos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Guia_algoritmo_a_codigo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía de apoyo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../S17_Java_Equivalencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    17 Equivalencias Java
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../POO/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plan POO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../POOTaller01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Taller POO 01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-datos-generales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Datos generales
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-descripcion-del-curso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Descripción del curso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-proposito-formativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Propósito formativo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Propósito formativo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#producto-del-curso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto del curso
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-enfoque-pedagogico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Enfoque pedagógico
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-como-deberia-ser-una-sesion-de-clase-de-programacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Cómo debería ser una sesión de clase de programación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Cómo debería ser una sesión de clase de programación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-inicio-de-la-sesion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Inicio de la sesión
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-construccion-guiada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Construcción guiada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-practica-acompanada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Práctica acompañada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-reto-aplicado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Reto aplicado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-cierre-y-metacognicion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Cierre y metacognición
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56-estructura-sugerida-de-tiempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6 Estructura sugerida de tiempo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-evaluacion-del-aprendizaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Evaluación del aprendizaje
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Evaluación del aprendizaje">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criterios-generales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Criterios generales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evidencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidencias
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unidad-1-estructuras-secuenciales-y-condicionales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unidad 1: Estructuras secuenciales y condicionales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unidad 1: Estructuras secuenciales y condicionales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proposito-de-la-unidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propósito de la unidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#competencias-de-la-unidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Competencias de la unidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-de-unidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto de unidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-1-pensamiento-algoritmico-datos-y-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 1: Pensamiento algorítmico, datos y variables
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 1: Pensamiento algorítmico, datos y variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secuencia-didactica-sugerida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secuencia didáctica sugerida
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-2-expresiones-y-secuencia-en-la-solucion-de-problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 2: Expresiones y secuencia en la solución de problemas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 2: Expresiones y secuencia en la solución de problemas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secuencia-didactica-sugerida_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secuencia didáctica sugerida
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-3-decisiones-simples-en-la-logica-del-programa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 3: Decisiones simples en la lógica del programa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 3: Decisiones simples en la lógica del programa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-4-decisiones-multiples-y-logica-anidada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 4: Decisiones múltiples y lógica anidada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 4: Decisiones múltiples y lógica anidada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-5-evaluacion-de-desempeno-de-la-unidad-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 5: Evaluación de desempeño de la unidad 1
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 5: Evaluación de desempeño de la unidad 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#evidencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-especificos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Criterios específicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unidad-2-estructuras-repetitivas-y-procesamiento-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unidad 2: Estructuras repetitivas y procesamiento de datos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unidad 2: Estructuras repetitivas y procesamiento de datos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proposito-de-la-unidad_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propósito de la unidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#competencias-de-la-unidad_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Competencias de la unidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-de-unidad_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto de unidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-6-repeticion-definida-con-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 6: Repetición definida con for
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 6: Repetición definida con for">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-7-repeticion-condicionada-con-while" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 7: Repetición condicionada con while
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 7: Repetición condicionada con while">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-8-listas-cadenas-y-procesamiento-de-colecciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 8: Listas, cadenas y procesamiento de colecciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 8: Listas, cadenas y procesamiento de colecciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-9-busqueda-secuencial-y-ordenacion-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 9: Búsqueda secuencial y ordenación básica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 9: Búsqueda secuencial y ordenación básica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-10-matrices-y-organizacion-tabular-de-informacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 10: Matrices y organización tabular de información
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 10: Matrices y organización tabular de información">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-11-diccionarios-organizacion-clave-valor-y-consulta-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 11: Diccionarios, organización clave-valor y consulta de datos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 11: Diccionarios, organización clave-valor y consulta de datos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-12-evaluacion-de-desempeno-de-la-unidad-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 12: Evaluación de desempeño de la unidad 2
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 12: Evaluación de desempeño de la unidad 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#evidencia_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-especificos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Criterios específicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unidad-3-problemas-estructurados-y-persistencia-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unidad 3: Problemas estructurados y persistencia básica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unidad 3: Problemas estructurados y persistencia básica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proposito-de-la-unidad_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propósito de la unidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#competencias-de-la-unidad_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Competencias de la unidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-de-la-unidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto de la unidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-13-funciones-parametros-retorno-y-modularizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 13: Funciones, parámetros, retorno y modularización
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 13: Funciones, parámetros, retorno y modularización">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-14-integracion-de-funciones-colecciones-y-menus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 14: Integración de funciones, colecciones y menús
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 14: Integración de funciones, colecciones y menús">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-15-persistencia-basica-de-informacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 15: Persistencia básica de información
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 15: Persistencia básica de información">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#producto-esperado_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Producto esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sesion-16-evaluacion-final-del-curso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sesión 16: Evaluación final del curso
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sesión 16: Evaluación final del curso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#evidencia_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-especificos_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Criterios específicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-distribucion-resumida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Distribución resumida
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Recursos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-recomendacion-pedagogica-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Recomendación pedagógica final
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="silabo-del-curso-fundamentos-de-programacion">Sílabo del curso: Fundamentos de Programación<a class="headerlink" href="#silabo-del-curso-fundamentos-de-programacion" title="Permanent link">&para;</a></h1>
+<h2 id="1-datos-generales">1. Datos generales<a class="headerlink" href="#1-datos-generales" title="Permanent link">&para;</a></h2>
+<p><strong>Curso:</strong> Fundamentos de Programación<br />
+<strong>Abreviación:</strong> FP<br />
+<strong>Carrera profesional:</strong> Ingeniería de Sistemas<br />
+<strong>Institución:</strong> UPeU<br />
+<strong>Ciclo:</strong> I<br />
+<strong>Duración:</strong> 3 unidades de 5 semanas y 1 sesión final de cierre<br />
+<strong>Sesiones:</strong> 16 sesiones teórico-prácticas<br />
+<strong>Lenguaje de trabajo:</strong> Según la planificación docente<br />
+<strong>Entorno sugerido:</strong> Entorno de programación o IDE según el lenguaje seleccionado</p>
+<hr />
+<h2 id="2-descripcion-del-curso">2. Descripción del curso<a class="headerlink" href="#2-descripcion-del-curso" title="Permanent link">&para;</a></h2>
+<p>Fundamentos de Programación es un curso de inicio de carrera orientado al desarrollo del pensamiento algorítmico y la resolución estructurada de problemas. El estudiante aprende a analizar situaciones, identificar datos de entrada, diseñar procesos, producir salidas verificables y traducir esa lógica a programas funcionales en un lenguaje de programación definido por el docente.</p>
+<p>Por tratarse de estudiantes de primer ciclo, el curso prioriza comprensión, práctica guiada y construcción progresiva de autonomía. El énfasis no está en memorizar sintaxis, sino en aprender a pensar como programador: descomponer problemas, probar soluciones, detectar errores y mejorar el código con criterio.</p>
+<hr />
+<h2 id="3-proposito-formativo">3. Propósito formativo<a class="headerlink" href="#3-proposito-formativo" title="Permanent link">&para;</a></h2>
+<p>Al finalizar el curso, el estudiante será capaz de diseñar algoritmos y desarrollar programas básicos en un lenguaje de programación empleando variables, operadores, estructuras condicionales, estructuras repetitivas, listas y funciones, validando sus resultados mediante pruebas simples y explicando la lógica de su solución.</p>
+<h3 id="producto-del-curso">Producto del curso<a class="headerlink" href="#producto-del-curso" title="Permanent link">&para;</a></h3>
+<p>Compendio de resolución de ejercicios de programación: conjunto organizado de ejercicios resueltos, probados y explicados, que evidencian el dominio progresivo de estructuras secuenciales, condicionales, repetitivas, estructuras básicas de datos y subprogramas.</p>
+<hr />
+<h2 id="4-enfoque-pedagogico">4. Enfoque pedagógico<a class="headerlink" href="#4-enfoque-pedagogico" title="Permanent link">&para;</a></h2>
+<p>El curso adopta un enfoque activo, progresivo y aplicado. En un curso de primer ciclo, una sesión de programación no debe consistir en exposición larga y copia de código. Debe combinar explicación breve, modelado del docente, práctica guiada, resolución de retos y cierre con verificación.</p>
+<p>La lógica metodológica del curso será:</p>
+<div class="highlight"><pre><span></span><code>Comprender -&gt; Diseñar -&gt; Codificar -&gt; Probar -&gt; Explicar -&gt; Mejorar
+</code></pre></div>
+<p>La arquitectura base de resolución de problemas será:</p>
+<div class="highlight"><pre><span></span><code>Problema
+   |
+Entrada -&gt; Proceso -&gt; Salida
+   |
+Código
+</code></pre></div>
+<p>Los 6 pasos operativos que se repetirán en cada sesión son:</p>
+<div class="highlight"><pre><span></span><code>1. Comprender el problema
+2. Identificar entradas
+3. Diseñar el proceso
+4. Definir salidas
+5. Casos de prueba
+6. Implementar, ejecutar y corregir
+</code></pre></div>
+<hr />
+<h2 id="5-como-deberia-ser-una-sesion-de-clase-de-programacion">5. Cómo debería ser una sesión de clase de programación<a class="headerlink" href="#5-como-deberia-ser-una-sesion-de-clase-de-programacion" title="Permanent link">&para;</a></h2>
+<p>En Fundamentos de Programación, una sesión eficaz debe tener ritmo, práctica y retroalimentación. Para estudiantes de primer ciclo, la secuencia sugerida es la siguiente:</p>
+<h3 id="51-inicio-de-la-sesion">5.1 Inicio de la sesión<a class="headerlink" href="#51-inicio-de-la-sesion" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Recuperar saberes previos con una pregunta o ejercicio corto.</li>
+<li>Presentar la meta de la sesión en lenguaje claro.</li>
+<li>Mostrar para qué sirve el tema en problemas reales de ingeniería o gestión de datos.</li>
+</ul>
+<h3 id="52-construccion-guiada">5.2 Construcción guiada<a class="headerlink" href="#52-construccion-guiada" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Explicar el concepto central con ejemplos pequeños.</li>
+<li>Resolver un problema modelo paso a paso antes de escribir el código.</li>
+<li>Pensar en voz alta: qué entra, qué se procesa, qué sale y cómo se prueba.</li>
+</ul>
+<h3 id="53-practica-acompanada">5.3 Práctica acompañada<a class="headerlink" href="#53-practica-acompanada" title="Permanent link">&para;</a></h3>
+<ul>
+<li>El estudiante modifica ejemplos ya resueltos.</li>
+<li>El docente supervisa errores frecuentes de sintaxis, tipos de datos y lógica.</li>
+<li>Se promueve que el estudiante anticipe el resultado antes de ejecutar.</li>
+</ul>
+<h3 id="54-reto-aplicado">5.4 Reto aplicado<a class="headerlink" href="#54-reto-aplicado" title="Permanent link">&para;</a></h3>
+<ul>
+<li>El estudiante resuelve un ejercicio nuevo con menor apoyo.</li>
+<li>El reto debe exigir transferencia, no copia literal del ejemplo.</li>
+<li>Se evalúa tanto el resultado como el proceso de solución.</li>
+</ul>
+<h3 id="55-cierre-y-metacognicion">5.5 Cierre y metacognición<a class="headerlink" href="#55-cierre-y-metacognicion" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Se revisan errores comunes y formas de corregirlos.</li>
+<li>El estudiante explica qué aprendió y qué parte aún le cuesta.</li>
+<li>Se deja una tarea breve o práctica de consolidación.</li>
+</ul>
+<h3 id="56-estructura-sugerida-de-tiempo">5.6 Estructura sugerida de tiempo<a class="headerlink" href="#56-estructura-sugerida-de-tiempo" title="Permanent link">&para;</a></h3>
+<p>Para una sesión de 4 horas pedagógicas, una distribución razonable sería:</p>
+<div class="highlight"><pre><span></span><code>Activación y propósito                 15 min
+Explicación y modelado del docente     35 min
+Práctica guiada                        50 min
+Pausa breve                            10 min
+Reto aplicado individual o en pares    45 min
+Socialización y retroalimentación      25 min
+Síntesis, autoevaluación y cierre      20 min
+</code></pre></div>
+<p>Esta estructura evita dos errores comunes en cursos iniciales: saturar de teoría y dejar al estudiante solo demasiado pronto.</p>
+<hr />
+<h2 id="6-evaluacion-del-aprendizaje">6. Evaluación del aprendizaje<a class="headerlink" href="#6-evaluacion-del-aprendizaje" title="Permanent link">&para;</a></h2>
+<p>La evaluación será continua, práctica y formativa. En programación inicial, no basta verificar si el código "corre"; también importa si el estudiante comprende el problema, selecciona correctamente las estructuras y prueba su solución.</p>
+<h3 id="criterios-generales">Criterios generales<a class="headerlink" href="#criterios-generales" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Analiza correctamente el problema y distingue entrada, proceso y salida.</li>
+<li>Usa variables y tipos de datos de forma coherente.</li>
+<li>Emplea operadores y estructuras de control según el problema.</li>
+<li>Escribe código legible, ordenado y funcional.</li>
+<li>Realiza pruebas con datos normales y casos límite básicos.</li>
+<li>Detecta y corrige errores de sintaxis o lógica simple.</li>
+<li>Explica verbalmente o por escrito la lógica de su programa.</li>
+</ul>
+<h3 id="evidencias">Evidencias<a class="headerlink" href="#evidencias" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Guías o cuadernos desarrollados por sesión.</li>
+<li>Ejercicios resueltos en clase.</li>
+<li>Retos prácticos individuales o colaborativos.</li>
+<li>Evaluaciones prácticas por unidad.</li>
+<li>Compendio de ejercicios resueltos por unidad.</li>
+</ul>
+<hr />
+<h2 id="unidad-1-estructuras-secuenciales-y-condicionales">Unidad 1: Estructuras secuenciales y condicionales<a class="headerlink" href="#unidad-1-estructuras-secuenciales-y-condicionales" title="Permanent link">&para;</a></h2>
+<h3 id="proposito-de-la-unidad">Propósito de la unidad<a class="headerlink" href="#proposito-de-la-unidad" title="Permanent link">&para;</a></h3>
+<p>Que el estudiante comprenda la lógica de resolución de problemas computacionales y desarrolle programas básicos usando datos, operadores y estructuras condicionales.</p>
+<h3 id="competencias-de-la-unidad">Competencias de la unidad<a class="headerlink" href="#competencias-de-la-unidad" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Representa un problema mediante entrada, proceso y salida.</li>
+<li>Usa variables y tipos de datos para modelar información.</li>
+<li>Aplica operadores aritméticos, relacionales y lógicos.</li>
+<li>Construye algoritmos secuenciales.</li>
+<li>Resuelve problemas con decisiones simples, compuestas y múltiples.</li>
+<li>Verifica resultados mediante pruebas básicas.</li>
+</ul>
+<h3 id="producto-de-unidad">Producto de unidad<a class="headerlink" href="#producto-de-unidad" title="Permanent link">&para;</a></h3>
+<p>Compendio de ejercicios resueltos sobre estructuras secuenciales y condicionales.</p>
+<hr />
+<h3 id="sesion-1-pensamiento-algoritmico-datos-y-variables">Sesión 1: Pensamiento algorítmico, datos y variables<a class="headerlink" href="#sesion-1-pensamiento-algoritmico-datos-y-variables" title="Permanent link">&para;</a></h3>
+<p><strong>Cuaderno de trabajo:</strong> <code>S01_Algoritmos_Datos.ipynb</code></p>
+<h4 id="objetivo">Objetivo<a class="headerlink" href="#objetivo" title="Permanent link">&para;</a></h4>
+<p>Comprender qué es un algoritmo, organizar una solución mediante entrada, proceso y salida, e identificar datos para almacenarlos en variables según su tipo.</p>
+<h4 id="secuencia-didactica-sugerida">Secuencia didáctica sugerida<a class="headerlink" href="#secuencia-didactica-sugerida" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Activación: distinguir una instrucción cotidiana de un algoritmo.</li>
+<li>Modelado: resolver un problema simple usando entrada, proceso y salida.</li>
+<li>Práctica guiada: usar <code>print()</code>, <code>input()</code>, <code>int()</code> y <code>float()</code>.</li>
+<li>Reto: construir una ficha básica de usuario o estudiante.</li>
+<li>Cierre: explicar qué diferencia existe entre dato, variable y tipo.</li>
+</ul>
+<h4 id="contenidos">Contenidos<a class="headerlink" href="#contenidos" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Concepto de algoritmo.</li>
+<li>Estructura entrada, proceso y salida.</li>
+<li>Representación de algoritmos en lenguaje natural, pseudocódigo y diagrama de flujo.</li>
+<li>Entorno de trabajo según el lenguaje y la herramienta seleccionada.</li>
+<li>Salidas con <code>print()</code>.</li>
+<li>Entradas con <code>input()</code>.</li>
+<li>Tipos de datos: <code>str</code>, <code>int</code>, <code>float</code>, <code>bool</code>.</li>
+<li>Variables y buenas prácticas de nombrado.</li>
+<li>Constantes.</li>
+<li>Metodología para resolver problemas y casos de prueba.</li>
+</ul>
+<h4 id="producto-esperado">Producto esperado<a class="headerlink" href="#producto-esperado" title="Permanent link">&para;</a></h4>
+<p>Programa que capture y muestre datos básicos de forma estructurada.</p>
+<hr />
+<h3 id="sesion-2-expresiones-y-secuencia-en-la-solucion-de-problemas">Sesión 2: Expresiones y secuencia en la solución de problemas<a class="headerlink" href="#sesion-2-expresiones-y-secuencia-en-la-solucion-de-problemas" title="Permanent link">&para;</a></h3>
+<p><strong>Cuaderno de trabajo:</strong> <code>S02_Operadores_Algoritmos_Secuenciales.ipynb</code></p>
+<h4 id="objetivo_1">Objetivo<a class="headerlink" href="#objetivo_1" title="Permanent link">&para;</a></h4>
+<p>Resolver problemas secuenciales utilizando operadores y conversiones de datos en un lenguaje de programación.</p>
+<h4 id="secuencia-didactica-sugerida_1">Secuencia didáctica sugerida<a class="headerlink" href="#secuencia-didactica-sugerida_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Activación: predecir el resultado de expresiones simples.</li>
+<li>Modelado: construir un algoritmo que calcule un promedio o costo total.</li>
+<li>Práctica guiada: aplicar operadores aritméticos, relacionales y lógicos.</li>
+<li>Reto: resolver un problema de cálculo con varias entradas.</li>
+<li>Cierre: justificar por qué un programa secuencial no requiere decisiones.</li>
+</ul>
+<h4 id="contenidos_1">Contenidos<a class="headerlink" href="#contenidos_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Operadores de asignación.</li>
+<li>Operadores aritméticos.</li>
+<li>Operadores relacionales.</li>
+<li>Operadores lógicos.</li>
+<li>Expresiones y precedencia de operadores.</li>
+<li>Conversión con <code>int()</code> y <code>float()</code>.</li>
+<li>Estructura secuencial.</li>
+<li>Organización en entrada, proceso y salida.</li>
+<li>Verificación de resultados.</li>
+</ul>
+<h4 id="producto-esperado_1">Producto esperado<a class="headerlink" href="#producto-esperado_1" title="Permanent link">&para;</a></h4>
+<p>Programas que leen datos, realizan cálculos y muestran resultados correctamente formateados.</p>
+<hr />
+<h3 id="sesion-3-decisiones-simples-en-la-logica-del-programa">Sesión 3: Decisiones simples en la lógica del programa<a class="headerlink" href="#sesion-3-decisiones-simples-en-la-logica-del-programa" title="Permanent link">&para;</a></h3>
+<p><strong>Cuaderno de trabajo:</strong> <code>S03_Decisiones.ipynb</code></p>
+<h4 id="objetivo_2">Objetivo<a class="headerlink" href="#objetivo_2" title="Permanent link">&para;</a></h4>
+<p>Construir programas que tomen decisiones usando estructuras <code>if</code> y <code>if-else</code>.</p>
+<h4 id="contenidos_2">Contenidos<a class="headerlink" href="#contenidos_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Expresiones condicionales.</li>
+<li><code>if</code>.</li>
+<li><code>if-else</code>.</li>
+<li>Condiciones compuestas con <code>and</code> y <code>or</code>.</li>
+<li>Validación básica de datos.</li>
+<li>Casos de prueba.</li>
+</ul>
+<h4 id="producto-esperado_2">Producto esperado<a class="headerlink" href="#producto-esperado_2" title="Permanent link">&para;</a></h4>
+<p>Programas que responden de manera diferente según las condiciones de entrada.</p>
+<hr />
+<h3 id="sesion-4-decisiones-multiples-y-logica-anidada">Sesión 4: Decisiones múltiples y lógica anidada<a class="headerlink" href="#sesion-4-decisiones-multiples-y-logica-anidada" title="Permanent link">&para;</a></h3>
+<p><strong>Cuaderno de trabajo:</strong> <code>S04_Decisiones_Multiples.ipynb</code></p>
+<h4 id="objetivo_3">Objetivo<a class="headerlink" href="#objetivo_3" title="Permanent link">&para;</a></h4>
+<p>Resolver problemas con varios caminos lógicos usando estructuras <code>if-elif-else</code>, <code>match-case</code> y condicionales anidados.</p>
+<h4 id="contenidos_3">Contenidos<a class="headerlink" href="#contenidos_3" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Condicionales anidados.</li>
+<li>Condicionales múltiples con <code>if-elif-else</code>.</li>
+<li>Selección de casos con <code>match-case</code>.</li>
+<li>Priorización de condiciones.</li>
+<li>Clasificación de datos.</li>
+<li>Casos límite.</li>
+</ul>
+<h4 id="producto-esperado_3">Producto esperado<a class="headerlink" href="#producto-esperado_3" title="Permanent link">&para;</a></h4>
+<p>Programas que clasifican y toman decisiones de acuerdo con varios criterios usando decisiones múltiples, <code>match-case</code> o lógica anidada.</p>
+<hr />
+<h3 id="sesion-5-evaluacion-de-desempeno-de-la-unidad-1">Sesión 5: Evaluación de desempeño de la unidad 1<a class="headerlink" href="#sesion-5-evaluacion-de-desempeno-de-la-unidad-1" title="Permanent link">&para;</a></h3>
+<p><strong>Cuaderno de trabajo:</strong> <code>S05_Evaluacion_1.ipynb</code></p>
+<h4 id="evidencia">Evidencia<a class="headerlink" href="#evidencia" title="Permanent link">&para;</a></h4>
+<p>Programa individual que integre variables, operadores, decisiones simples, múltiples o anidadas y selección con <code>match-case</code>, organizando la solución en entrada, proceso y salida.</p>
+<h4 id="criterios-especificos">Criterios específicos<a class="headerlink" href="#criterios-especificos" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Analiza bien el problema.</li>
+<li>Usa datos y operadores con corrección.</li>
+<li>Implementa decisiones simples, múltiples, anidadas o <code>match-case</code> según el problema.</li>
+<li>Presenta resultados claros.</li>
+<li>Realiza pruebas con casos normales y límite antes de entregar.</li>
+</ul>
+<hr />
+<h2 id="unidad-2-estructuras-repetitivas-y-procesamiento-de-datos">Unidad 2: Estructuras repetitivas y procesamiento de datos<a class="headerlink" href="#unidad-2-estructuras-repetitivas-y-procesamiento-de-datos" title="Permanent link">&para;</a></h2>
+<h3 id="proposito-de-la-unidad_1">Propósito de la unidad<a class="headerlink" href="#proposito-de-la-unidad_1" title="Permanent link">&para;</a></h3>
+<p>Que el estudiante automatice tareas mediante bucles y procese colecciones de datos usando listas, cadenas, búsqueda, ordenación, matrices y diccionarios simples.</p>
+<h3 id="competencias-de-la-unidad_1">Competencias de la unidad<a class="headerlink" href="#competencias-de-la-unidad_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Usa estructuras repetitivas para automatizar procesos.</li>
+<li>Aplica contadores y acumuladores.</li>
+<li>Maneja listas, cadenas, matrices y diccionarios simples.</li>
+<li>Aplica búsqueda secuencial y ordenación básica en problemas sencillos.</li>
+<li>Procesa datos organizados en filas, columnas y pares clave-valor.</li>
+<li>Integra varias estructuras en programas de complejidad progresiva.</li>
+</ul>
+<h3 id="producto-de-unidad_1">Producto de unidad<a class="headerlink" href="#producto-de-unidad_1" title="Permanent link">&para;</a></h3>
+<p>Compendio de ejercicios resueltos sobre estructuras repetitivas y procesamiento de datos.</p>
+<hr />
+<h3 id="sesion-6-repeticion-definida-con-for">Sesión 6: Repetición definida con <code>for</code><a class="headerlink" href="#sesion-6-repeticion-definida-con-for" title="Permanent link">&para;</a></h3>
+<p><strong>Cuaderno de trabajo:</strong> <code>S06_For.ipynb</code></p>
+<h4 id="objetivo_4">Objetivo<a class="headerlink" href="#objetivo_4" title="Permanent link">&para;</a></h4>
+<p>Resolver problemas que requieren repetir una acción un número conocido de veces.</p>
+<h4 id="contenidos_4">Contenidos<a class="headerlink" href="#contenidos_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Bucle <code>for</code>.</li>
+<li>Uso de <code>range()</code>.</li>
+<li>Contadores.</li>
+<li>Acumuladores.</li>
+<li>Sumatorias.</li>
+</ul>
+<h4 id="producto-esperado_4">Producto esperado<a class="headerlink" href="#producto-esperado_4" title="Permanent link">&para;</a></h4>
+<p>Programas que usan <code>for</code>, contadores y acumuladores para procesar varios datos.</p>
+<hr />
+<h3 id="sesion-7-repeticion-condicionada-con-while">Sesión 7: Repetición condicionada con <code>while</code><a class="headerlink" href="#sesion-7-repeticion-condicionada-con-while" title="Permanent link">&para;</a></h3>
+<p><strong>Cuaderno de trabajo:</strong> <code>S07_While.ipynb</code></p>
+<h4 id="objetivo_5">Objetivo<a class="headerlink" href="#objetivo_5" title="Permanent link">&para;</a></h4>
+<p>Resolver problemas en los que la repetición depende de una condición de parada.</p>
+<h4 id="contenidos_5">Contenidos<a class="headerlink" href="#contenidos_5" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Bucle <code>while</code>.</li>
+<li>Condición de parada.</li>
+<li>Centinelas.</li>
+<li>Validación iterativa.</li>
+<li>Control de ingreso de datos.</li>
+</ul>
+<h4 id="producto-esperado_5">Producto esperado<a class="headerlink" href="#producto-esperado_5" title="Permanent link">&para;</a></h4>
+<p>Programa que use <code>while</code>, centinelas y validación iterativa de datos.</p>
+<hr />
+<h3 id="sesion-8-listas-cadenas-y-procesamiento-de-colecciones">Sesión 8: Listas, cadenas y procesamiento de colecciones<a class="headerlink" href="#sesion-8-listas-cadenas-y-procesamiento-de-colecciones" title="Permanent link">&para;</a></h3>
+<p><strong>Cuaderno de trabajo:</strong> <code>S08_Listas_Cadenas.ipynb</code></p>
+<h4 id="objetivo_6">Objetivo<a class="headerlink" href="#objetivo_6" title="Permanent link">&para;</a></h4>
+<p>Procesar conjuntos de datos usando listas y cadenas en problemas de recorrido y análisis simple.</p>
+<h4 id="contenidos_6">Contenidos<a class="headerlink" href="#contenidos_6" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Listas.</li>
+<li>Cadenas.</li>
+<li>Recorrido de colecciones.</li>
+<li>Conteos condicionados.</li>
+<li>Transformación básica de texto.</li>
+</ul>
+<h4 id="producto-esperado_6">Producto esperado<a class="headerlink" href="#producto-esperado_6" title="Permanent link">&para;</a></h4>
+<p>Programa que recorra una colección, cuente elementos y transforme información textual.</p>
+<hr />
+<h3 id="sesion-9-busqueda-secuencial-y-ordenacion-basica">Sesión 9: Búsqueda secuencial y ordenación básica<a class="headerlink" href="#sesion-9-busqueda-secuencial-y-ordenacion-basica" title="Permanent link">&para;</a></h3>
+<p><strong>Cuaderno de trabajo:</strong> <code>S09_Busqueda_Ordenacion.ipynb</code></p>
+<h4 id="objetivo_7">Objetivo<a class="headerlink" href="#objetivo_7" title="Permanent link">&para;</a></h4>
+<p>Resolver problemas de localización y ordenamiento de datos usando técnicas básicas.</p>
+<h4 id="contenidos_7">Contenidos<a class="headerlink" href="#contenidos_7" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Búsqueda secuencial.</li>
+<li>Comparación entre elementos.</li>
+<li>Intercambio de valores.</li>
+<li>Ordenación básica por intercambio.</li>
+<li>Análisis del proceso de búsqueda u ordenación.</li>
+</ul>
+<h4 id="producto-esperado_7">Producto esperado<a class="headerlink" href="#producto-esperado_7" title="Permanent link">&para;</a></h4>
+<p>Programa que encuentre elementos y ordene listas con una estrategia elemental.</p>
+<hr />
+<h3 id="sesion-10-matrices-y-organizacion-tabular-de-informacion">Sesión 10: Matrices y organización tabular de información<a class="headerlink" href="#sesion-10-matrices-y-organizacion-tabular-de-informacion" title="Permanent link">&para;</a></h3>
+<p><strong>Cuaderno de trabajo:</strong> <code>S10_Matrices.ipynb</code></p>
+<h4 id="objetivo_8">Objetivo<a class="headerlink" href="#objetivo_8" title="Permanent link">&para;</a></h4>
+<p>Representar y procesar datos organizados en filas y columnas, incluyendo operaciones matemáticas básicas con matrices.</p>
+<h4 id="contenidos_8">Contenidos<a class="headerlink" href="#contenidos_8" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Concepto de matriz o estructura bidimensional.</li>
+<li>Recorrido por filas.</li>
+<li>Recorrido por columnas.</li>
+<li>Promedios y totales por fila.</li>
+<li>Totales por columna.</li>
+<li>Organización tabular de información.</li>
+<li>Consulta y actualización de datos.</li>
+<li>Transpuesta.</li>
+<li>Producto por escalar.</li>
+<li>Producto de matrices.</li>
+<li>Inversa 2x2.</li>
+</ul>
+<h4 id="producto-esperado_8">Producto esperado<a class="headerlink" href="#producto-esperado_8" title="Permanent link">&para;</a></h4>
+<p>Programa que recorra una matriz y obtenga resúmenes por filas o columnas, o que aplique operaciones matriciales básicas.</p>
+<hr />
+<h3 id="sesion-11-diccionarios-organizacion-clave-valor-y-consulta-de-datos">Sesión 11: Diccionarios, organización clave-valor y consulta de datos<a class="headerlink" href="#sesion-11-diccionarios-organizacion-clave-valor-y-consulta-de-datos" title="Permanent link">&para;</a></h3>
+<p><strong>Cuaderno de trabajo:</strong> <code>S11_Diccionarios.ipynb</code></p>
+<h4 id="objetivo_9">Objetivo<a class="headerlink" href="#objetivo_9" title="Permanent link">&para;</a></h4>
+<p>Modelar información mediante pares clave-valor para registrar y consultar datos de forma directa.</p>
+<h4 id="contenidos_9">Contenidos<a class="headerlink" href="#contenidos_9" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Diccionarios.</li>
+<li>Claves y valores.</li>
+<li>Registro de datos.</li>
+<li>Consulta y actualización de datos.</li>
+</ul>
+<h4 id="producto-esperado_9">Producto esperado<a class="headerlink" href="#producto-esperado_9" title="Permanent link">&para;</a></h4>
+<p>Programa que use diccionarios para guardar, consultar y actualizar información.</p>
+<hr />
+<h3 id="sesion-12-evaluacion-de-desempeno-de-la-unidad-2">Sesión 12: Evaluación de desempeño de la unidad 2<a class="headerlink" href="#sesion-12-evaluacion-de-desempeno-de-la-unidad-2" title="Permanent link">&para;</a></h3>
+<p><strong>Cuaderno de trabajo:</strong> <code>S12_Evaluacion_2.ipynb</code></p>
+<h4 id="evidencia_1">Evidencia<a class="headerlink" href="#evidencia_1" title="Permanent link">&para;</a></h4>
+<p>Programa aplicado que use ciclos y estructuras de datos de la unidad 2, integrando <code>for</code>, <code>while</code>, listas, cadenas, búsqueda, ordenación, matrices y diccionarios según el problema.</p>
+<h4 id="criterios-especificos_1">Criterios específicos<a class="headerlink" href="#criterios-especificos_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Integra correctamente las estructuras estudiadas.</li>
+<li>Organiza el código en bloques claros.</li>
+<li>Procesa múltiples datos sin errores graves.</li>
+<li>Resuelve correctamente recorridos, búsquedas, ordenación u operaciones con matrices cuando corresponda.</li>
+<li>Presenta resultados comprensibles.</li>
+<li>Demuestra pruebas con casos normales y límite.</li>
+</ul>
+<hr />
+<h2 id="unidad-3-problemas-estructurados-y-persistencia-basica">Unidad 3: Problemas estructurados y persistencia básica<a class="headerlink" href="#unidad-3-problemas-estructurados-y-persistencia-basica" title="Permanent link">&para;</a></h2>
+<h3 id="proposito-de-la-unidad_2">Propósito de la unidad<a class="headerlink" href="#proposito-de-la-unidad_2" title="Permanent link">&para;</a></h3>
+<p>Que el estudiante organice programas mediante funciones, integre colecciones con menús y use archivos de texto para resolver problemas aplicados con mayor claridad, control y continuidad de los datos.</p>
+<h3 id="competencias-de-la-unidad_2">Competencias de la unidad<a class="headerlink" href="#competencias-de-la-unidad_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Diseña funciones con parámetros y retorno.</li>
+<li>Integra funciones, colecciones y menús simples.</li>
+<li>Lee, escribe y recupera información en archivos de texto.</li>
+<li>Relaciona datos, operaciones y estructura del programa para resolver ejercicios completos.</li>
+</ul>
+<h3 id="producto-de-la-unidad">Producto de la unidad<a class="headerlink" href="#producto-de-la-unidad" title="Permanent link">&para;</a></h3>
+<p>Compendio parcial de ejercicios resueltos sobre modularización, integración y persistencia básica.</p>
+<h3 id="sesion-13-funciones-parametros-retorno-y-modularizacion">Sesión 13: Funciones, parámetros, retorno y modularización<a class="headerlink" href="#sesion-13-funciones-parametros-retorno-y-modularizacion" title="Permanent link">&para;</a></h3>
+<p><strong>Cuaderno de trabajo:</strong> <code>S13_Funciones.ipynb</code></p>
+<h4 id="objetivo_10">Objetivo<a class="headerlink" href="#objetivo_10" title="Permanent link">&para;</a></h4>
+<p>Dividir un problema en partes reutilizables mediante funciones con parámetros y retorno.</p>
+<h4 id="contenidos_10">Contenidos<a class="headerlink" href="#contenidos_10" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>def</code>.</li>
+<li>Parámetros.</li>
+<li><code>return</code>.</li>
+<li>Modularización.</li>
+<li>Reutilización de código.</li>
+</ul>
+<h4 id="producto-esperado_10">Producto esperado<a class="headerlink" href="#producto-esperado_10" title="Permanent link">&para;</a></h4>
+<p>Programa organizado en funciones claras que resuelvan subproblemas concretos y presenten resultados verificables.</p>
+<hr />
+<h3 id="sesion-14-integracion-de-funciones-colecciones-y-menus">Sesión 14: Integración de funciones, colecciones y menús<a class="headerlink" href="#sesion-14-integracion-de-funciones-colecciones-y-menus" title="Permanent link">&para;</a></h3>
+<p><strong>Cuaderno de trabajo:</strong> <code>S14_Integracion_Menus.ipynb</code></p>
+<h4 id="objetivo_11">Objetivo<a class="headerlink" href="#objetivo_11" title="Permanent link">&para;</a></h4>
+<p>Construir un programa que integre funciones, estructuras de datos y un menú sencillo de opciones.</p>
+<h4 id="contenidos_11">Contenidos<a class="headerlink" href="#contenidos_11" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Menús para organizar opciones del programa.</li>
+<li>Integración de funciones con listas o diccionarios.</li>
+<li>Registro, consulta, actualización y salida.</li>
+<li>Coordinación del flujo del programa.</li>
+<li>Pruebas de funcionamiento.</li>
+</ul>
+<h4 id="producto-esperado_11">Producto esperado<a class="headerlink" href="#producto-esperado_11" title="Permanent link">&para;</a></h4>
+<p>Programa modular con menú que registre, consulte o actualice información en memoria.</p>
+<hr />
+<h3 id="sesion-15-persistencia-basica-de-informacion">Sesión 15: Persistencia básica de información<a class="headerlink" href="#sesion-15-persistencia-basica-de-informacion" title="Permanent link">&para;</a></h3>
+<p><strong>Cuaderno de trabajo:</strong> <code>S15_Archivos.ipynb</code></p>
+<h4 id="objetivo_12">Objetivo<a class="headerlink" href="#objetivo_12" title="Permanent link">&para;</a></h4>
+<p>Registrar y recuperar información simple usando archivos de texto.</p>
+<h4 id="contenidos_12">Contenidos<a class="headerlink" href="#contenidos_12" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Concepto de persistencia.</li>
+<li>Archivos de texto.</li>
+<li>Escritura.</li>
+<li>Lectura.</li>
+<li>Registro y recuperación de datos.</li>
+<li>Procesamiento básico de información guardada.</li>
+</ul>
+<h4 id="producto-esperado_12">Producto esperado<a class="headerlink" href="#producto-esperado_12" title="Permanent link">&para;</a></h4>
+<p>Programa que escriba datos en un archivo y luego los lea para mostrarlos o procesarlos.</p>
+<hr />
+<h3 id="sesion-16-evaluacion-final-del-curso">Sesión 16: Evaluación final del curso<a class="headerlink" href="#sesion-16-evaluacion-final-del-curso" title="Permanent link">&para;</a></h3>
+<p><strong>Cuaderno de trabajo:</strong> <code>S16_Evaluacion_Final.ipynb</code></p>
+<h4 id="evidencia_2">Evidencia<a class="headerlink" href="#evidencia_2" title="Permanent link">&para;</a></h4>
+<p>Evaluación práctica integradora con problemas que combinen funciones, menús, colecciones y persistencia básica, organizada en entrada, proceso y salida y acompañada por el compendio trabajado en el curso.</p>
+<h4 id="criterios-especificos_2">Criterios específicos<a class="headerlink" href="#criterios-especificos_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Integra funciones, menús, colecciones y archivos según el problema.</li>
+<li>Organiza la solución en bloques claros y verificables.</li>
+<li>Presenta resultados correctos, ordenados y comprensibles.</li>
+<li>Demuestra comprensión integral de los fundamentos de programación mediante pruebas básicas.</li>
+</ul>
+<hr />
+<h2 id="7-distribucion-resumida">7. Distribución resumida<a class="headerlink" href="#7-distribucion-resumida" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>Nombre del curso: Fundamentos de Programación (FP)
+Producto del curso: Compendio de resolución de ejercicios de programación
+Duración: 16 sesiones teórico-prácticas
+
+Unidad 1 - U1: Estructuras secuenciales y condicionales
+Producto U1: Compendio parcial de ejercicios sobre estructuras secuenciales y condicionales
+s1: Pensamiento algorítmico, datos y variables (algoritmos, representación, entrada-proceso-salida, variables, tipos de datos y constantes)
+s2: Algoritmos secuenciales y operadores (asignación, operadores aritméticos, relacionales y lógicos, expresiones y conversión)
+s3: Decisiones simples y compuestas (if, if-else, condiciones compuestas, validación y casos de prueba)
+s4: Decisiones múltiples y lógica anidada (if-elif-else, match-case, decisiones anidadas, clasificación y casos límite)
+s5: Evaluación 1 (variables, operadores, decisiones y match-case)
+
+Unidad 2 - U2: Estructuras repetitivas y procesamiento de datos
+Producto U2: Compendio parcial de ejercicios sobre estructuras repetitivas y procesamiento de datos
+s6: Repetición definida con for (for, range, contadores, acumuladores y sumatorias)
+s7: Repetición condicionada con while (while, condición de parada, centinelas, validación y control de ingreso)
+s8: Listas y cadenas (listas, cadenas, recorridos, conteos y transformación de texto)
+s9: Búsqueda secuencial y ordenación básica (búsqueda, comparación, intercambio y análisis del proceso)
+s10: Matrices y organización tabular (filas, columnas, recorridos y operaciones matriciales básicas)
+s11: Diccionarios y organización clave-valor (claves, valores, registro, consulta y actualización)
+s12: Evaluación 2 (ciclos, listas, cadenas, búsqueda, ordenación, matrices y diccionarios)
+
+Unidad 3 - U3: Problemas estructurados y persistencia básica
+Producto U3: Compendio parcial de ejercicios sobre modularización, integración y persistencia básica
+s13: Funciones y modularización (funciones, parámetros, return, modularización y reutilización)
+s14: Integración de funciones, colecciones y menús (menús, listas o diccionarios, flujo y opciones del programa)
+s15: Persistencia básica de información (archivos de texto, escritura, lectura, registro y recuperación)
+s16: Evaluación final del curso (integración de funciones, menús, colecciones y persistencia)
+</code></pre></div>
+<hr />
+<h2 id="8-recursos">8. Recursos<a class="headerlink" href="#8-recursos" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Computadora o laptop.</li>
+<li>Acceso a un entorno de programación o IDE según el lenguaje seleccionado.</li>
+<li>Guías o cuadernos de práctica por sesión.</li>
+<li>Lenguaje de programación definido para el curso.</li>
+<li>Proyector o pantalla para modelado en vivo.</li>
+<li>Rúbrica de evaluación práctica.</li>
+</ul>
+<hr />
+<h2 id="9-recomendacion-pedagogica-final">9. Recomendación pedagógica final<a class="headerlink" href="#9-recomendacion-pedagogica-final" title="Permanent link">&para;</a></h2>
+<p>Si el curso está dirigido a estudiantes de primer ciclo de Ingeniería de Sistemas, cada sesión debe priorizar menos contenido y más práctica significativa. Es preferible que el estudiante resuelva 2 o 3 problemas bien guiados y explique su lógica, antes que exponer muchas estructuras en una sola clase sin tiempo de aplicación.</p>
+<p>En este nivel, una buena sesión de programación se reconoce porque el estudiante:</p>
+<ul>
+<li>entiende qué problema está resolviendo,</li>
+<li>puede anticipar qué debería ocurrir al ejecutar,</li>
+<li>prueba su programa con distintos datos,</li>
+<li>y explica por qué su solución funciona.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Angel Sullon @asullom - UPeU 2026
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "toc.follow", "content.code.copy", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../javascripts/mermaid.js"></script>
+      
+    
+  </body>
+</html>
