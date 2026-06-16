@@ -48,7 +48,6 @@ extra_javascript:
 
 nav:
   - Inicio: index.md
-  - Sílabo: Silabo_FP.md
   - 1. Resolución de problemas secuenciales y condicionales:
       - 1 Algoritmos y datos: S01_Algoritmos_Datos.ipynb
       - 2 Operadores y Algo. secuencial: S02_Operadores_Algoritmos_Secuenciales.ipynb
@@ -71,5 +70,3 @@ nav:
   - 4. Anexos:
       - Guía de apoyo: Guia_algoritmo_a_codigo.ipynb  
       - 17 Equivalencias Java: S17_Java_Equivalencias.ipynb
-      - Plan POO: POO.md
-      - Taller POO 01: POOTaller01.md
