@@ -4,7 +4,7 @@ Curso práctico de Fundamentos de Programación orientado al pensamiento algorí
 
 Este libro digital organiza las sesiones del curso para guiar la resolución acumulativa de ejercicios de programación. A diferencia de un curso con proyecto integrador único, FP funciona como un curso de matemática o cálculo: cada sesión aporta ejercicios resueltos, probados y explicados, y el producto final es el compendio ordenado de ese trabajo.
 
-El material también está disponible en [`recursosdecursos/fp2026`](https://github.com/recursosdecursos/fp2026) para descargar y abrir los cuadernos en VS Code o IDE favorito y trabajar en local, incluso cuando no tenga conexión a internet.
+El libro digital es el material guía del curso. El compendio del estudiante se entrega como PDF, reuniendo los problemas desarrollados por sesión con los 6 pasos operativos de resolución.
 
 ## Producto del curso
 
@@ -13,7 +13,8 @@ El producto del curso se construye durante todo el semestre:
 ```text
 Compendio final de ejercicios de programación resueltos por sesión,
 organizado por unidades, con análisis del problema, código funcional,
-pruebas de ejecución, correcciones y explicación de la lógica aplicada.
+pruebas de ejecución, correcciones, explicación de la lógica aplicada
+y presentación final en PDF.
 ```
 
 Resultado esperado del curso:
@@ -131,7 +132,7 @@ Los 6 pasos operativos que se repetirán en cada sesión son:
 5. Casos de prueba.
 6. Implementar, ejecutar y corregir.
 
-El ejercicio resuelto se registra como evidencia de la sesión y se integra al compendio de la unidad.
+El ejercicio resuelto y el aprendizaje autónomo de cada sesión se registran como evidencia y se integran al compendio PDF de la unidad.
 
 ## Evaluación del aprendizaje
 
@@ -153,7 +154,8 @@ Evidencias:
 2. Ejercicios resueltos en clase.
 3. Retos prácticos individuales o colaborativos.
 4. Evaluaciones prácticas por unidad.
-5. Compendio de ejercicios resueltos por unidad.
+5. Compendio PDF de ejercicios resueltos por unidad.
+6. Desarrollo de cada problema con los 6 pasos operativos: comprender, entradas, proceso, salidas, casos de prueba e implementación/corrección.
 
 ## Recursos
 
