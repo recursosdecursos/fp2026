@@ -4,6 +4,8 @@ Curso práctico de Fundamentos de Programación orientado al pensamiento algorí
 
 Este libro digital organiza las sesiones del curso para guiar la resolución acumulativa de ejercicios de programación. A diferencia de un curso con proyecto integrador único, FP funciona como un curso de matemática o cálculo: cada sesión aporta ejercicios resueltos, probados y explicados, y el producto final es el compendio ordenado de ese trabajo.
 
+El material también está disponible en [`recursosdecursos/fp2026`](https://github.com/recursosdecursos/fp2026) para descargar y abrir los cuadernos en VS Code o IDE favorito y trabajar en local, incluso cuando no tenga conexión a internet.
+
 ## Producto del curso
 
 El producto del curso se construye durante todo el semestre:
@@ -180,5 +182,5 @@ Evidencias:
 - [S14: Integración y menús](S14_Integracion_Menus.ipynb)
 - [S15: Archivos](S15_Archivos.ipynb)
 - [S16: Evaluación final](S16_Evaluacion_Final.ipynb)
-- [Anexo: Guía algoritmo a código](Guia_algoritmo_a_codigo.ipynb)
+- [S0: Guía algoritmo a código](S00_Guia_algoritmo_a_codigo.ipynb)
 - [Anexo: Equivalencias Java](S17_Java_Equivalencias.ipynb)
